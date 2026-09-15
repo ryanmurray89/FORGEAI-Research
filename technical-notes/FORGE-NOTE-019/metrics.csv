@@ -1,0 +1,12 @@
+metric,value,unit_or_status
+manifest_schema,forge.public_research_index.v1,schema
+supported_entry_types,5,types
+supported_status_values,4,statuses
+public_artifact_format_classes,4,format_classes
+sync_interval,5,minutes
+immutable_commit_resolution,YES,consistency
+manifest_and_artifacts_same_revision,YES,consistency
+commit_sha_persisted_in_sync_state,YES,provenance
+github_token_required,NO,operation
+private_app_repo_published,NO,boundary
+raw_third_party_evidence_published,NO,boundary

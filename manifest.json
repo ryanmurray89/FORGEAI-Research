@@ -3,7 +3,7 @@
   "project": "FORGE AI",
   "publisher": "NexLabs",
   "repository": "https://github.com/ryanmurray89/FORGEAI-Research",
-  "updated_at": "2026-09-15T09:16:01Z",
+  "updated_at": "2026-09-15T09:17:32Z",
   "entries": [
     {
       "id": "FORGE-EXP-001",
@@ -1172,6 +1172,49 @@
         "fail-closed",
         "source-independence",
         "autonomous-research"
+      ],
+      "files": [
+        {
+          "name": "README.md",
+          "type": "markdown",
+          "primary": true
+        },
+        {
+          "name": "note.json",
+          "type": "json"
+        },
+        {
+          "name": "metrics.csv",
+          "type": "csv"
+        },
+        {
+          "name": "methodology.md",
+          "type": "markdown"
+        },
+        {
+          "name": "provenance.json",
+          "type": "json"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "FORGE-NOTE-019",
+      "type": "technical_note",
+      "title": "Public Research Archive and Immutable Revision Sync",
+      "date": "2026-09-15",
+      "status": "verified",
+      "summary": "FORGE established a public research repository and website bridge that publishes experiments, benchmarks, technical notes, datasets, and updates through a manifest-driven archive. The sync path resolves GitHub main to an immutable commit SHA before fetching the manifest and artifacts, eliminating stale branch-CDN reads and ensuring each sync uses one consistent repository revision.",
+      "path": "technical-notes/FORGE-NOTE-019",
+      "tags": [
+        "research-archive",
+        "provenance",
+        "github",
+        "immutable-revisions",
+        "publication"
       ],
       "files": [
         {
