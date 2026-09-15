@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://forge.nexlabs.studio/schemas/public-research-index-v1.json",
+  "title": "FORGE Public Research Index",
+  "type": "object",
+  "required": [
+    "schema",
+    "project",
+    "publisher",
+    "entries"
+  ],
+  "properties": {
+    "schema": {
+      "const": "forge.public_research_index.v1"
+    },
+    "project": {
+      "type": "string"
+    },
+    "publisher": {
+      "type": "string"
+    },
+    "repository": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "type",
+          "title",
+          "date",
+          "status",
+          "path"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "experiment",
+              "benchmark",
+              "technical_note",
+              "dataset",
+              "update"
+            ]
+          },
+          "title": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "draft",
+              "published",
+              "verified",
+              "archived"
+            ]
+          },
+          "summary": {
+            "type": "string"
+          },
+          "path": {
+            "type": "string"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+# OS/editor junk
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+
+# Never commit local/private config
+.env
+.env.*
+secrets/
+private/
