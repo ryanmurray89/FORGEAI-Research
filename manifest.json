@@ -3,7 +3,7 @@
   "project": "FORGE AI",
   "publisher": "NexLabs",
   "repository": "https://github.com/ryanmurray89/FORGEAI-Research",
-  "updated_at": "2026-09-15T08:52:48Z",
+  "updated_at": "2026-09-15T08:54:19Z",
   "entries": [
     {
       "id": "FORGE-EXP-001",
@@ -785,6 +785,49 @@
         "sha256",
         "integrity",
         "claim-verifier"
+      ],
+      "files": [
+        {
+          "name": "README.md",
+          "type": "markdown",
+          "primary": true
+        },
+        {
+          "name": "note.json",
+          "type": "json"
+        },
+        {
+          "name": "metrics.csv",
+          "type": "csv"
+        },
+        {
+          "name": "methodology.md",
+          "type": "markdown"
+        },
+        {
+          "name": "provenance.json",
+          "type": "json"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "FORGE-NOTE-010",
+      "type": "technical_note",
+      "title": "Autonomous Natural Research Gap Lifecycle",
+      "date": "2026-09-15",
+      "status": "verified",
+      "summary": "FORGE operationalized a natural knowledge-gap research path that detects low-confidence public-knowledge gaps during normal use, queues isolated research jobs, gathers multi-source evidence, verifies claims, imports approved releases, promotes trusted knowledge, indexes it locally, and records provenance through NexLedger without modifying the legacy/manual lifecycle.",
+      "path": "technical-notes/FORGE-NOTE-010",
+      "tags": [
+        "autonomous-research",
+        "knowledge-gap",
+        "trusted-knowledge",
+        "groq",
+        "nexledger"
       ],
       "files": [
         {

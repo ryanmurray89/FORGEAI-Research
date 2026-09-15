@@ -1,0 +1,13 @@
+{
+  "schema": "forge.public_provenance.v1",
+  "research_id": "FORGE-NOTE-010",
+  "source_basis": "Historical FORGE operational/Jira records for the isolated natural-research lifecycle and its Cuckoo-filter end-to-end proof.",
+  "source_observations": [
+    "A conservative natural-gap detector queues public-general-knowledge research jobs from low-confidence RAG-backed interactions.",
+    "The research worker is isolated from the legacy/manual lifecycle and uses search snippets only for discovery, never as evidence.",
+    "Claims require support from at least two independent source organizations.",
+    "The Cuckoo-filter proof produced three evidence sources, four candidate claims, four verified claims, candidate #82, trusted knowledge #74, and NexLedger asset FORGEAI#TK123V1.",
+    "The release ID was forge-release-07990ffc7fc9d09f9be2dd3b with recorded SHA-256 07990ffc7fc9d09f9be2dd3b5594285e5ee0789f7430e24fb1a812cbbf996ed3."
+  ],
+  "publication_note": "This public note publishes lifecycle architecture and aggregate proof metrics only. HMAC secrets, Discord webhooks, private API keys, internal source code, and raw research evidence bodies are intentionally omitted."
+}

@@ -1,0 +1,16 @@
+metric,value,unit_or_status
+trust_after_trigger_max,0.72,score
+best_rag_trigger_max,0.45,score
+minimum_independent_source_organizations_per_claim,2,organizations
+cuckoo_filter_evidence_sources,3,sources
+cuckoo_filter_source_organizations,3,organizations
+cuckoo_filter_candidate_claims,4,claims
+cuckoo_filter_verified_claims,4,claims
+cuckoo_filter_groq_requests,2,requests
+cuckoo_filter_groq_tokens,11034,tokens
+imported_candidate_id,82,candidate
+trusted_knowledge_id,74,record
+nexledger_asset,FORGEAI#TK123V1,asset
+end_to_end_result,PASS,status
+legacy_shared_lifecycle_modified,NO,boundary
+search_snippets_used_as_evidence,NO,boundary
