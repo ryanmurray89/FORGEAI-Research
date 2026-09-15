@@ -1,0 +1,15 @@
+{
+  "schema": "forge.public_provenance.v1",
+  "research_id": "FORGE-BENCH-004",
+  "source_basis": "Historical clean-pilot retrieval benchmark transcript, FORGE changelog entry for benchmark_candidate_retrieval.py v001->v002, and the later public FORGE research checkpoint.",
+  "source_observations": [
+    "The raw v001 benchmark ran 30 queries against a 30-card candidate index with top-k 5.",
+    "Expected-card retrieval was 28/30 at rank 1 and 30/30 by rank 3.",
+    "Expected-topic retrieval was 30/30 at rank 1.",
+    "The initial contamination implementation produced 20/150 candidate flags and a NO-GO.",
+    "The benchmark was corrected to separate hard contamination from ordinary cross-topic retrieval and to add whole-candidate hard-contamination scanning.",
+    "The later public FORGE checkpoint records 93.3% exact-card retrieval @1, 100% expected-topic retrieval @1, 0/150 hard synthetic flags in pilot top-5 results, and a GO clean-corpus scale gate."
+  ],
+  "verification_note": "The supplied raw transcript directly contains the v001 pre-correction run. The final corrected 0/150 and GO outcome is preserved in the later FORGE public research checkpoint and public-site source. Because the corrected raw v002 report itself was not supplied in this reconstruction batch, this entry is marked published rather than independently re-verified from the v002 raw artifact.",
+  "publication_note": "No raw third-party evidence text, private application code, credentials, or private telemetry are included."
+}

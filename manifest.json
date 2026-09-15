@@ -3,7 +3,7 @@
   "project": "FORGE AI",
   "publisher": "NexLabs",
   "repository": "https://github.com/ryanmurray89/FORGEAI-Research",
-  "updated_at": "2026-09-15T09:17:32Z",
+  "updated_at": "2026-09-15T09:19:24Z",
   "entries": [
     {
       "id": "FORGE-EXP-001",
@@ -1224,6 +1224,49 @@
         },
         {
           "name": "note.json",
+          "type": "json"
+        },
+        {
+          "name": "metrics.csv",
+          "type": "csv"
+        },
+        {
+          "name": "methodology.md",
+          "type": "markdown"
+        },
+        {
+          "name": "provenance.json",
+          "type": "json"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "FORGE-BENCH-004",
+      "type": "benchmark",
+      "title": "Clean Pilot Retrieval Gate and Contamination-Metric Correction",
+      "date": "2026-09-02",
+      "status": "published",
+      "summary": "A 30-card clean candidate corpus achieved 93.3% exact-card retrieval at rank 1 and 100% expected-topic retrieval at rank 1. The first benchmark run incorrectly treated legitimate cross-topic top-5 retrieval as hard contamination and produced a NO-GO; benchmark v002 separated hard contamination from cross-topic retrieval, after which the recorded public checkpoint reported 0/150 hard synthetic flags and a GO scale gate.",
+      "path": "benchmarks/FORGE-BENCH-004",
+      "tags": [
+        "retrieval",
+        "clean-pilot",
+        "contamination",
+        "metric-correction",
+        "knowledge-factory"
+      ],
+      "files": [
+        {
+          "name": "README.md",
+          "type": "markdown",
+          "primary": true
+        },
+        {
+          "name": "benchmark.json",
           "type": "json"
         },
         {

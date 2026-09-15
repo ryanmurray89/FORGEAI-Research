@@ -1,0 +1,84 @@
+{
+  "schema": "forge.public_benchmark.v1",
+  "id": "FORGE-BENCH-004",
+  "title": "Clean Pilot Retrieval Gate and Contamination-Metric Correction",
+  "date": "2026-09-02",
+  "status": "published",
+  "purpose": "Measure whether the 30-card evidence-bound clean pilot retrieved its intended cards/topics strongly enough to justify scaling, while preserving a contamination gate.",
+  "candidate_index": {
+    "cards": 30,
+    "verified_true": 30,
+    "trust_assigned": false,
+    "production_ready_true": 0,
+    "high_stakes_cards": 8,
+    "safety_sensitive_cards": 2,
+    "embedding_model": "all-MiniLM-L6-v2",
+    "embedding_dimension": 384,
+    "normalized_embeddings": true,
+    "embedded_field": "retrieval_text",
+    "stored_document_field": "content",
+    "distance": "cosine",
+    "read_back_integrity": "PASS"
+  },
+  "benchmark_shape": {
+    "queries": 30,
+    "top_k": 5,
+    "device": "CUDA / NVIDIA GeForce RTX 3070"
+  },
+  "retrieval_results": {
+    "expected_card_at_1": "28/30",
+    "expected_card_at_1_percent": 93.3,
+    "expected_card_at_3": "30/30",
+    "expected_card_at_3_percent": 100.0,
+    "expected_card_at_5": "30/30",
+    "expected_card_at_5_percent": 100.0,
+    "expected_topic_at_1": "30/30",
+    "expected_topic_at_1_percent": 100.0,
+    "expected_topic_at_3": "30/30",
+    "expected_topic_at_3_percent": 100.0,
+    "expected_topic_at_5": "30/30",
+    "expected_topic_at_5_percent": 100.0
+  },
+  "v001_contamination_gate": {
+    "candidate_flagged_top5_results": "20/150",
+    "candidate_queries_with_flags": "14/30",
+    "result": "NO-GO",
+    "diagnosis": "The contamination metric conflated legitimate cross-topic retrieval with hard synthetic contamination."
+  },
+  "v002_metric_correction": {
+    "change": [
+      "separated hard contamination from cross-topic retrieval",
+      "cross-topic top-5 results no longer fail the gate",
+      "added whole-candidate hard-contamination scan",
+      "made legacy production topic matching tolerant of generated topic prefixes"
+    ],
+    "candidate_and_production_chroma_query_only": true,
+    "brain_changes": false,
+    "corpus_changes": false
+  },
+  "corrected_public_checkpoint": {
+    "clean_pilot_cards": 30,
+    "exact_card_retrieval_at_1_percent": 93.3,
+    "expected_topic_retrieval_at_1_percent": 100.0,
+    "hard_synthetic_flags_in_pilot_top5": "0/150",
+    "clean_corpus_scale_gate": "GO"
+  },
+  "safety": {
+    "production_mutation_methods_used": 0,
+    "candidate_writes_during_benchmark": 0,
+    "brain_changes": 0,
+    "production_replacement_authorized_by_benchmark": false
+  },
+  "interpretation": [
+    "The clean pilot demonstrated strong semantic retrieval before large-scale corpus generation.",
+    "The first gate failure was caused by an over-broad contamination definition rather than poor retrieval accuracy.",
+    "Separating cross-topic retrieval from hard synthetic contamination preserved a meaningful contamination check without treating every neighboring clean topic as contamination.",
+    "Passing the scale gate authorized continued clean-corpus scaling work; it did not authorize replacing production by itself."
+  ],
+  "limitations": [
+    "The corrected final checkpoint is preserved in the FORGE public landing/research record, while the supplied raw benchmark transcript contains the earlier v001 pre-correction run.",
+    "This was a 30-query pilot and not a broad production workload benchmark.",
+    "The benchmark evaluated retrieval behavior only; it did not test Brain reranking or answer-generation quality.",
+    "The legacy production corpus comparison was historical and should not be treated as representative of the later clean 423-claim production baseline."
+  ]
+}

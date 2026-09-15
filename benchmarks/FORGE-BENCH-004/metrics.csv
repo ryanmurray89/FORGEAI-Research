@@ -1,0 +1,18 @@
+metric,value,unit_or_status
+candidate_cards,30,cards
+queries,30,queries
+top_k,5,results
+exact_card_at_1,28/30,93.3%
+exact_card_at_3,30/30,100.0%
+exact_card_at_5,30/30,100.0%
+expected_topic_at_1,30/30,100.0%
+expected_topic_at_3,30/30,100.0%
+expected_topic_at_5,30/30,100.0%
+v001_candidate_contamination_flags,20/150,pre-correction
+v001_candidate_queries_with_flags,14/30,pre-correction
+v001_scale_gate,NO-GO,pre-correction
+corrected_hard_synthetic_flags_top5,0/150,public checkpoint
+corrected_scale_gate,GO,public checkpoint
+production_mutation_methods,0,safety
+candidate_writes_during_benchmark,0,safety
+brain_changes,0,safety
