@@ -3,7 +3,7 @@
   "project": "FORGE AI",
   "publisher": "NexLabs",
   "repository": "https://github.com/ryanmurray89/FORGEAI-Research",
-  "updated_at": "2026-09-15T08:34:12Z",
+  "updated_at": "2026-09-15T08:36:54Z",
   "entries": [
     {
       "id": "FORGE-EXP-001",
@@ -458,6 +458,49 @@
         },
         {
           "name": "results.csv",
+          "type": "csv"
+        },
+        {
+          "name": "methodology.md",
+          "type": "markdown"
+        },
+        {
+          "name": "provenance.json",
+          "type": "json"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "FORGE-NOTE-003",
+      "type": "technical_note",
+      "title": "Autonomous Trusted Knowledge Lifecycle Operationalization",
+      "date": "2026-09-14",
+      "status": "verified",
+      "summary": "FORGE operationalized an end-to-end trusted-knowledge lifecycle for manually trained public knowledge: synthesis, candidate creation, evidence collection, local verification, policy-gated approval, trusted-knowledge promotion, and live local indexing. Autonomous publication was separated from human approval through explicit system-policy audit metadata.",
+      "path": "technical-notes/FORGE-NOTE-003",
+      "tags": [
+        "autonomous-learning",
+        "trusted-knowledge",
+        "verification",
+        "policy-gating",
+        "production-architecture"
+      ],
+      "files": [
+        {
+          "name": "README.md",
+          "type": "markdown",
+          "primary": true
+        },
+        {
+          "name": "note.json",
+          "type": "json"
+        },
+        {
+          "name": "metrics.csv",
           "type": "csv"
         },
         {

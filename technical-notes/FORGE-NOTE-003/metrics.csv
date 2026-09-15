@@ -1,0 +1,15 @@
+metric,value,unit_or_status
+clean_starting_corpus,423,cards
+after_first_trusted_record,424,cards
+after_second_trusted_record,425,cards
+after_first_autonomous_record,426,cards
+validated_candidate_id,6,candidate
+validated_candidate_confidence,0.95,confidence
+validated_candidate_verified,YES,status
+validated_candidate_approved,YES,status
+validated_candidate_promoted,YES,status
+minimum_auto_publish_confidence,0.9,policy
+minimum_qualifying_evidence,2,policy
+minimum_supporting_evidence_v0_1,2,policy
+conflicting_evidence_allowed,0,policy
+routine_manual_intervention_required,NO,normal_flow

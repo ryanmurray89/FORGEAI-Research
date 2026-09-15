@@ -1,0 +1,14 @@
+{
+  "schema": "forge.public_provenance.v1",
+  "research_id": "FORGE-NOTE-003",
+  "source_basis": "Historical FORGE changelog/Jira export supplied for public research reconstruction.",
+  "source_observations": [
+    "The manual public-knowledge lifecycle was recorded as complete and validated.",
+    "Candidate #6 completed verification, system-policy approval, promotion, and live local indexing with verification confidence 0.95.",
+    "Observed live clean-index progression was 423 -> 424 -> 425 -> 426.",
+    "Normal public manual-training submissions no longer required routine manual SSH intervention.",
+    "System-policy approvals were explicitly separated from human-admin approvals.",
+    "Encrypted candidate/evidence content was excluded from operational notifications."
+  ],
+  "publication_note": "This note publishes lifecycle architecture and aggregate operational proof only. It intentionally omits private implementation code, encrypted candidate/evidence content, credentials, internal webhooks, and private database payloads."
+}
