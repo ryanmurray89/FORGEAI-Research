@@ -1,0 +1,17 @@
+metric,value,unit_or_status
+canonical_topics,759,topics
+blueprint_cards,3982,cards
+evidence_slots,4807,slots
+primary_roles,3982,slots
+supporting_roles,609,slots
+cross_check_roles,216,slots
+source_policy_families,60,families
+smoke_slots,28,slots
+smoke_topics,24,topics
+smoke_sha256_reproduced,PASS,determinism
+full_collector_offline_preflight,PASS,validation
+input_catalog_invariant_validation,PASS,validation
+evidence_auditor_mechanical_harness,PASS,validation
+network_calls_during_validation,0,calls
+production_ready_evidence_created,0,items
+windows_live_network_smoke,NOT_YET_EXECUTED,historical_checkpoint

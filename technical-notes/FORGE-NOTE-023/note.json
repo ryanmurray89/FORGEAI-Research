@@ -1,0 +1,78 @@
+{
+  "schema": "forge.public_technical_note.v1",
+  "id": "FORGE-NOTE-023",
+  "title": "Deterministic Evidence Acquisition Preflight and Bounded Smoke Harness",
+  "date": "2026-09-02",
+  "status": "published",
+  "purpose": "Document the evidence-acquisition preflight layer that translated the canonical bootstrap blueprint into a bounded, auditable acquisition workload before any full network-scale evidence collection was attempted.",
+  "canonical_scope": {
+    "canonical_topics": 759,
+    "blueprint_cards": 3982,
+    "evidence_slots": 4807,
+    "primary_roles": 3982,
+    "supporting_roles": 609,
+    "cross_check_roles": 216
+  },
+  "smoke_harness": {
+    "slots": 28,
+    "topics": 24,
+    "deterministic_reconstruction": true,
+    "sha256_reproduced_byte_for_byte": true
+  },
+  "acquisition_components": [
+    "full blueprint evidence collector",
+    "offline evidence-quality auditor",
+    "deterministic representative smoke selector",
+    "acquisition invariant validator",
+    "60-family conservative source-policy catalog",
+    "Windows offline validation wrapper",
+    "bounded Windows network-smoke wrapper"
+  ],
+  "policy_and_safety": {
+    "discovery_separated_from_page_content_acquisition": true,
+    "unknown_sources_default": "REVIEW_REQUIRED",
+    "ssrf_controls": true,
+    "redirect_controls": true,
+    "robots_controls": true,
+    "ai_exclusion_controls": true,
+    "bounded_excerpt_controls": true,
+    "blueprint_modified": false
+  },
+  "recorded_validation": {
+    "python_compilation": "PASS locally",
+    "full_queue_recognized": "4807/4807",
+    "cards_reconciled": "3982/3982",
+    "canonical_topics": "759",
+    "smoke_build": "28 slots / 24 topics",
+    "smoke_sha256_reproduced": "PASS",
+    "full_collector_offline_preflight": "PASS locally",
+    "input_catalog_invariant_validation": "PASS locally",
+    "evidence_auditor_mechanical_harness": "PASS locally",
+    "network_calls_during_validation": 0,
+    "windows_live_smoke_at_recorded_checkpoint": "NOT YET EXECUTED"
+  },
+  "data_impact": {
+    "production_chroma_changed": false,
+    "brain_api_changed": false,
+    "database_changed": false,
+    "private_data_routing_changed": false,
+    "deepinfra_usage": false,
+    "groq_usage": false,
+    "external_web_usage_during_candidate_validation": false,
+    "production_ready_evidence_created": 0
+  },
+  "interpretation": [
+    "The acquisition problem was made finite and measurable before network execution.",
+    "Deterministic smoke selection allows the same small representative workload to be rerun after discovery or policy changes.",
+    "Separating discovery from acquisition prevents search ranking itself from being treated as evidence.",
+    "Unknown source families fail toward review rather than silent approval.",
+    "The preflight creates a safe bridge between a large blueprint and later live acquisition experiments."
+  ],
+  "limitations": [
+    "The recorded September 2 checkpoint explicitly states that the Windows live network smoke had not yet been executed.",
+    "PDF ingestion was intentionally deferred.",
+    "New source families still required review.",
+    "Deterministic heuristic ranking was not treated as factual verification.",
+    "This note documents acquisition mechanics and preflight validation, not live evidence-coverage performance."
+  ]
+}

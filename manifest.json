@@ -3,7 +3,7 @@
   "project": "FORGE AI",
   "publisher": "NexLabs",
   "repository": "https://github.com/ryanmurray89/FORGEAI-Research",
-  "updated_at": "2026-09-15T09:30:08Z",
+  "updated_at": "2026-09-15T09:31:28Z",
   "entries": [
     {
       "id": "FORGE-EXP-001",
@@ -1475,6 +1475,49 @@
         "source-independence",
         "high-stakes",
         "provenance",
+        "knowledge-factory"
+      ],
+      "files": [
+        {
+          "name": "README.md",
+          "type": "markdown",
+          "primary": true
+        },
+        {
+          "name": "note.json",
+          "type": "json"
+        },
+        {
+          "name": "metrics.csv",
+          "type": "csv"
+        },
+        {
+          "name": "methodology.md",
+          "type": "markdown"
+        },
+        {
+          "name": "provenance.json",
+          "type": "json"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "FORGE-NOTE-023",
+      "type": "technical_note",
+      "title": "Deterministic Evidence Acquisition Preflight and Bounded Smoke Harness",
+      "date": "2026-09-02",
+      "status": "published",
+      "summary": "FORGE converted the validated 3,982-card knowledge blueprint into a 4,807-slot evidence-acquisition workload with explicit primary/supporting/cross-check roles, a conservative 60-family source-policy catalog, an offline evidence-quality auditor, invariant validation, and a deterministic 28-slot/24-topic smoke harness. Local preflight checks passed with zero network/provider calls; the recorded checkpoint explicitly notes that the Windows live smoke had not yet been executed.",
+      "path": "technical-notes/FORGE-NOTE-023",
+      "tags": [
+        "evidence-acquisition",
+        "deterministic-smoke",
+        "preflight",
+        "source-policy",
         "knowledge-factory"
       ],
       "files": [

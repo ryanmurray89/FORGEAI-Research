@@ -1,0 +1,16 @@
+{
+  "schema": "forge.public_provenance.v1",
+  "research_id": "FORGE-NOTE-023",
+  "source_basis": "Historical FORGE Knowledge Factory Evidence Acquisition v001 preflight record dated 2026-09-02.",
+  "source_observations": [
+    "The acquisition candidate recognized 4,807 evidence slots mapped to 3,982 cards and 759 canonical topics.",
+    "Role counts were 3,982 primary, 609 supporting, and 216 cross-check.",
+    "A deterministic 28-slot / 24-topic smoke was built and its SHA-256 reproduced byte-for-byte.",
+    "The implementation included a 60-family conservative source-policy catalog and unknown sources defaulted to REVIEW_REQUIRED.",
+    "Python compilation, offline preflight, input/catalog invariants, and the evidence-auditor mechanical harness passed locally.",
+    "Zero network calls were made during candidate validation and no production state was changed.",
+    "The source explicitly states that the Windows live network smoke had not yet been executed at this checkpoint."
+  ],
+  "status_note": "This entry is marked published because the mechanics and offline preflight were validated, but the source explicitly states that the live Windows network smoke was not yet executed at this historical checkpoint.",
+  "publication_note": "This package publishes architecture, scope counts, safety controls, and validation state. It does not expose credentials, private configuration, raw source evidence text, or private implementation code."
+}
