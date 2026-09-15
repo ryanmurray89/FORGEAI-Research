@@ -3,7 +3,7 @@
   "project": "FORGE AI",
   "publisher": "NexLabs",
   "repository": "https://github.com/ryanmurray89/FORGEAI-Research",
-  "updated_at": "2026-09-15T08:05:59Z",
+  "updated_at": "2026-09-15T08:15:01Z",
   "entries": [
     {
       "id": "FORGE-EXP-001",
@@ -196,6 +196,49 @@
         },
         {
           "name": "metrics.csv",
+          "type": "csv"
+        },
+        {
+          "name": "methodology.md",
+          "type": "markdown"
+        },
+        {
+          "name": "provenance.json",
+          "type": "json"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "FORGE-BENCH-001",
+      "type": "benchmark",
+      "title": "A/B/C Verified-Intelligence Quality and Compute Benchmark",
+      "date": "2026-09-04",
+      "status": "verified",
+      "summary": "A frozen 54-question, 162-execution benchmark compared a raw local 7B path, clean verified atomic retrieval, and the then-current FORGE orchestration. The verified-retrieval arm achieved the highest reported composite quality score (54.22), 54/54 retrieval Hit@1, 79.17% gold recall, and the lowest mean latency and GPU energy of the three arms.",
+      "path": "benchmarks/FORGE-BENCH-001",
+      "tags": [
+        "benchmark",
+        "verified-rag",
+        "compute-efficiency",
+        "retrieval",
+        "blinded-evaluation"
+      ],
+      "files": [
+        {
+          "name": "README.md",
+          "type": "markdown",
+          "primary": true
+        },
+        {
+          "name": "benchmark.json",
+          "type": "json"
+        },
+        {
+          "name": "results.csv",
           "type": "csv"
         },
         {
