@@ -1,0 +1,13 @@
+metric,value,unit_or_status
+total_questions,66,questions
+calibration_questions,12,questions
+locked_evaluation_questions,54,questions
+gold_claims_represented,423,claims
+high_stakes_calibration,0,questions
+high_stakes_evaluation,2,questions
+evaluation_questions_parsed_during_calibration,0,questions
+evaluation_hash_verified,YES,control
+production_chroma_opened,NO,boundary
+production_chroma_modified,NO,boundary
+brain_modified,NO,boundary
+database_modified,NO,boundary

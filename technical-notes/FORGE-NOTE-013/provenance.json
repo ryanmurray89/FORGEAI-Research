@@ -1,0 +1,31 @@
+{
+  "schema": "forge.public_provenance.v1",
+  "research_id": "FORGE-NOTE-013",
+  "source_basis": "Historical FORGE benchmark builder and retrieval-calibration records supplied in the project changelog/Jira export.",
+  "recorded_hashes": [
+    {
+      "path": "benchmark_v001/benchmark_calibration_v001.jsonl",
+      "recorded_sha256": "366CA6A74CE2EDE4ABAF2DC9EE4641241AC5E57BFF99BCB1319415626A3BC60C"
+    },
+    {
+      "path": "benchmark_v001/benchmark_evaluation_v001.jsonl",
+      "recorded_sha256": "0EE67DE597B793A7A7665558AA97382494989A681376C59454ED4257455ACC62"
+    },
+    {
+      "path": "benchmark_v001/benchmark_question_manifest_v001.json",
+      "recorded_sha256": "D319B7F8E3ED9379ECAEFE47E4F0C3DEDE78F57450390C054B87AD3D757A74F7"
+    },
+    {
+      "path": "benchmark_v001/benchmark_questions_v001.jsonl",
+      "recorded_sha256": "D10807FCE5C049C991B5AAA4611D1D6D30D2EE61A526B4874DFE05D1F5BB7DBC"
+    }
+  ],
+  "hash_verification_note": "These hashes are transcribed from the historical user-environment record. The underlying benchmark question files were not supplied in the current public reconstruction package, so this package does not claim independent rehashing.",
+  "source_observations": [
+    "The benchmark contained 66 questions: 12 calibration and 54 locked evaluation.",
+    "All 423 verified gold claims were represented.",
+    "The calibration process verified the locked evaluation hash without parsing the evaluation questions.",
+    "Production Chroma, Brain, and database state were not modified."
+  ],
+  "publication_note": "This public note publishes benchmark-construction metadata, freeze hashes, and methodology. The locked benchmark question text is intentionally not republished here."
+}

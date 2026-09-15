@@ -3,7 +3,7 @@
   "project": "FORGE AI",
   "publisher": "NexLabs",
   "repository": "https://github.com/ryanmurray89/FORGEAI-Research",
-  "updated_at": "2026-09-15T08:58:28Z",
+  "updated_at": "2026-09-15T09:00:24Z",
   "entries": [
     {
       "id": "FORGE-EXP-001",
@@ -914,6 +914,49 @@
         "evidence-verification",
         "nexledger",
         "provenance"
+      ],
+      "files": [
+        {
+          "name": "README.md",
+          "type": "markdown",
+          "primary": true
+        },
+        {
+          "name": "note.json",
+          "type": "json"
+        },
+        {
+          "name": "metrics.csv",
+          "type": "csv"
+        },
+        {
+          "name": "methodology.md",
+          "type": "markdown"
+        },
+        {
+          "name": "provenance.json",
+          "type": "json"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "FORGE-NOTE-013",
+      "type": "technical_note",
+      "title": "Frozen Benchmark Construction and Evaluation Leakage Prevention",
+      "date": "2026-09-04",
+      "status": "verified",
+      "summary": "FORGE built a 66-question benchmark from the 423-claim verified corpus, separating 12 calibration questions from 54 locked evaluation questions. Evaluation hashes were frozen before retrieval-policy tuning, and calibration tooling verified the locked evaluation hash without parsing its contents.",
+      "path": "technical-notes/FORGE-NOTE-013",
+      "tags": [
+        "benchmark-design",
+        "evaluation-freeze",
+        "data-leakage",
+        "reproducibility",
+        "verified-corpus"
       ],
       "files": [
         {
