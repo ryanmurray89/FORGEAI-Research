@@ -3,7 +3,7 @@
   "id": "FORGE-NOTE-001",
   "title": "Knowledge Blueprint v004: Deterministic Bootstrap Planning",
   "date": "2026-09-02",
-  "status": "published",
+  "status": "verified",
   "purpose": "Document the planning-stage design and measured output of the FORGE v004 knowledge blueprint before evidence acquisition or production knowledge generation.",
   "baseline": {
     "recovered_taxonomy_rows": 729,
@@ -59,8 +59,12 @@
   "validation_status": {
     "assistant_side_local_artifact_validation": "passed",
     "deterministic_byte_for_byte_rebuild": "passed",
-    "user_environment_validation_recorded_in_source_archive": false,
-    "publication_status_reason": "Published as a technical planning note rather than a verified production result because the source package explicitly states that user-environment validation had not yet been supplied."
+    "windows_user_environment_validation": "passed",
+    "windows_python_version": "3.11.9",
+    "windows_validation_result": "[PASS] Windows validation completed successfully",
+    "content_counts_changed_by_validation": false,
+    "production_state_changed_by_validation": false,
+    "publication_status_reason": "Upgraded from published to verified after the later user-environment record confirmed successful Windows validation and byte-for-byte deterministic rebuild behavior."
   },
   "limitations": [
     "The blueprint is a planning artifact, not a factual knowledge corpus.",
@@ -68,6 +72,6 @@
     "No card was production-ready.",
     "The 37-topic amendment was intentionally bounded and was not intended to be an exhaustive enterprise IT ontology.",
     "Existing corrected taxonomy topics were not broadly reclassified into the two new amendment domains.",
-    "The source archive records local deterministic validation, but not completed user-environment validation."
+    "Verified status here refers to deterministic artifact validation in the user environment, not factual verification of the planned future knowledge cards."
   ]
 }

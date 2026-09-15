@@ -34,5 +34,14 @@
       "bytes": 4412
     }
   ],
-  "publication_note": "This public note publishes derived counts, methodology, limitations, and source hashes. The full historical blueprint JSONL/CSV corpus, implementation scripts, private repository metadata, and internal candidate package are intentionally not republished."
+  "publication_note": "This public note publishes derived counts, methodology, limitations, source hashes, and the later user-environment validation outcome. The full historical blueprint JSONL/CSV corpus, implementation scripts, private repository metadata, and internal candidate package remain intentionally unpublished.",
+  "status_update": {
+    "previous_public_status": "published",
+    "new_public_status": "verified",
+    "reason": "Later user-environment validation record supplied after the original public package was created.",
+    "windows_python_version": "3.11.9",
+    "deterministic_rebuild": "byte-for-byte match",
+    "validator_result": "[PASS] Windows validation completed successfully",
+    "production_changes": "none"
+  }
 }

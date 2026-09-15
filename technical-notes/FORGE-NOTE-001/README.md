@@ -1,7 +1,7 @@
 # FORGE-NOTE-001 — Knowledge Blueprint v004: Deterministic Bootstrap Planning
 
 **Date:** 2026-09-02  
-**Status:** Published technical note  
+**Status:** Verified — deterministic user-environment validation  
 **Project:** FORGE AI / NexLabs
 
 ## What this document records
@@ -105,6 +105,19 @@ At this point:
 - Brain was unchanged;
 - the database was unchanged.
 
-The source archive records successful local deterministic artifact validation, but explicitly states that
-the separate user-environment validation result had not yet been supplied. For that reason this public
-record is marked **published**, not **verified**.
+The original public record was conservatively marked **published** because the first source archive did
+not yet contain the separate user-environment validation result.
+
+A later FORGE changelog/Jira record supplied that missing result:
+
+- Windows Python: **3.11.9**
+- deterministic v004 rebuild: **byte-for-byte match**
+- blueprint counts: **unchanged**
+- production state changes: **none**
+- final validator result: **`[PASS] Windows validation completed successfully`**
+
+Because the missing user-environment validation was later supplied, this public record is now correctly
+marked **verified**.
+
+That verified status applies to the deterministic blueprint artifact and its reproduction, not to the
+factual truth of future cards that the blueprint planned.

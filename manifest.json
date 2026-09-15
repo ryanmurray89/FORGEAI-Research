@@ -3,7 +3,7 @@
   "project": "FORGE AI",
   "publisher": "NexLabs",
   "repository": "https://github.com/ryanmurray89/FORGEAI-Research",
-  "updated_at": "2026-09-15T08:47:20Z",
+  "updated_at": "2026-09-15T08:49:02Z",
   "entries": [
     {
       "id": "FORGE-EXP-001",
@@ -174,8 +174,8 @@
       "type": "technical_note",
       "title": "Knowledge Blueprint v004: Deterministic Bootstrap Planning",
       "date": "2026-09-02",
-      "status": "published",
-      "summary": "FORGE Blueprint v004 converted a repaired 729-topic recovered taxonomy plus 37 approved foundational additions into 759 canonical generating topics, 3,982 unique planned card scopes, and 4,807 evidence-source slots while keeping every card non-production-ready until evidence and verification were completed.",
+      "status": "verified",
+      "summary": "FORGE Blueprint v004 converted a repaired 729-topic recovered taxonomy plus 37 approved foundational additions into 759 canonical generating topics, 3,982 unique planned card scopes, and 4,807 evidence-source slots. Windows user-environment validation later confirmed the deterministic rebuild matched the expected artifacts byte-for-byte.",
       "path": "technical-notes/FORGE-NOTE-001",
       "tags": [
         "knowledge-factory",
