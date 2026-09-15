@@ -3,7 +3,7 @@
   "project": "FORGE AI",
   "publisher": "NexLabs",
   "repository": "https://github.com/ryanmurray89/FORGEAI-Research",
-  "updated_at": "2026-09-15T08:42:31Z",
+  "updated_at": "2026-09-15T08:44:15Z",
   "entries": [
     {
       "id": "FORGE-EXP-001",
@@ -588,6 +588,49 @@
         {
           "name": "hypotheses.csv",
           "type": "csv"
+        },
+        {
+          "name": "provenance.json",
+          "type": "json"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "FORGE-NOTE-005",
+      "type": "technical_note",
+      "title": "Legacy Corpus Recovery and Clean Rebuild Boundary",
+      "date": "2026-09-01",
+      "status": "published",
+      "summary": "FORGE recovered 729 original subject areas from the legacy synthetic corpus, resolved all 121 ambiguous taxonomy classifications, split the recovered scope into 484 TECH_REVIEW and 245 REBUILD_FROM_SOURCE topics, preserved the ~442k-card synthetic corpus as immutable archive material, and explicitly rejected those synthetic cards for clean production indexing.",
+      "path": "technical-notes/FORGE-NOTE-005",
+      "tags": [
+        "corpus-recovery",
+        "taxonomy",
+        "contamination-control",
+        "clean-rebuild",
+        "knowledge-factory"
+      ],
+      "files": [
+        {
+          "name": "README.md",
+          "type": "markdown",
+          "primary": true
+        },
+        {
+          "name": "note.json",
+          "type": "json"
+        },
+        {
+          "name": "metrics.csv",
+          "type": "csv"
+        },
+        {
+          "name": "methodology.md",
+          "type": "markdown"
         },
         {
           "name": "provenance.json",

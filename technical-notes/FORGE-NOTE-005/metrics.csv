@@ -1,0 +1,11 @@
+metric,value,unit_or_status
+recovered_subject_areas,729,topics
+ambiguous_classifications_resolved,121,topics
+ambiguous_to_tech_review,81,topics
+ambiguous_to_rebuild_from_source,40,topics
+final_tech_review,484,topics
+final_rebuild_from_source,245,topics
+manual_classify_remaining,0,topics
+legacy_synthetic_cards_preserved,442577,cards
+legacy_cards_clean_production_eligible,NO,policy
+legacy_corpus_preserved_as_archive,YES,policy

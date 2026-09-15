@@ -1,0 +1,58 @@
+{
+  "schema": "forge.public_technical_note.v1",
+  "id": "FORGE-NOTE-005",
+  "title": "Legacy Corpus Recovery and Clean Rebuild Boundary",
+  "date": "2026-09-01",
+  "status": "published",
+  "purpose": "Document the recovery of FORGE's original topic taxonomy from the legacy synthetic corpus and the decision to preserve that corpus for history/research while rebuilding production knowledge from authoritative evidence.",
+  "recovery": {
+    "recovered_subject_areas": 729,
+    "ambiguous_classifications_resolved": 121,
+    "tech_review_topics": 484,
+    "rebuild_from_source_topics": 245,
+    "manual_classify_remaining": 0
+  },
+  "legacy_corpus": {
+    "synthetic_cards_preserved": 442577,
+    "role": "immutable archive / discovery / research history",
+    "eligible_for_clean_production_indexing": false
+  },
+  "classification_process": {
+    "initial_manifest_classes": [
+      "TECH_REVIEW",
+      "REBUILD_FROM_SOURCE",
+      "MANUAL_CLASSIFY"
+    ],
+    "final_manifest_classes": [
+      "TECH_REVIEW",
+      "REBUILD_FROM_SOURCE"
+    ],
+    "ambiguous_topics_resolved_to_tech_review": 81,
+    "ambiguous_topics_resolved_to_rebuild_from_source": 40,
+    "classification_source_metadata_added": true,
+    "existing_corpus_statistics_preserved": true,
+    "contamination_statistics_preserved": true
+  },
+  "clean_rebuild_direction": {
+    "source_policy_by_domain": true,
+    "freshness_policy": true,
+    "revalidation_policy": true,
+    "high_stakes_detection": true,
+    "primary_source_requirements": true,
+    "independent_crosscheck_requirements": true,
+    "technical_validation_requirements": true,
+    "synthetic_fixed_trust_rejected": true,
+    "focused_retrieval_text_contract": true
+  },
+  "interpretation": [
+    "The legacy corpus remained useful as historical/discovery material but was not accepted as a trustworthy production knowledge base.",
+    "Recovering the original topic taxonomy allowed FORGE to preserve subject coverage while discarding synthetic trust assumptions.",
+    "The 729-topic recovered manifest became the planning substrate for the later evidence-bound Knowledge Factory and canonical blueprint."
+  ],
+  "limitations": [
+    "This note documents taxonomy recovery and rebuild policy, not factual validation of the legacy cards.",
+    "The historical source record reports ~442,577 synthetic cards at this stage; later production records reference ~441,197 cards after subsequent system changes. These should not be treated as the same snapshot.",
+    "TECH_REVIEW does not mean a topic was already production-ready; it indicates a different rebuild/validation path than REBUILD_FROM_SOURCE.",
+    "Heuristic research-lead terms in the recovered manifest were not promoted as facts."
+  ]
+}
