@@ -1,0 +1,12 @@
+metric,value,unit_or_status
+legacy_cards_retired,441197,approx_cards
+clean_verified_claims,423,claims
+clean_chroma_indexed_cards,423,cards
+retrieval_known_claim_rank,1,rank
+retrieval_top_similarity,0.8409,cosine_similarity
+expected_terms_present,4/4,terms
+chat_memories_preserved,13,records
+user_memories_preserved,5,records
+legacy_cards_copied,0,cards
+first_post_cutover_live_count,424,cards
+production_cutover,PASS,status

@@ -3,7 +3,7 @@
   "project": "FORGE AI",
   "publisher": "NexLabs",
   "repository": "https://github.com/ryanmurray89/FORGEAI-Research",
-  "updated_at": "2026-09-15T08:28:08Z",
+  "updated_at": "2026-09-15T08:31:40Z",
   "entries": [
     {
       "id": "FORGE-EXP-001",
@@ -372,6 +372,49 @@
         },
         {
           "name": "results.csv",
+          "type": "csv"
+        },
+        {
+          "name": "methodology.md",
+          "type": "markdown"
+        },
+        {
+          "name": "provenance.json",
+          "type": "json"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "FORGE-NOTE-002",
+      "type": "technical_note",
+      "title": "Clean Verified Knowledge Production Baseline",
+      "date": "2026-09-13",
+      "status": "verified",
+      "summary": "FORGE replaced the legacy ~441k-card production retrieval corpus with the clean 423-claim verified baseline, preserved memory collections separately, validated known-claim retrieval at rank #1, and established trusted_knowledge as the authoritative knowledge store with Chroma as a rebuildable search index.",
+      "path": "technical-notes/FORGE-NOTE-002",
+      "tags": [
+        "production-cutover",
+        "verified-knowledge",
+        "chroma",
+        "retrieval",
+        "architecture"
+      ],
+      "files": [
+        {
+          "name": "README.md",
+          "type": "markdown",
+          "primary": true
+        },
+        {
+          "name": "note.json",
+          "type": "json"
+        },
+        {
+          "name": "metrics.csv",
           "type": "csv"
         },
         {
