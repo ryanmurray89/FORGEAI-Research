@@ -3,7 +3,7 @@
   "project": "FORGE AI",
   "publisher": "NexLabs",
   "repository": "https://github.com/ryanmurray89/FORGEAI-Research",
-  "updated_at": "2026-09-15T09:19:24Z",
+  "updated_at": "2026-09-15T09:22:20Z",
   "entries": [
     {
       "id": "FORGE-EXP-001",
@@ -1271,6 +1271,50 @@
         },
         {
           "name": "metrics.csv",
+          "type": "csv"
+        },
+        {
+          "name": "methodology.md",
+          "type": "markdown"
+        },
+        {
+          "name": "provenance.json",
+          "type": "json"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "FORGE-EXP-007",
+      "type": "experiment",
+      "title": "Groq Evidence-Bound Generation Canary and Fail-Closed Verification",
+      "date": "2026-09-02",
+      "status": "verified",
+      "summary": "A four-blueprint cross-domain Groq canary generated four evidence-bound knowledge candidates with zero generation failures for $0.003482 in reported provider cost, while assigning no trust and making no Chroma writes. Downstream verification then demonstrated the intended fail-closed boundary: a PostgreSQL candidate passed claim support verification, a calculus candidate failed on a partially supported claim, and a diabetes candidate surfaced a structural missing-claim-number execution failure.",
+      "path": "experiments/FORGE-EXP-007",
+      "tags": [
+        "knowledge-factory",
+        "groq",
+        "evidence-bound-generation",
+        "claim-verification",
+        "fail-closed",
+        "canary"
+      ],
+      "files": [
+        {
+          "name": "README.md",
+          "type": "markdown",
+          "primary": true
+        },
+        {
+          "name": "experiment.json",
+          "type": "json"
+        },
+        {
+          "name": "results.csv",
           "type": "csv"
         },
         {

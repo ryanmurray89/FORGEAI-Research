@@ -1,0 +1,16 @@
+phase,metric,value,unit,basis
+generation,blueprints_selected,4,blueprints,recorded
+generation,candidates_generated,4,candidates,recorded
+generation,generation_failures,0,failures,recorded
+generation,prompt_tokens,15445,tokens,recorded
+generation,completion_tokens,1942,tokens,recorded
+generation,total_tokens,17387,tokens,derived
+generation,reported_cost,0.003482,USD,recorded
+safety,evidence_hashes_verified_before_generation,YES,status,recorded
+safety,old_synthetic_corpus_used_as_factual_evidence,NO,status,recorded
+safety,trust_assigned_during_generation,NO,status,recorded
+safety,production_ready_cards_at_generation,0,cards,recorded
+safety,chroma_writes,0,writes,recorded
+verification,postgresql,VERIFIER_PASS,outcome,recorded
+verification,calculus,VERIFIER_FAIL_PARTIAL_SUPPORT,outcome,recorded
+verification,diabetes,EXECUTION_FAILURE_MISSING_CLAIM_NUMBER_7,outcome,recorded
