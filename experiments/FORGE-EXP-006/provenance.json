@@ -1,0 +1,14 @@
+{
+  "schema": "forge.public_provenance.v1",
+  "research_id": "FORGE-EXP-006",
+  "source_basis": "Historical FORGE changelog/Jira export supplied for public research reconstruction.",
+  "source_observations": [
+    "Auto-Publish Policy v0.2 reduced supporting-evidence requirement from 2 to 1.",
+    "All other trust/conflict/consensus requirements were retained.",
+    "29 previously held candidates became eligible without rerunning evidence collection or local verification.",
+    "Expected backlog autonomy increased from 36.7% to approximately 95.9%.",
+    "System-generated publish jobs used system_policy approval and v0.2 audit metadata."
+  ],
+  "verification_note": "The supplied changelog records the policy change and projected backlog effect but does not include the complete candidate-level backlog table. This package therefore preserves the reported aggregate figures and labels the 95.9% figure as projected.",
+  "publication_note": "No encrypted candidate/evidence content, private database rows, internal implementation code, Discord payloads, or private approvals are republished."
+}

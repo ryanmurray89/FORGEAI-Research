@@ -1,0 +1,10 @@
+metric,policy_v0_1,policy_v0_2,interpretation
+minimum_supporting_evidence,2,1,only explicitly relaxed evidence threshold
+verification_pass_required,YES,YES,retained
+minimum_confidence,0.90,0.90,retained
+ai_consensus_required,YES,YES,retained
+conflicting_evidence_allowed,0,0,retained
+verifier_conflict_allowed,NO,NO,retained
+newly_eligible_held_candidates,0,29,reclassified without evidence recollection or reverification
+backlog_autonomy_percent,36.7,~95.9,v0.2 value recorded as projected/expected
+absolute_percentage_point_change,,+59.2,derived from recorded percentages

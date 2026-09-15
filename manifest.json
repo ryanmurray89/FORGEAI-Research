@@ -3,7 +3,7 @@
   "project": "FORGE AI",
   "publisher": "NexLabs",
   "repository": "https://github.com/ryanmurray89/FORGEAI-Research",
-  "updated_at": "2026-09-15T08:31:40Z",
+  "updated_at": "2026-09-15T08:34:12Z",
   "entries": [
     {
       "id": "FORGE-EXP-001",
@@ -415,6 +415,49 @@
         },
         {
           "name": "metrics.csv",
+          "type": "csv"
+        },
+        {
+          "name": "methodology.md",
+          "type": "markdown"
+        },
+        {
+          "name": "provenance.json",
+          "type": "json"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "FORGE-EXP-006",
+      "type": "experiment",
+      "title": "Autonomous Trust Policy v0.1 to v0.2 Backlog Reclassification",
+      "date": "2026-09-14",
+      "status": "published",
+      "summary": "FORGE relaxed one auto-publication condition from two supporting evidence items to one while retaining verification, confidence, consensus, and zero-conflict requirements. Applying the policy change to the existing backlog made 29 previously held candidates eligible without rerunning evidence collection or local verification, raising projected backlog autonomy from 36.7% to approximately 95.9%.",
+      "path": "experiments/FORGE-EXP-006",
+      "tags": [
+        "autonomous-learning",
+        "trust-policy",
+        "auto-publish",
+        "human-review",
+        "policy-tuning"
+      ],
+      "files": [
+        {
+          "name": "README.md",
+          "type": "markdown",
+          "primary": true
+        },
+        {
+          "name": "experiment.json",
+          "type": "json"
+        },
+        {
+          "name": "results.csv",
           "type": "csv"
         },
         {
