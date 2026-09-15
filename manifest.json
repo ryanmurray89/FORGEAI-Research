@@ -3,7 +3,7 @@
   "project": "FORGE AI",
   "publisher": "NexLabs",
   "repository": "https://github.com/ryanmurray89/FORGEAI-Research",
-  "updated_at": "2026-09-15T07:57:26Z",
+  "updated_at": "2026-09-15T08:05:59Z",
   "entries": [
     {
       "id": "FORGE-EXP-001",
@@ -153,6 +153,49 @@
         },
         {
           "name": "results.csv",
+          "type": "csv"
+        },
+        {
+          "name": "methodology.md",
+          "type": "markdown"
+        },
+        {
+          "name": "provenance.json",
+          "type": "json"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "FORGE-NOTE-001",
+      "type": "technical_note",
+      "title": "Knowledge Blueprint v004: Deterministic Bootstrap Planning",
+      "date": "2026-09-02",
+      "status": "published",
+      "summary": "FORGE Blueprint v004 converted a repaired 729-topic recovered taxonomy plus 37 approved foundational additions into 759 canonical generating topics, 3,982 unique planned card scopes, and 4,807 evidence-source slots while keeping every card non-production-ready until evidence and verification were completed.",
+      "path": "technical-notes/FORGE-NOTE-001",
+      "tags": [
+        "knowledge-factory",
+        "blueprint",
+        "taxonomy",
+        "deterministic-planning",
+        "safety-gates"
+      ],
+      "files": [
+        {
+          "name": "README.md",
+          "type": "markdown",
+          "primary": true
+        },
+        {
+          "name": "note.json",
+          "type": "json"
+        },
+        {
+          "name": "metrics.csv",
           "type": "csv"
         },
         {

@@ -1,0 +1,20 @@
+metric,value,meaning
+recovered_taxonomy_rows,729,baseline taxonomy rows
+audited_unsafe_classifications,24,previously audited unsafe classifications
+domain_changes,20,classification repair domain changes
+corrected_pre_amendment_cards,3810,"planned cards after repair, before amendment"
+approved_foundational_additions,37,bounded amendment topics
+added_planned_cards,207,planned card scopes added by amendment
+amended_taxonomy_rows,766,taxonomy rows after amendment
+amended_raw_planned_cards,4017,planned cards before alias suppression
+aliases_suppressed,7,existing high-confidence aliases
+canonical_generating_topics,759,topics generating final card scopes
+final_unique_card_scopes,3982,canonical planned cards
+evidence_queue_slots,4807,planned evidence-source slots
+high_stakes_cards,216,cards requiring high-stakes policy
+safety_sensitive_cards,467,cards marked safety-sensitive
+human_review_cards,216,cards requiring human review
+technical_validation_cards,2975,cards requiring technical validation
+cross_check_required_cards,216,cards requiring independent cross-check
+production_ready_cards,0,planning-stage result
+selected_evidence_urls,0,no evidence selected at blueprint stage
