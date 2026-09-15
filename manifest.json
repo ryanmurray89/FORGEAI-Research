@@ -3,7 +3,7 @@
   "project": "FORGE AI",
   "publisher": "NexLabs",
   "repository": "https://github.com/ryanmurray89/FORGEAI-Research",
-  "updated_at": "2026-09-15T09:26:01Z",
+  "updated_at": "2026-09-15T09:28:01Z",
   "entries": [
     {
       "id": "FORGE-EXP-001",
@@ -1402,6 +1402,50 @@
         },
         {
           "name": "metrics.csv",
+          "type": "csv"
+        },
+        {
+          "name": "methodology.md",
+          "type": "markdown"
+        },
+        {
+          "name": "provenance.json",
+          "type": "json"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "FORGE-EXP-008",
+      "type": "experiment",
+      "title": "Cross-Model Claim Verification and Human-Review Gating Pilot",
+      "date": "2026-09-02",
+      "status": "verified",
+      "summary": "Four recorded pilot verifier runs evaluated 21 candidate-card executions with a different model family from the generator. The verifier produced 19 card passes, one evidence-support failure, and one structural execution failure while rechecking frozen evidence hashes and candidate identity. Seven high-stakes/safety cards still required human review despite model-level support, demonstrating that model agreement did not bypass policy or trust gates.",
+      "path": "experiments/FORGE-EXP-008",
+      "tags": [
+        "claim-verification",
+        "cross-model",
+        "human-review",
+        "high-stakes",
+        "fail-closed",
+        "knowledge-factory"
+      ],
+      "files": [
+        {
+          "name": "README.md",
+          "type": "markdown",
+          "primary": true
+        },
+        {
+          "name": "experiment.json",
+          "type": "json"
+        },
+        {
+          "name": "results.csv",
           "type": "csv"
         },
         {

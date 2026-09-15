@@ -1,0 +1,6 @@
+run,candidate_cards,verifier_pass,verifier_fail,execution_failures,human_review_required,supported,partially_supported,unsupported,contradicted,unclear,prompt_tokens,completion_tokens,total_tokens
+batch-13a/verification-6b,6,6,0,0,0,40,0,0,0,0,21823,7811,29634
+batch-13a/verification-7a,7,6,1,0,0,45,1,1,0,0,23725,7037,30762
+batch-13b/verification-highstakes-4,4,4,0,0,4,26,0,0,0,0,17341,4260,21601
+batch-13b/verification-safety-4,4,3,0,1,3,19,0,0,0,0,19171,4520,23691
+TOTAL_RECORDED_RUNS,21,19,1,1,7,130,1,1,0,0,82060,23628,105688
