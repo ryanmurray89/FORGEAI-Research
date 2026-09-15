@@ -3,7 +3,7 @@
   "project": "FORGE AI",
   "publisher": "NexLabs",
   "repository": "https://github.com/ryanmurray89/FORGEAI-Research",
-  "updated_at": "2026-09-15T08:39:56Z",
+  "updated_at": "2026-09-15T08:42:31Z",
   "entries": [
     {
       "id": "FORGE-EXP-001",
@@ -549,6 +549,45 @@
         {
           "name": "methodology.md",
           "type": "markdown"
+        },
+        {
+          "name": "provenance.json",
+          "type": "json"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "FORGE-UPDATE-001",
+      "type": "update",
+      "title": "FORGE V2 Research Program: Verified Intelligence and Adaptive Compute",
+      "date": "2026-09-05",
+      "status": "published",
+      "summary": "FORGE V2 formalized the research direction emerging from the completed A/B/C benchmark: verified externalized intelligence and fast trusted retrieval as the default path, adaptive orchestration only when justified, explicit separation of evidence/knowledge/memory, continuous knowledge growth, and compute-efficiency as a first-class research objective.",
+      "path": "updates/FORGE-UPDATE-001",
+      "tags": [
+        "research-program",
+        "master-plan-v2",
+        "verified-intelligence",
+        "adaptive-compute",
+        "nsf"
+      ],
+      "files": [
+        {
+          "name": "README.md",
+          "type": "markdown",
+          "primary": true
+        },
+        {
+          "name": "update.json",
+          "type": "json"
+        },
+        {
+          "name": "hypotheses.csv",
+          "type": "csv"
         },
         {
           "name": "provenance.json",

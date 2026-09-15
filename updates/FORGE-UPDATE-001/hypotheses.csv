@@ -1,0 +1,7 @@
+id,hypothesis,status_at_v2_revision
+H1,Verified externalized knowledge can improve useful small-model output relative to the same local model without retrieval.,supported by initial A/B/C benchmark; requires replication/generalization
+H2,Verified retrieval can reduce recurring inference compute for knowledge-rich workloads.,supported by initial latency/energy comparison; requires broader workload testing
+H3,Always-on orchestration can destroy the efficiency advantage of clean retrieval when its additional compute does not produce proportional quality gains.,supported by A/B/C C-arm result; architecture-specific
+H4,Adaptive inference can preserve quality while selectively allocating additional compute only where necessary.,planned / not yet validated at V2 revision time
+H5,"Continuous knowledge growth can remain useful only if candidate intelligence is separated from trusted knowledge through evidence, verification, conflict detection, and auditable promotion.",planned lifecycle hypothesis; later operationalized
+H6,Knowledge quality and provenance may substitute for some model-scale increases on bounded private/local workloads.,research hypothesis; not established as a universal result
