@@ -1,0 +1,11 @@
+metric,value,unit_or_status
+diagnostic_source_cards,100,cards
+final_verified_source_cards,66,cards
+topics_represented,66,topics
+verified_atomic_claims,423,claims
+linked_evidence_excerpts,56,evidence_excerpts
+strict_claim_survival,48.0,percent
+claims_rescued_from_failed_cards,331,claims
+rescued_claim_share_of_final_corpus,78.3,percent
+full_generation_population,1075,candidate_cards
+production_ready,NO,status

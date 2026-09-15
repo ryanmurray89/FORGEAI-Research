@@ -3,7 +3,7 @@
   "project": "FORGE AI",
   "publisher": "NexLabs",
   "repository": "https://github.com/ryanmurray89/FORGEAI-Research",
-  "updated_at": "2026-09-15T08:22:45Z",
+  "updated_at": "2026-09-15T08:25:32Z",
   "entries": [
     {
       "id": "FORGE-EXP-001",
@@ -286,6 +286,49 @@
         },
         {
           "name": "preregistered_checks.csv",
+          "type": "csv"
+        },
+        {
+          "name": "methodology.md",
+          "type": "markdown"
+        },
+        {
+          "name": "provenance.json",
+          "type": "json"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "FORGE-EXP-005",
+      "type": "experiment",
+      "title": "Claim-Level Verification and Clean Corpus Consolidation",
+      "date": "2026-09-04",
+      "status": "verified",
+      "summary": "FORGE consolidated strict claim-level verifier survivors from a 100-card diagnostic subset into a clean 423-claim corpus. The experiment recorded a 48.0% strict claim survival rate and rescued 331 independently supportable claims from cards that would have been discarded under whole-card acceptance.",
+      "path": "experiments/FORGE-EXP-005",
+      "tags": [
+        "claim-verification",
+        "knowledge-quality",
+        "corpus-consolidation",
+        "atomic-claims",
+        "provenance"
+      ],
+      "files": [
+        {
+          "name": "README.md",
+          "type": "markdown",
+          "primary": true
+        },
+        {
+          "name": "experiment.json",
+          "type": "json"
+        },
+        {
+          "name": "results.csv",
           "type": "csv"
         },
         {
