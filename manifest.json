@@ -3,7 +3,7 @@
   "project": "FORGE AI",
   "publisher": "NexLabs",
   "repository": "https://github.com/ryanmurray89/FORGEAI-Research",
-  "updated_at": "2026-09-15T08:25:32Z",
+  "updated_at": "2026-09-15T08:28:08Z",
   "entries": [
     {
       "id": "FORGE-EXP-001",
@@ -325,6 +325,49 @@
         },
         {
           "name": "experiment.json",
+          "type": "json"
+        },
+        {
+          "name": "results.csv",
+          "type": "csv"
+        },
+        {
+          "name": "methodology.md",
+          "type": "markdown"
+        },
+        {
+          "name": "provenance.json",
+          "type": "json"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "FORGE-BENCH-003",
+      "type": "benchmark",
+      "title": "Atomic Knowledge Retrieval Policy Calibration",
+      "date": "2026-09-04",
+      "status": "verified",
+      "summary": "A locked 12-question calibration showed that legacy long-card retrieval filters were poorly matched to short verified atomic claims. Plain vector top-6 achieved 12/12 Hit@1 and 67/87 claim recall, while legacy minimum-length filtering produced severe retrieval loss; the final policy freeze selected plain_vector_top6.",
+      "path": "benchmarks/FORGE-BENCH-003",
+      "tags": [
+        "retrieval",
+        "calibration",
+        "atomic-claims",
+        "vector-search",
+        "policy-freeze"
+      ],
+      "files": [
+        {
+          "name": "README.md",
+          "type": "markdown",
+          "primary": true
+        },
+        {
+          "name": "benchmark.json",
           "type": "json"
         },
         {
