@@ -1,0 +1,55 @@
+{
+  "schema": "forge.public_technical_note.v1",
+  "id": "FORGE-NOTE-011",
+  "title": "Automated Research Evidence Capture and NexLedger Attestation",
+  "date": "2026-09-14",
+  "status": "verified",
+  "purpose": "Document the completed hourly automation that converts closed runtime telemetry and completed benchmark outputs into safe, durable research-evidence records with database persistence and tamper-evident NexLedger attestation.",
+  "topology": {
+    "live_brain_host": "RYANDESKTOP",
+    "live_gpu": "NVIDIA RTX 3070 8GB",
+    "research_home_server": "DESKTOP-S16TRCC",
+    "web_application_host": "app-nexlabs"
+  },
+  "automated_flow": [
+    "read closed telemetry from RYANDESKTOP / RTX 3070",
+    "aggregate telemetry on the home/research server",
+    "construct safe MET evidence",
+    "submit MET evidence through signed intake",
+    "record accepted evidence event in MySQL",
+    "generic worker attests accepted evidence to NexLedger"
+  ],
+  "benchmark_watch": {
+    "enabled": true,
+    "behavior": "Automatically watches future completed benchmark runs for BM evidence.",
+    "evidence_class": "BM"
+  },
+  "telemetry_evidence": {
+    "evidence_class": "MET",
+    "source": "closed FORGE runtime telemetry",
+    "raw_private_payload_required_on_ledger": false
+  },
+  "schedule": {
+    "cadence": "hourly",
+    "automation_name": "FORGE Evidence Automation"
+  },
+  "ledger_scope": {
+    "mysql_role": "authoritative application/research event record",
+    "nexledger_role": "tamper-evident evidence/provenance attestation",
+    "routine_git_activity_attested": false,
+    "source_code_attested": false,
+    "private_prompt_or_answer_plaintext_attested": false,
+    "profile_or_leaderboard_statistics_routed_to_nexledger": false
+  },
+  "research_relevance": [
+    "Turns ephemeral runtime measurements into durable research evidence without requiring manual collection after each run.",
+    "Separates telemetry collection, evidence intake, authoritative database recording, and ledger attestation into distinct stages.",
+    "Creates a repeatable path for future benchmark evidence so later research claims can be tied to preserved provenance."
+  ],
+  "limitations": [
+    "The automation attests selected safe research evidence, not every telemetry field or every application event.",
+    "NexLedger is not the authoritative database; MySQL remains authoritative for the application-side record.",
+    "The pipeline does not make telemetry or benchmark results scientifically valid merely by attesting them; experimental design and interpretation remain separate.",
+    "User profile/leaderboard statistics are intentionally outside this NexLedger evidence scope."
+  ]
+}

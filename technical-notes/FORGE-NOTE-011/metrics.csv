@@ -1,0 +1,14 @@
+metric,value,unit_or_status
+automation_cadence,hourly,schedule
+live_runtime_host,RYANDESKTOP,host
+live_gpu,RTX 3070 8GB,hardware
+aggregation_host,DESKTOP-S16TRCC,host
+runtime_evidence_class,MET,evidence_type
+benchmark_evidence_class,BM,evidence_type
+signed_intake,YES,control
+mysql_event_record,YES,persistence
+generic_nexledger_worker,YES,attestation
+future_completed_benchmark_watch,YES,automation
+routine_git_activity_attested,NO,scope
+private_prompt_answer_plaintext_attested,NO,scope
+profile_stats_routed_to_nexledger,NO,scope

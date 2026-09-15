@@ -3,7 +3,7 @@
   "project": "FORGE AI",
   "publisher": "NexLabs",
   "repository": "https://github.com/ryanmurray89/FORGEAI-Research",
-  "updated_at": "2026-09-15T08:54:19Z",
+  "updated_at": "2026-09-15T08:56:51Z",
   "entries": [
     {
       "id": "FORGE-EXP-001",
@@ -828,6 +828,49 @@
         "trusted-knowledge",
         "groq",
         "nexledger"
+      ],
+      "files": [
+        {
+          "name": "README.md",
+          "type": "markdown",
+          "primary": true
+        },
+        {
+          "name": "note.json",
+          "type": "json"
+        },
+        {
+          "name": "metrics.csv",
+          "type": "csv"
+        },
+        {
+          "name": "methodology.md",
+          "type": "markdown"
+        },
+        {
+          "name": "provenance.json",
+          "type": "json"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "FORGE-NOTE-011",
+      "type": "technical_note",
+      "title": "Automated Research Evidence Capture and NexLedger Attestation",
+      "date": "2026-09-14",
+      "status": "verified",
+      "summary": "FORGE operationalized an hourly cross-host evidence pipeline that reads closed telemetry from the RTX 3070 Brain machine, aggregates it on the research/home server, submits safe MET evidence through a signed intake, records the event in MySQL, and lets the generic worker attest it to NexLedger. The same automation watches future completed benchmark runs for BM evidence.",
+      "path": "technical-notes/FORGE-NOTE-011",
+      "tags": [
+        "telemetry",
+        "evidence-automation",
+        "nexledger",
+        "provenance",
+        "benchmarks"
       ],
       "files": [
         {
