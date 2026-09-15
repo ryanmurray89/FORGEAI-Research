@@ -3,7 +3,7 @@
   "project": "FORGE AI",
   "publisher": "NexLabs",
   "repository": "https://github.com/ryanmurray89/FORGEAI-Research",
-  "updated_at": "2026-09-15T09:04:41Z",
+  "updated_at": "2026-09-15T09:12:28Z",
   "entries": [
     {
       "id": "FORGE-EXP-001",
@@ -1043,6 +1043,49 @@
         "privacy",
         "chroma",
         "security-boundary"
+      ],
+      "files": [
+        {
+          "name": "README.md",
+          "type": "markdown",
+          "primary": true
+        },
+        {
+          "name": "note.json",
+          "type": "json"
+        },
+        {
+          "name": "metrics.csv",
+          "type": "csv"
+        },
+        {
+          "name": "methodology.md",
+          "type": "markdown"
+        },
+        {
+          "name": "provenance.json",
+          "type": "json"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "FORGE-NOTE-016",
+      "type": "technical_note",
+      "title": "Telemetry-Backed User Profiles, Community Scoring, and Privacy Controls",
+      "date": "2026-09-15",
+      "status": "verified",
+      "summary": "FORGE added complete authenticated profiles, historical usage analytics, milestones, a 182-day activity history, community leaderboards, FORGE Score v2, and opt-in public profiles using existing persisted telemetry rather than a second analytics pipeline. The design keeps prompts, answers, private memories, request diagnostics, and user/community statistics out of NexLedger.",
+      "path": "technical-notes/FORGE-NOTE-016",
+      "tags": [
+        "telemetry",
+        "user-profiles",
+        "leaderboard",
+        "privacy",
+        "community-analytics"
       ],
       "files": [
         {
