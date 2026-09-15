@@ -1,0 +1,14 @@
+metric,value,unit_or_status
+clean_index_before,423,cards
+trusted_knowledge_id,1,record
+clean_index_after,424,cards
+index_status,indexed,status
+intended_query_rank,1,rank
+website_counter_reflected_live_index,YES,validation
+authenticated_knowledge_index_endpoint,YES,control
+public_promoted_knowledge_indexable,YES,policy
+internal_private_plaintext_public_indexing,BLOCKED,privacy
+authoritative_store,MySQL trusted_knowledge,architecture
+semantic_index,Chroma forge_cards,architecture
+semantic_index_rebuildable,YES,architecture
+validation_result,PASS,status

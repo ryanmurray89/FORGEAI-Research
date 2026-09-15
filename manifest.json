@@ -3,7 +3,7 @@
   "project": "FORGE AI",
   "publisher": "NexLabs",
   "repository": "https://github.com/ryanmurray89/FORGEAI-Research",
-  "updated_at": "2026-09-15T09:03:05Z",
+  "updated_at": "2026-09-15T09:04:41Z",
   "entries": [
     {
       "id": "FORGE-EXP-001",
@@ -1000,6 +1000,49 @@
         "metadata-repair",
         "evaluation",
         "reproducibility"
+      ],
+      "files": [
+        {
+          "name": "README.md",
+          "type": "markdown",
+          "primary": true
+        },
+        {
+          "name": "note.json",
+          "type": "json"
+        },
+        {
+          "name": "metrics.csv",
+          "type": "csv"
+        },
+        {
+          "name": "methodology.md",
+          "type": "markdown"
+        },
+        {
+          "name": "provenance.json",
+          "type": "json"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "FORGE-NOTE-015",
+      "type": "technical_note",
+      "title": "Trusted Knowledge Indexing Boundary and Private-Data Exclusion",
+      "date": "2026-09-14",
+      "status": "verified",
+      "summary": "FORGE introduced an authenticated trusted-knowledge indexing path that allows promoted public knowledge to enter the live Chroma retrieval index while blocking internal/private plaintext indexing. MySQL trusted_knowledge remains authoritative and Chroma remains a rebuildable search index; the first promoted trusted record was confirmed live, increasing the clean production index from 423 to 424 cards.",
+      "path": "technical-notes/FORGE-NOTE-015",
+      "tags": [
+        "trusted-knowledge",
+        "indexing",
+        "privacy",
+        "chroma",
+        "security-boundary"
       ],
       "files": [
         {

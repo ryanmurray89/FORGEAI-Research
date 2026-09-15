@@ -1,0 +1,13 @@
+{
+  "schema": "forge.public_provenance.v1",
+  "research_id": "FORGE-NOTE-015",
+  "source_basis": "Historical FORGE production-cutover and trusted-knowledge indexing records from the project changelog/Jira export.",
+  "source_observations": [
+    "Brain API v1.1.1-dev added an authenticated POST /knowledge/index path.",
+    "Public promoted knowledge could enter live forge_cards while internal/private plaintext Chroma indexing was blocked.",
+    "MySQL trusted_knowledge remained authoritative and Chroma remained the searchable/rebuildable index.",
+    "trusted_knowledge #1 was indexed successfully and the live production count increased from 423 to 424.",
+    "The indexed record ranked #1 for its intended query and the website reflected the live 424-card count."
+  ],
+  "publication_note": "This public note describes the architecture boundary and live validation result. Authentication secrets, private payloads, internal request bodies, and private training content are intentionally omitted."
+}
