@@ -3,7 +3,7 @@
   "project": "FORGE AI",
   "publisher": "NexLabs",
   "repository": "https://github.com/ryanmurray89/FORGEAI-Research",
-  "updated_at": "2026-09-15T09:28:01Z",
+  "updated_at": "2026-09-15T09:30:08Z",
   "entries": [
     {
       "id": "FORGE-EXP-001",
@@ -1446,6 +1446,49 @@
         },
         {
           "name": "results.csv",
+          "type": "csv"
+        },
+        {
+          "name": "methodology.md",
+          "type": "markdown"
+        },
+        {
+          "name": "provenance.json",
+          "type": "json"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "FORGE-NOTE-022",
+      "type": "technical_note",
+      "title": "Source-Organization Independence and High-Stakes Evidence Policy",
+      "date": "2026-09-01",
+      "status": "published",
+      "summary": "FORGE hardened its pilot evidence policy by moving independence from hostname counting to source-organization counting, adding explicit source_organization provenance, strengthening high-stakes cross-check requirements, replacing weak/failed seeds with authoritative sources, and preserving evidence-excerpt, hashing, redirect, and SSRF safety rails. Syntax and offline cross-check policy tests passed; no LLM, Chroma, or Brain changes were involved.",
+      "path": "technical-notes/FORGE-NOTE-022",
+      "tags": [
+        "evidence-policy",
+        "source-independence",
+        "high-stakes",
+        "provenance",
+        "knowledge-factory"
+      ],
+      "files": [
+        {
+          "name": "README.md",
+          "type": "markdown",
+          "primary": true
+        },
+        {
+          "name": "note.json",
+          "type": "json"
+        },
+        {
+          "name": "metrics.csv",
           "type": "csv"
         },
         {

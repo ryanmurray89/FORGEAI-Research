@@ -1,0 +1,17 @@
+metric,value,unit_or_status
+independence_basis,source_organization,policy
+source_organization_provenance,YES,control
+organization_counts_in_reports,YES,control
+high_stakes_cross_checking,YES,policy
+cbt_promoted_to_high_stakes,YES,policy
+evidence_excerpt_only,YES,policy
+evidence_hashing,YES,provenance
+ssrf_safe_public_url_validation,YES,security
+redirect_validation,YES,security
+openstax_automated_ingestion_policy,REMOVED,policy
+sec_multi_domain_false_independence,BLOCKED,policy
+syntax_validation,PASS,validation
+offline_cross_check_policy_tests,PASS,validation
+llm_calls,0,calls
+chroma_changes,0,changes
+brain_api_changes,0,changes
