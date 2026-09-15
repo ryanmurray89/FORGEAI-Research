@@ -1,0 +1,56 @@
+{
+  "schema": "forge.public_technical_note.v1",
+  "id": "FORGE-NOTE-006",
+  "title": "Compute-Aware Model Routing and Telemetry Foundation",
+  "date": "2026-09-04",
+  "status": "verified",
+  "purpose": "Document the validated runtime infrastructure that made later adaptive-compute experiments measurable: model registration, role-based routing, persistent telemetry, hardware metrics, and Admin-configurable routing policy.",
+  "validated_components": {
+    "brain_api": "PASS",
+    "models_admin": "PASS",
+    "telemetry_admin": "PASS",
+    "persistent_telemetry": "PASS",
+    "metrics_endpoint": "PASS",
+    "rtx_3070_telemetry": "PASS"
+  },
+  "routing_policy_correction": {
+    "problem": "Broad coding keywords caused technical-learning questions such as Docker explanations to route as coding tasks.",
+    "change": "Narrowed coding-intent keyword configuration.",
+    "validation": [
+      {
+        "request": "Docker explanation",
+        "expected_route": "learn / instant",
+        "result": "PASS"
+      },
+      {
+        "request": "Python implementation request",
+        "expected_route": "build / coding",
+        "result": "PASS"
+      },
+      {
+        "telemetry_requests": "3/3",
+        "result": "PASS"
+      }
+    ]
+  },
+  "architecture_boundaries": {
+    "production_chroma_modified": false,
+    "database_change": "configuration additions only",
+    "private_routing": "local by default",
+    "new_request_time_external_provider_dependency": false
+  },
+  "hardware_context": {
+    "gpu": "NVIDIA RTX 3070",
+    "operational_constraint": "one resident primary model on the then-current single-GPU setup"
+  },
+  "research_relevance": [
+    "Persistent telemetry created the measurement substrate needed for later latency, energy, routing, and escalation experiments.",
+    "Admin-configurable routing allowed policy tuning without tying research behavior permanently to source-code changes.",
+    "Separating learning intent from coding intent reduced an observed routing-confound before later system benchmarks."
+  ],
+  "limitations": [
+    "At this stage one physical RTX 3070 supported one resident primary model, so model-role differences were primarily routing/configuration semantics rather than simultaneous multi-model specialization.",
+    "This note documents infrastructure validation, not a standalone quality benchmark.",
+    "Later routing and adaptive-inference experiments are documented separately."
+  ]
+}

@@ -1,0 +1,13 @@
+metric,value,unit_or_status
+brain_api,PASS,validation
+models_admin,PASS,validation
+telemetry_admin,PASS,validation
+persistent_telemetry,PASS,validation
+metrics_endpoint,PASS,validation
+rtx_3070_telemetry,PASS,validation
+docker_explanation_route,learn / instant,PASS
+python_implementation_route,build / coding,PASS
+telemetry_requests,3/3,successful
+production_chroma_modified,NO,boundary
+request_time_external_provider_dependency_added,NO,boundary
+primary_gpu,RTX 3070,hardware

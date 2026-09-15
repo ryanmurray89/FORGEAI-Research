@@ -3,7 +3,7 @@
   "project": "FORGE AI",
   "publisher": "NexLabs",
   "repository": "https://github.com/ryanmurray89/FORGEAI-Research",
-  "updated_at": "2026-09-15T08:44:15Z",
+  "updated_at": "2026-09-15T08:45:41Z",
   "entries": [
     {
       "id": "FORGE-EXP-001",
@@ -613,6 +613,49 @@
         "contamination-control",
         "clean-rebuild",
         "knowledge-factory"
+      ],
+      "files": [
+        {
+          "name": "README.md",
+          "type": "markdown",
+          "primary": true
+        },
+        {
+          "name": "note.json",
+          "type": "json"
+        },
+        {
+          "name": "metrics.csv",
+          "type": "csv"
+        },
+        {
+          "name": "methodology.md",
+          "type": "markdown"
+        },
+        {
+          "name": "provenance.json",
+          "type": "json"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "FORGE-NOTE-006",
+      "type": "technical_note",
+      "title": "Compute-Aware Model Routing and Telemetry Foundation",
+      "date": "2026-09-04",
+      "status": "verified",
+      "summary": "FORGE validated its local model registry, routing infrastructure, persistent telemetry, metrics endpoint, RTX 3070 instrumentation, and Admin controls on the actual FORGE machine. A subsequent routing-policy correction separated technical-learning requests from coding requests while preserving local-first execution.",
+      "path": "technical-notes/FORGE-NOTE-006",
+      "tags": [
+        "model-routing",
+        "telemetry",
+        "compute-efficiency",
+        "local-ai",
+        "instrumentation"
       ],
       "files": [
         {
