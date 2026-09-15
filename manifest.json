@@ -3,7 +3,7 @@
   "project": "FORGE AI",
   "publisher": "NexLabs",
   "repository": "https://github.com/ryanmurray89/FORGEAI-Research",
-  "updated_at": "2026-09-15T07:05:00Z",
+  "updated_at": "2026-09-15T07:35:00Z",
   "entries": [
     {
       "id": "FORGE-EXP-001",
@@ -19,6 +19,25 @@
         "evidence-verification",
         "trusted-knowledge",
         "nexledger"
+      ],
+      "files": [
+        {
+          "name": "README.md",
+          "type": "markdown",
+          "primary": true
+        },
+        {
+          "name": "experiment.json",
+          "type": "json"
+        },
+        {
+          "name": "provenance.json",
+          "type": "json"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "type": "text"
+        }
       ]
     }
   ]

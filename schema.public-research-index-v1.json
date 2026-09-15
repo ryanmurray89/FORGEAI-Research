@@ -78,8 +78,36 @@
             "items": {
               "type": "string"
             }
+          },
+          "files": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "name",
+                "type"
+              ],
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "type": {
+                  "enum": [
+                    "markdown",
+                    "json",
+                    "text",
+                    "csv"
+                  ]
+                },
+                "primary": {
+                  "type": "boolean"
+                }
+              },
+              "additionalProperties": false
+            }
           }
-        }
+        },
+        "additionalProperties": true
       }
     }
   }
