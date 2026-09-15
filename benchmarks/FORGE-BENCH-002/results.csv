@@ -1,0 +1,4 @@
+system,quality_score,mean_latency_ms,mean_energy_wh,hit_at_1,gold_micro_recall_percent,mean_llm_calls,escalation_rate_percent,quality_per_second,quality_per_wh
+A_same_batch,23.2600,,,,,,,,
+B_same_batch,56.2379,,,,,,,,
+D_v001,55.2586,2443.03,0.153616,42/54,59.5238,1.0185185185,62.9630,22.618858,359.718120

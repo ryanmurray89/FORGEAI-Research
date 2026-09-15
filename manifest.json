@@ -3,7 +3,7 @@
   "project": "FORGE AI",
   "publisher": "NexLabs",
   "repository": "https://github.com/ryanmurray89/FORGEAI-Research",
-  "updated_at": "2026-09-15T08:15:01Z",
+  "updated_at": "2026-09-15T08:22:45Z",
   "entries": [
     {
       "id": "FORGE-EXP-001",
@@ -239,6 +239,53 @@
         },
         {
           "name": "results.csv",
+          "type": "csv"
+        },
+        {
+          "name": "methodology.md",
+          "type": "markdown"
+        },
+        {
+          "name": "provenance.json",
+          "type": "json"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "FORGE-BENCH-002",
+      "type": "benchmark",
+      "title": "Adaptive Inference D v001: Preregistered Efficiency Benchmark",
+      "date": "2026-09-05",
+      "status": "verified",
+      "summary": "FORGE D v001 tested adaptive inference on the frozen 54-case workload. It achieved a composite quality score of 55.2586 at 2.443 s mean latency and 0.153616 Wh mean energy, but failed the preregistered primary success criterion because retrieval Hit@1, gold recall, and escalation-rate thresholds were not met.",
+      "path": "benchmarks/FORGE-BENCH-002",
+      "tags": [
+        "adaptive-inference",
+        "benchmark",
+        "preregistered",
+        "compute-efficiency",
+        "negative-result"
+      ],
+      "files": [
+        {
+          "name": "README.md",
+          "type": "markdown",
+          "primary": true
+        },
+        {
+          "name": "benchmark.json",
+          "type": "json"
+        },
+        {
+          "name": "results.csv",
+          "type": "csv"
+        },
+        {
+          "name": "preregistered_checks.csv",
           "type": "csv"
         },
         {
