@@ -3,7 +3,7 @@
   "project": "FORGE AI",
   "publisher": "NexLabs",
   "repository": "https://github.com/ryanmurray89/FORGEAI-Research",
-  "updated_at": "2026-09-15T09:22:20Z",
+  "updated_at": "2026-09-15T09:23:46Z",
   "entries": [
     {
       "id": "FORGE-EXP-001",
@@ -1315,6 +1315,49 @@
         },
         {
           "name": "results.csv",
+          "type": "csv"
+        },
+        {
+          "name": "methodology.md",
+          "type": "markdown"
+        },
+        {
+          "name": "provenance.json",
+          "type": "json"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "FORGE-NOTE-020",
+      "type": "technical_note",
+      "title": "Always-On Orchestration Overhead in the Locked A/B/C Runtime Run",
+      "date": "2026-09-04",
+      "status": "verified",
+      "summary": "The locked 54-case A/B/C runtime run showed that the then-current full FORGE orchestration path was materially more expensive than both the raw local model and the verified-retrieval fast path. Arm C averaged 9.066 s and 0.5759 Wh, executed 65 LLM passes, searched RAG on all 54 cases but used it on only 28, invoked planner/reviewer selectively, and avoided inference on zero cases. This runtime profile helped motivate V2 adaptive compute rather than always-on orchestration.",
+      "path": "technical-notes/FORGE-NOTE-020",
+      "tags": [
+        "orchestration",
+        "compute-efficiency",
+        "latency",
+        "energy",
+        "adaptive-inference"
+      ],
+      "files": [
+        {
+          "name": "README.md",
+          "type": "markdown",
+          "primary": true
+        },
+        {
+          "name": "note.json",
+          "type": "json"
+        },
+        {
+          "name": "metrics.csv",
           "type": "csv"
         },
         {

@@ -1,0 +1,74 @@
+{
+  "schema": "forge.public_technical_note.v1",
+  "id": "FORGE-NOTE-020",
+  "title": "Always-On Orchestration Overhead in the Locked A/B/C Runtime Run",
+  "date": "2026-09-04",
+  "status": "verified",
+  "purpose": "Isolate the raw runtime/compute behavior of the then-current full FORGE orchestration arm from the larger A/B/C quality benchmark and record why adaptive compute became a V2 design objective.",
+  "benchmark_shape": {
+    "locked_evaluation_cases": 54,
+    "arms": 3,
+    "system_executions": 162,
+    "completed_executions": "162/162"
+  },
+  "arm_definitions": {
+    "A": "raw local model",
+    "B": "verified atomic retrieval fast path",
+    "C": "then-current full FORGE orchestration"
+  },
+  "raw_compute": {
+    "A": {
+      "mean_latency_ms": 3757,
+      "mean_gpu_energy_wh": 0.245
+    },
+    "B": {
+      "mean_latency_ms": 1675,
+      "mean_gpu_energy_wh": 0.1085
+    },
+    "C": {
+      "mean_latency_ms": 9066,
+      "mean_gpu_energy_wh": 0.5759,
+      "total_llm_passes": 65,
+      "rag_searched_cases": "54/54",
+      "rag_used_cases": "28/54",
+      "planner_used_cases": "8/54",
+      "reviewer_used_cases": "3/54",
+      "inference_avoided_cases": "0/54"
+    }
+  },
+  "derived_comparisons": {
+    "C_vs_B_latency_multiple": 5.413,
+    "C_vs_B_energy_multiple": 5.308,
+    "B_vs_A_latency_reduction_percent": 55.4,
+    "B_vs_A_energy_reduction_percent": 55.7
+  },
+  "later_quality_context": {
+    "A_quality": 20.71,
+    "B_quality": 54.22,
+    "C_quality": 27.71,
+    "B_case_wins": "39/54",
+    "C_hit_at_1": "27/54",
+    "C_gold_micro_recall_percent": 22.02,
+    "note": "These quality results were produced by the later blinded judging stage; they are included only to interpret whether the measured orchestration cost bought corresponding quality."
+  },
+  "architecture_finding": [
+    "Searching RAG on every case did not imply using retrieved knowledge on every case.",
+    "The full orchestration path added multiple inference passes yet avoided inference on zero evaluation cases.",
+    "The verified-retrieval path was materially faster and lower-energy than both the raw model and full orchestration in this workload.",
+    "The result supported moving orchestration from an always-on default toward selective/adaptive escalation."
+  ],
+  "safety_boundary": {
+    "production_chroma_changed": false,
+    "brain_modified": false,
+    "database_writes": false,
+    "private_memory": false,
+    "external_web_cloud": false,
+    "trust_callback": false
+  },
+  "limitations": [
+    "This profile reflects one local model, one GPU, one 54-case workload, and the orchestration implementation that existed on 2026-09-04.",
+    "Runtime/energy alone cannot establish answer quality; quality context comes from the separately completed blinded judge.",
+    "The result does not imply orchestration is intrinsically bad; it shows that orchestration cost must be justified selectively.",
+    "Later adaptive-inference work changed the compute policy and should not be conflated with Arm C."
+  ]
+}
