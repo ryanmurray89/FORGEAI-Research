@@ -1,0 +1,15 @@
+{
+  "schema": "forge.public_provenance.v1",
+  "research_id": "FORGE-NOTE-018",
+  "source_basis": "FORGE Natural Research Lifecycle completion record supplied by the project owner.",
+  "source_observations": [
+    "Search/discovery uses multiple public mechanisms, but search results are never treated as evidence.",
+    "Direct evidence retrieval checks network safety, redirects, robots.txt, content type, size, useful text, relevance, prompt-injection markers, source organization, and duplicate organizations.",
+    "The validated Cuckoo-filter run accepted wikipedia.org, arxiv.org, and github.io while rejecting several blocked, unsupported, or off-topic candidates.",
+    "Natural research requires at least two independent organizations per released claim.",
+    "The Cuckoo-filter run produced four candidate claims and four verified claims.",
+    "Observed provider failures included 429 TPM limits, 413 request-too-large errors, and malformed JSON; the worker added bounded retry/backoff controls.",
+    "High-stakes, private, sensitive, and volatile/current categories are excluded from permanent autonomous learning through this path."
+  ],
+  "publication_note": "This public note publishes research methodology, safety rules, aggregate provider behavior, and source-qualification outcomes. Raw third-party evidence text, API keys, private prompts, internal source code, and private queue contents are intentionally omitted."
+}

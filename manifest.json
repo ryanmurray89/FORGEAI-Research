@@ -3,7 +3,7 @@
   "project": "FORGE AI",
   "publisher": "NexLabs",
   "repository": "https://github.com/ryanmurray89/FORGEAI-Research",
-  "updated_at": "2026-09-15T09:14:54Z",
+  "updated_at": "2026-09-15T09:16:01Z",
   "entries": [
     {
       "id": "FORGE-EXP-001",
@@ -1129,6 +1129,49 @@
         "hmac",
         "durability",
         "handoff"
+      ],
+      "files": [
+        {
+          "name": "README.md",
+          "type": "markdown",
+          "primary": true
+        },
+        {
+          "name": "note.json",
+          "type": "json"
+        },
+        {
+          "name": "metrics.csv",
+          "type": "csv"
+        },
+        {
+          "name": "methodology.md",
+          "type": "markdown"
+        },
+        {
+          "name": "provenance.json",
+          "type": "json"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "FORGE-NOTE-018",
+      "type": "technical_note",
+      "title": "Fail-Closed Web Discovery and Evidence Qualification Pipeline",
+      "date": "2026-09-15",
+      "status": "verified",
+      "summary": "FORGE's autonomous research worker separates discovery from evidence, directly fetches candidate sources, rejects unsafe/off-topic/blocked material, requires independent organizations, and refuses high-stakes/private/volatile topics from durable autonomous learning. The validated Cuckoo-filter run accepted three independent sources while rejecting multiple unsuitable candidates and completed with four verified claims.",
+      "path": "technical-notes/FORGE-NOTE-018",
+      "tags": [
+        "web-research",
+        "evidence-quality",
+        "fail-closed",
+        "source-independence",
+        "autonomous-research"
       ],
       "files": [
         {

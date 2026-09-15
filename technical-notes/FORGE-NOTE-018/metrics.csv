@@ -1,0 +1,13 @@
+metric,value,unit_or_status
+minimum_independent_organizations_per_claim,2,organizations
+accepted_evidence_sources_cuckoo,3,sources
+independent_organizations_cuckoo,3,organizations
+candidate_claims_cuckoo,4,claims
+verified_claims_cuckoo,4,claims
+groq_requests_cuckoo,2,requests
+groq_tokens_cuckoo,11034,tokens
+search_snippets_are_evidence,NO,policy
+shared_legacy_research_scripts_invoked,NO,boundary
+research_server_direct_production_chroma_edit,NO,boundary
+high_stakes_permanent_autolearning,NO,policy
+validated_pipeline_result,PASS,status
