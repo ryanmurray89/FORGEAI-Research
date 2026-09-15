@@ -3,7 +3,7 @@
   "project": "FORGE AI",
   "publisher": "NexLabs",
   "repository": "https://github.com/ryanmurray89/FORGEAI-Research",
-  "updated_at": "2026-09-15T09:00:24Z",
+  "updated_at": "2026-09-15T09:03:05Z",
   "entries": [
     {
       "id": "FORGE-EXP-001",
@@ -957,6 +957,49 @@
         "data-leakage",
         "reproducibility",
         "verified-corpus"
+      ],
+      "files": [
+        {
+          "name": "README.md",
+          "type": "markdown",
+          "primary": true
+        },
+        {
+          "name": "note.json",
+          "type": "json"
+        },
+        {
+          "name": "metrics.csv",
+          "type": "csv"
+        },
+        {
+          "name": "methodology.md",
+          "type": "markdown"
+        },
+        {
+          "name": "provenance.json",
+          "type": "json"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "FORGE-NOTE-014",
+      "type": "technical_note",
+      "title": "Blinded Quality Judging and Offline Gold-Metadata Repair",
+      "date": "2026-09-04",
+      "status": "verified",
+      "summary": "FORGE preserved a completed 162-row A/B/C benchmark after discovering that all raw rows had empty gold_claim_ids. The evaluator repaired gold associations offline from locked reference_claim_ids without modifying raw results, verified frozen corpus/evaluation hashes, and used blinded one-answer judge inputs containing no arm labels, runtime metrics, or system identity.",
+      "path": "technical-notes/FORGE-NOTE-014",
+      "tags": [
+        "benchmark-integrity",
+        "blinded-judging",
+        "metadata-repair",
+        "evaluation",
+        "reproducibility"
       ],
       "files": [
         {
