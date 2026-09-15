@@ -1,0 +1,14 @@
+{
+  "schema": "forge.public_provenance.v1",
+  "research_id": "FORGE-NOTE-012",
+  "source_basis": "Historical FORGE operational/Jira records for the verified systemd research-release proof.",
+  "source_observations": [
+    "The research pipeline used safe fetch, evidence audit, claim generation, claim-support verification, research-release policy, and trusted-release packaging.",
+    "The systemd release ID was forge-release-b668d809f8b517bb46cdb92b and contained six verified claims with one evidence record.",
+    "The release became application candidate #80 and trusted knowledge #72, which was active/public/indexed.",
+    "The live Brain retrieved the newly indexed trusted card.",
+    "NexLedger attestation #73 produced token TK121 / asset FORGEAI#TK121V1 at ledger height 91.",
+    "The existing NexLedger worker was not modified."
+  ],
+  "publication_note": "This public note records lifecycle architecture, IDs, aggregate counts, and attestation metadata. Private source code, credentials, raw evidence bodies, and internal implementation details are intentionally omitted."
+}

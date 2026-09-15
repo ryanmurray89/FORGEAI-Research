@@ -3,7 +3,7 @@
   "project": "FORGE AI",
   "publisher": "NexLabs",
   "repository": "https://github.com/ryanmurray89/FORGEAI-Research",
-  "updated_at": "2026-09-15T08:56:51Z",
+  "updated_at": "2026-09-15T08:58:28Z",
   "entries": [
     {
       "id": "FORGE-EXP-001",
@@ -871,6 +871,49 @@
         "nexledger",
         "provenance",
         "benchmarks"
+      ],
+      "files": [
+        {
+          "name": "README.md",
+          "type": "markdown",
+          "primary": true
+        },
+        {
+          "name": "note.json",
+          "type": "json"
+        },
+        {
+          "name": "metrics.csv",
+          "type": "csv"
+        },
+        {
+          "name": "methodology.md",
+          "type": "markdown"
+        },
+        {
+          "name": "provenance.json",
+          "type": "json"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "FORGE-NOTE-012",
+      "type": "technical_note",
+      "title": "Trusted Research Release Promotion Pipeline",
+      "date": "2026-09-14",
+      "status": "verified",
+      "summary": "FORGE validated a research-release path that turns audited evidence and verified claims into a gated trusted-knowledge release, imports it as a research candidate, promotes it to trusted knowledge, indexes it for live Brain retrieval, and records the result through NexLedger. A systemd release completed the full path without modifying the existing NexLedger worker.",
+      "path": "technical-notes/FORGE-NOTE-012",
+      "tags": [
+        "research-release",
+        "trusted-knowledge",
+        "evidence-verification",
+        "nexledger",
+        "provenance"
       ],
       "files": [
         {

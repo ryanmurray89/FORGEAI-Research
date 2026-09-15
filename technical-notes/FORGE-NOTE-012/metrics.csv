@@ -1,0 +1,15 @@
+metric,value,unit_or_status
+validated_topic,What is systemd?,scope
+verified_claims,6,claims
+evidence_records,1,evidence
+web_candidate_id,80,candidate
+trusted_knowledge_id,72,record
+trusted_knowledge_status,active/public/indexed,status
+live_brain_retrieval,YES,validation
+nexledger_attestation_id,73,attestation
+nexledger_token,TK121,token
+nexledger_asset,FORGEAI#TK121V1,asset
+nexledger_height,91,height
+existing_nexledger_worker_modified,NO,boundary
+search_snippets_used_as_evidence,NO,boundary
+end_to_end_result,PASS,status
