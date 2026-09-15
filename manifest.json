@@ -3,6 +3,23 @@
   "project": "FORGE AI",
   "publisher": "NexLabs",
   "repository": "https://github.com/ryanmurray89/FORGEAI-Research",
-  "updated_at": null,
-  "entries": []
+  "updated_at": "2026-09-15T07:05:00Z",
+  "entries": [
+    {
+      "id": "FORGE-EXP-001",
+      "type": "experiment",
+      "title": "Autonomous Knowledge Gap Acquisition",
+      "date": "2026-09-15",
+      "status": "verified",
+      "summary": "FORGE detected a live knowledge gap during normal use, researched the missing concept from multiple independent public sources, verified four claims, promoted the result to trusted knowledge, indexed it for retrieval, and recorded provenance through NexLedger.",
+      "path": "experiments/FORGE-EXP-001",
+      "tags": [
+        "adaptive-learning",
+        "knowledge-gap",
+        "evidence-verification",
+        "trusted-knowledge",
+        "nexledger"
+      ]
+    }
+  ]
 }
