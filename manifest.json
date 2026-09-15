@@ -3,7 +3,7 @@
   "project": "FORGE AI",
   "publisher": "NexLabs",
   "repository": "https://github.com/ryanmurray89/FORGEAI-Research",
-  "updated_at": "2026-09-15T08:51:02Z",
+  "updated_at": "2026-09-15T08:52:48Z",
   "entries": [
     {
       "id": "FORGE-EXP-001",
@@ -742,6 +742,49 @@
         "compatibility",
         "deterministic-validation",
         "verified-knowledge"
+      ],
+      "files": [
+        {
+          "name": "README.md",
+          "type": "markdown",
+          "primary": true
+        },
+        {
+          "name": "note.json",
+          "type": "json"
+        },
+        {
+          "name": "metrics.csv",
+          "type": "csv"
+        },
+        {
+          "name": "methodology.md",
+          "type": "markdown"
+        },
+        {
+          "name": "provenance.json",
+          "type": "json"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "FORGE-NOTE-009",
+      "type": "technical_note",
+      "title": "Frozen Evidence Identity: Canonical URL Plus SHA-256",
+      "date": "2026-09-04",
+      "status": "published",
+      "summary": "FORGE corrected its scale claim/evidence verifier so frozen evidence is identified by canonical URL plus SHA-256 rather than URL alone. The change addressed 17 authoritative URLs that legitimately mapped to multiple frozen excerpts, 16 of which were referenced by generated candidates, while preserving strict contamination controls.",
+      "path": "technical-notes/FORGE-NOTE-009",
+      "tags": [
+        "evidence-verification",
+        "provenance",
+        "sha256",
+        "integrity",
+        "claim-verifier"
       ],
       "files": [
         {

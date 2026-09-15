@@ -1,0 +1,12 @@
+metric,value,unit_or_status
+authoritative_urls_with_multiple_excerpts,17,urls
+multi_excerpt_urls_referenced_by_candidates,16,urls
+previous_identity_key,canonical URL,design
+corrected_identity_key,canonical URL + SHA-256,design
+canonical_pilot_verifier_changed,NO,boundary
+candidate_mutation,NO,boundary
+evidence_mutation,NO,boundary
+production_chroma_write,NO,boundary
+brain_write,NO,boundary
+database_write,NO,boundary
+deadlock_1213_guard_broadly_relaxed,NO,boundary
