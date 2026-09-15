@@ -1,0 +1,98 @@
+{
+  "schema": "forge.public_technical_note.v1",
+  "id": "FORGE-NOTE-021",
+  "title": "Public-Only External Intelligence Refinery and Budgeted Cloud Analysis",
+  "date": "2026-09-05",
+  "status": "verified",
+  "purpose": "Document how FORGE can use optional cloud inference for public benchmark/research analysis without allowing the external provider to become a trust authority or receive private/internal data.",
+  "refinery_contract": {
+    "allowed_external_classifications": [
+      "public_external",
+      "public_benchmark"
+    ],
+    "blocked_classifications": [
+      "private",
+      "personal_private",
+      "business_private",
+      "confidential",
+      "restricted",
+      "secret",
+      "phi",
+      "health_private"
+    ],
+    "provider_output_is_evidence": false,
+    "provider_output_is_verified_knowledge": false,
+    "automatic_promotion_allowed": false,
+    "required_next_gate": "local_review_or_future_knowledge_lifecycle"
+  },
+  "queue": {
+    "states": [
+      "pending",
+      "processing",
+      "done",
+      "failed"
+    ],
+    "task_ids_content_derived": true,
+    "result_input_sha256_recorded": true,
+    "result_sha256_recorded": true,
+    "failure_records_persisted": true,
+    "rate_limited_tasks_requeued": true
+  },
+  "workloads": {
+    "retrieval_diagnosis": {
+      "purpose": "Analyze public benchmark retrieval misses such as D v001 misses.",
+      "structured_output": true,
+      "do_not_auto_promote_required": true,
+      "controlled_action_vocabulary": true
+    },
+    "claim_retrieval_enrichment": {
+      "purpose": "Use spare external quota to generate retrieval aids for already verified claims.",
+      "trusted_corpus_read_only": true,
+      "real_refinery_queue_has_priority": true,
+      "high_stakes_skipped": true,
+      "safety_sensitive_skipped": true,
+      "human_review_required_skipped": true,
+      "new_factual_assertions_allowed": false,
+      "auto_promotion": false
+    }
+  },
+  "rate_and_budget_controls": {
+    "observed_provider_tpm_limit": 8000,
+    "configured_operating_target_tpm": 6500,
+    "configured_daily_token_ceiling": 180000,
+    "configured_daily_request_ceiling": 900,
+    "retry_after_handling": true,
+    "proactive_pacing": true,
+    "cooldown_on_rate_limit": true,
+    "daily_usage_ledger": true
+  },
+  "observed_validation": {
+    "desktop_groq_120b_analyses_completed": 4,
+    "provider_limit_exposed": "8K TPM",
+    "worker_compile": "PASS",
+    "windows_service_wrapper_compile": "PASS",
+    "service_command_construction_review": "PASS"
+  },
+  "windows_service_checkpoint": {
+    "deployment_target": "always-on Windows home server",
+    "delayed_auto_start": true,
+    "restart_on_failure": true,
+    "default_queue_cycle_minutes": 15,
+    "immediate_cycle_at_start": true,
+    "state_migration_excludes_env_and_api_keys": true,
+    "user_environment_scm_validation_at_recorded_checkpoint": false
+  },
+  "interpretation": [
+    "Cloud inference is treated as optional analytical compute rather than as an authority over trust.",
+    "Privacy classification is checked before an external request is made.",
+    "Rate-limit and daily-budget controls convert provider scarcity into queued delay rather than pressure to bypass policy.",
+    "Spare quota can improve retrieval metadata for already verified claims while leaving the trusted corpus unchanged.",
+    "The architecture separates always-on background analysis from the interactive local GPU workstation."
+  ],
+  "limitations": [
+    "At the recorded checkpoint, the Windows SCM deployment itself had not yet received a user-environment PASS.",
+    "The refinery's original task set was narrow and centered on retrieval diagnosis; additional external-intelligence roles were still reserved.",
+    "External model output remains candidate analysis and requires separate local lifecycle gates before it can influence trusted knowledge.",
+    "Configured ceilings describe the recorded deployment configuration, not universal provider limits or future FORGE settings."
+  ]
+}

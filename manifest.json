@@ -3,7 +3,7 @@
   "project": "FORGE AI",
   "publisher": "NexLabs",
   "repository": "https://github.com/ryanmurray89/FORGEAI-Research",
-  "updated_at": "2026-09-15T09:23:46Z",
+  "updated_at": "2026-09-15T09:26:01Z",
   "entries": [
     {
       "id": "FORGE-EXP-001",
@@ -1345,6 +1345,50 @@
         "latency",
         "energy",
         "adaptive-inference"
+      ],
+      "files": [
+        {
+          "name": "README.md",
+          "type": "markdown",
+          "primary": true
+        },
+        {
+          "name": "note.json",
+          "type": "json"
+        },
+        {
+          "name": "metrics.csv",
+          "type": "csv"
+        },
+        {
+          "name": "methodology.md",
+          "type": "markdown"
+        },
+        {
+          "name": "provenance.json",
+          "type": "json"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "FORGE-NOTE-021",
+      "type": "technical_note",
+      "title": "Public-Only External Intelligence Refinery and Budgeted Cloud Analysis",
+      "date": "2026-09-05",
+      "status": "verified",
+      "summary": "FORGE introduced an optional external-intelligence refinery that sends only explicitly classified public_external/public_benchmark tasks to Groq, retains all provider output as non-authoritative candidate analysis, enforces daily request/token budgets and rate-limit backoff, and persists queue/results/provenance locally. A desktop validation completed four Groq 120B analyses and exposed the provider's 8K TPM limit; the worker was then made rate-aware. A later Windows-service wrapper was prepared for the always-on home server but had not yet received a user-environment SCM validation at the recorded checkpoint.",
+      "path": "technical-notes/FORGE-NOTE-021",
+      "tags": [
+        "external-intelligence",
+        "groq",
+        "privacy-boundary",
+        "rate-limits",
+        "retrieval-diagnostics",
+        "budget-control"
       ],
       "files": [
         {

@@ -1,0 +1,20 @@
+metric,value,unit_or_status
+allowed_external_classifications,2,classes
+provider_output_is_evidence,NO,trust
+provider_output_is_verified_knowledge,NO,trust
+automatic_promotion_allowed,NO,trust
+desktop_groq_120b_analyses,4,successful analyses
+observed_provider_tpm_limit,8000,tokens_per_minute
+configured_operating_target,6500,tokens_per_minute
+configured_daily_token_ceiling,180000,tokens
+configured_daily_request_ceiling,900,requests
+primary_queue_states,4,states
+rate_limited_tasks_requeued,YES,resilience
+daily_usage_ledger,YES,provenance
+trusted_corpus_modified_by_enrichment,NO,boundary
+high_stakes_claims_enriched,NO,boundary
+real_queue_priority_over_enrichment,YES,scheduling
+windows_service_default_cycle,15,minutes
+windows_service_worker_compile,PASS,validation
+windows_service_wrapper_compile,PASS,validation
+windows_scm_user_environment_pass_at_checkpoint,NO,validation
