@@ -3,7 +3,7 @@
   "project": "FORGE AI",
   "publisher": "NexLabs",
   "repository": "https://github.com/ryanmurray89/FORGEAI-Research",
-  "updated_at": "2026-09-15T08:49:02Z",
+  "updated_at": "2026-09-15T08:51:02Z",
   "entries": [
     {
       "id": "FORGE-EXP-001",
@@ -699,6 +699,49 @@
         "rate-limits",
         "provider-resilience",
         "provenance"
+      ],
+      "files": [
+        {
+          "name": "README.md",
+          "type": "markdown",
+          "primary": true
+        },
+        {
+          "name": "note.json",
+          "type": "json"
+        },
+        {
+          "name": "metrics.csv",
+          "type": "csv"
+        },
+        {
+          "name": "methodology.md",
+          "type": "markdown"
+        },
+        {
+          "name": "provenance.json",
+          "type": "json"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "FORGE-NOTE-008",
+      "type": "technical_note",
+      "title": "Chroma Corpus Compatibility and Retrieval Equivalence",
+      "date": "2026-09-04",
+      "status": "verified",
+      "summary": "FORGE validated that the isolated 423-claim clean corpus could be reproduced in a Brain-compatible Chroma layout without changing IDs, documents, metadata, or observed retrieval ordering. All 423 records matched structurally, 32/32 top-1/top-10 retrieval checks matched, and only float-scale embedding round-trip differences were observed.",
+      "path": "technical-notes/FORGE-NOTE-008",
+      "tags": [
+        "chroma",
+        "retrieval",
+        "compatibility",
+        "deterministic-validation",
+        "verified-knowledge"
       ],
       "files": [
         {

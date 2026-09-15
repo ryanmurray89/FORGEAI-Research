@@ -1,0 +1,13 @@
+{
+  "schema": "forge.public_provenance.v1",
+  "research_id": "FORGE-NOTE-008",
+  "source_basis": "Historical FORGE changelog/Jira export supplied for public research reconstruction.",
+  "source_observations": [
+    "The clean 423-claim corpus was validated in a Brain-compatible Chroma representation.",
+    "IDs, documents, and metadata matched exactly for 423/423 records.",
+    "Top-1/top-10 retrieval-equivalence checks matched 32/32.",
+    "43/423 embeddings showed only tiny float-roundtrip differences, with maximum absolute delta 1.49011611938e-08.",
+    "Production Chroma, Brain API, and database state were not modified by the compatibility validation."
+  ],
+  "publication_note": "This public note publishes aggregate compatibility measurements and methodology. Raw Chroma storage files, full embeddings, private implementation code, and internal validation scripts are not republished."
+}

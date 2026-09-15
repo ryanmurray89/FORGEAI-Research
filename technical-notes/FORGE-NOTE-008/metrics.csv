@@ -1,0 +1,12 @@
+metric,value,unit_or_status
+verified_claims,423,claims
+ids_exact,423/423,records
+documents_exact,423/423,records
+metadata_exact,423/423,records
+top1_top10_retrieval_matches,32/32,checks
+embeddings_with_float_delta,43/423,vectors
+max_embedding_delta,1.49011611938e-08,absolute_delta
+retrieval_equivalence,PASS,status
+production_chroma_modified,NO,boundary
+brain_api_modified,NO,boundary
+database_modified,NO,boundary
