@@ -3,7 +3,7 @@
   "project": "FORGE AI",
   "publisher": "NexLabs",
   "repository": "https://github.com/ryanmurray89/FORGEAI-Research",
-  "updated_at": "2026-09-15T08:45:41Z",
+  "updated_at": "2026-09-15T08:47:20Z",
   "entries": [
     {
       "id": "FORGE-EXP-001",
@@ -656,6 +656,49 @@
         "compute-efficiency",
         "local-ai",
         "instrumentation"
+      ],
+      "files": [
+        {
+          "name": "README.md",
+          "type": "markdown",
+          "primary": true
+        },
+        {
+          "name": "note.json",
+          "type": "json"
+        },
+        {
+          "name": "metrics.csv",
+          "type": "csv"
+        },
+        {
+          "name": "methodology.md",
+          "type": "markdown"
+        },
+        {
+          "name": "provenance.json",
+          "type": "json"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "FORGE-NOTE-007",
+      "type": "technical_note",
+      "title": "Evidence-Bound Candidate Generation and Provider Rate-Limit Resilience",
+      "date": "2026-09-02",
+      "status": "published",
+      "summary": "FORGE's clean pilot generator bound model output to frozen evidence, atomic claim-to-source mappings, retrieval-focused text, contamination guards, and deferred trust. Subsequent provider-pacing changes added rate-header-aware throttling, Retry-After handling, token accounting, and a regression fix for an 8,041-token estimate against an 8,000-TPM limit.",
+      "path": "technical-notes/FORGE-NOTE-007",
+      "tags": [
+        "knowledge-factory",
+        "evidence-bound-generation",
+        "rate-limits",
+        "provider-resilience",
+        "provenance"
       ],
       "files": [
         {
