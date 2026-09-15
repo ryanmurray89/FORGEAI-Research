@@ -1,0 +1,13 @@
+metric,value,unit_or_status
+request_api_operations,3,ping_poll_ack
+hmac_algorithm,SHA-256,authentication
+timestamp_window,300,seconds
+nonce_replay_protection,YES,control
+home_poll_interval,5,minutes
+home_queue_states,6,states
+handoff_scan_interval,5,minutes
+public_inbound_to_home_required,NO,architecture
+queue_survives_home_reboot,YES,durability
+failed_handoff_retains_release,YES,durability
+unchanged_successful_release_redelivery,SKIPPED,dedupe
+remote_received_status_proven,YES,validation

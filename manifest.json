@@ -3,7 +3,7 @@
   "project": "FORGE AI",
   "publisher": "NexLabs",
   "repository": "https://github.com/ryanmurray89/FORGEAI-Research",
-  "updated_at": "2026-09-15T09:12:28Z",
+  "updated_at": "2026-09-15T09:14:54Z",
   "entries": [
     {
       "id": "FORGE-EXP-001",
@@ -1086,6 +1086,49 @@
         "leaderboard",
         "privacy",
         "community-analytics"
+      ],
+      "files": [
+        {
+          "name": "README.md",
+          "type": "markdown",
+          "primary": true
+        },
+        {
+          "name": "note.json",
+          "type": "json"
+        },
+        {
+          "name": "metrics.csv",
+          "type": "csv"
+        },
+        {
+          "name": "methodology.md",
+          "type": "markdown"
+        },
+        {
+          "name": "provenance.json",
+          "type": "json"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "FORGE-NOTE-017",
+      "type": "technical_note",
+      "title": "Signed Cross-Host Research Queue and Durable Handoff Architecture",
+      "date": "2026-09-15",
+      "status": "verified",
+      "summary": "FORGE split autonomous research across the application server and home research server using pull-based HTTPS, HMAC SHA-256 request authentication, nonce replay protection, durable filesystem queues, signed release handoff, and resumable delivery state. The design keeps the home server off the public inbound path while allowing queued research and completed releases to survive process restarts and host reboots.",
+      "path": "technical-notes/FORGE-NOTE-017",
+      "tags": [
+        "distributed-systems",
+        "research-queue",
+        "hmac",
+        "durability",
+        "handoff"
       ],
       "files": [
         {
