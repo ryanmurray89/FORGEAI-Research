@@ -1,0 +1,75 @@
+{
+  "schema": "forge.public_experiment.v1",
+  "id": "FORGE-EXP-003",
+  "title": "Seeded Evidence Scale: Scope-Precision Correction",
+  "original_date": "2026-09-02",
+  "published_at": "2026-09-15T07:47:28Z",
+  "status": "verified",
+  "research_question": "Can a bounded scope-specific seed correction improve evidence quality on the same fixed batch without changing the canonical blueprint, collector architecture, or source trust registry?",
+  "fixed_batch": {
+    "cards": 120,
+    "evidence_slots": 142,
+    "topics": 107,
+    "domains": 15
+  },
+  "baseline": {
+    "evidence_excerpts_audited": 98,
+    "pass": 41,
+    "pass_with_warnings": 33,
+    "needs_review": 24,
+    "hard_no_scope_term_match": 24,
+    "cards_passing_evidence_gate": 62,
+    "cards_total": 120,
+    "card_gate_rate": 0.5166666667,
+    "duplicate_evidence_hashes": 19,
+    "duplicate_final_urls": 21
+  },
+  "correction": {
+    "override_rules": 64,
+    "batch_slots_affected": 72,
+    "topics_affected": 51,
+    "existing_approved_source_ids": 38,
+    "exact_seed_urls": 77,
+    "new_source_trust_families": 0,
+    "blueprint_changed": false,
+    "collector_architecture_changed": false,
+    "source_registry_changed": false,
+    "search_fallback": false
+  },
+  "corrected_rerun": {
+    "evidence_excerpts_audited": 97,
+    "pass": 52,
+    "pass_with_warnings": 44,
+    "needs_review": 1,
+    "hard_no_scope_term_match": 1,
+    "cards_passing_evidence_gate": 82,
+    "cards_total": 120,
+    "card_gate_rate": 0.6833333333,
+    "duplicate_evidence_hashes": 16,
+    "duplicate_final_urls": 19
+  },
+  "measured_change": {
+    "passing_cards_delta": 20,
+    "card_gate_percentage_point_delta": 16.66666666,
+    "relative_card_gate_improvement": 0.3225806452,
+    "hard_scope_issue_delta": -23,
+    "hard_scope_issue_reduction_rate": 0.9583333333,
+    "evidence_excerpt_delta": -1
+  },
+  "safety_and_isolation": {
+    "llm_calls": 0,
+    "search_fallback": false,
+    "full_page_mirroring": false,
+    "production_chroma_writes": 0,
+    "brain_changes": 0,
+    "database_writes": 0
+  },
+  "conclusion": "For this fixed batch, a bounded scope-specific seed correction materially improved evidence-quality gating and reduced hard scope-match failures without broadening source trust or changing the acquisition architecture. It did not improve raw fetch yield.",
+  "limitations": [
+    "Same-batch before/after comparison, not a randomized experiment.",
+    "Network conditions were not frozen between live runs.",
+    "Exact URLs changed for affected rows by design.",
+    "PASS_WITH_WARNINGS evidence remained common after correction.",
+    "Evidence-audit passage did not by itself authorize production card generation."
+  ]
+}

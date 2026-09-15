@@ -1,0 +1,13 @@
+metric,baseline_v001_1,corrected_v001_2,change
+cards_total,120,120,0
+evidence_slots,142,142,0
+topics,107,107,0
+evidence_excerpts_audited,98,97,-1
+PASS,41,52,+11
+PASS_WITH_WARNINGS,33,44,+11
+NEEDS_REVIEW,24,1,-23
+hard_no_scope_term_match,24,1,-23
+cards_passing_evidence_gate,62,82,+20
+card_gate_rate_percent,51.7,68.3,+16.7 percentage points
+duplicate_evidence_hashes,19,16,-3
+duplicate_final_urls,21,19,-2
