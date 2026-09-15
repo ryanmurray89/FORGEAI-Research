@@ -1,0 +1,24 @@
+{
+  "schema": "forge.public_provenance.v1",
+  "experiment_id": "FORGE-EXP-002",
+  "historical_source_archive": "forge_ai_research.zip",
+  "source_artifacts": [
+    {
+      "path": "FORGE_evidence_acquisition_v001_1_windows_candidate/V001_LIVE_SMOKE_FINDINGS.txt",
+      "sha256": "7a5153ca69741670de6109d61d8ec76098bc949ebc993ac6efa292526f44971a"
+    },
+    {
+      "path": "FORGE_evidence_acquisition_v001_2_windows_candidate/V001_1_LIVE_DISCOVERY_FINDINGS.txt",
+      "sha256": "f65c02bd4bd4dabc97594dbe7e8631c165ba4846fdb99b277e37a6a4c8cd12e1"
+    },
+    {
+      "path": "FORGE_evidence_acquisition_v001_2_windows_candidate/source_discovery_smoke_run/evidence_acquisition_summary.txt",
+      "sha256": "7df344dbe4b892c6b58faec5be160eef1b1881d62147418e4087b35b9bb67c36"
+    },
+    {
+      "path": "FORGE_evidence_acquisition_v001_2_windows_candidate/source_discovery_smoke_run/search_diagnostics_summary.txt",
+      "sha256": "ac8742890471d1942543faa23d0d9ff3b4493c036efc5e7694259277b5172873"
+    }
+  ],
+  "publication_note": "The public package contains derived measurements and methodology. Historical implementation scripts, raw candidate lists, fetched third-party text, private configuration, and the original internal repository are not republished."
+}
