@@ -3,7 +3,7 @@
   "project": "FORGE AI",
   "publisher": "NexLabs",
   "repository": "https://github.com/ryanmurray89/FORGEAI-Research",
-  "updated_at": "2026-09-15T08:36:54Z",
+  "updated_at": "2026-09-15T08:39:56Z",
   "entries": [
     {
       "id": "FORGE-EXP-001",
@@ -488,6 +488,49 @@
         "verification",
         "policy-gating",
         "production-architecture"
+      ],
+      "files": [
+        {
+          "name": "README.md",
+          "type": "markdown",
+          "primary": true
+        },
+        {
+          "name": "note.json",
+          "type": "json"
+        },
+        {
+          "name": "metrics.csv",
+          "type": "csv"
+        },
+        {
+          "name": "methodology.md",
+          "type": "markdown"
+        },
+        {
+          "name": "provenance.json",
+          "type": "json"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "FORGE-NOTE-004",
+      "type": "technical_note",
+      "title": "Evidence-Bound Knowledge Factory Pilot Design",
+      "date": "2026-09-02",
+      "status": "published",
+      "summary": "FORGE's first clean Knowledge Factory pilot defined a 15-topic, 30-card evidence-bound generation contract with authoritative-source policies, independent organization checks for high-stakes topics, evidence hashing, atomic claim-to-source mappings, contamination guards, and deferred trust assignment.",
+      "path": "technical-notes/FORGE-NOTE-004",
+      "tags": [
+        "knowledge-factory",
+        "evidence-bound-generation",
+        "provenance",
+        "high-stakes",
+        "pilot-design"
       ],
       "files": [
         {

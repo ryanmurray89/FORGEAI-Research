@@ -1,0 +1,12 @@
+metric,value,unit_or_status
+pilot_topics,15,topics
+planned_cards,30,cards
+cards_per_topic,2,cards
+trust_assigned_during_generation,NO,status
+generated_verified_default,FALSE,status
+generated_production_ready_default,FALSE,status
+evidence_hashing,YES,control
+organization_level_independence,YES,high_stakes_control
+prompt_injection_text_detection,YES,evidence_audit
+long_verbatim_copy_detection,YES,generation_guard
+synthetic_contamination_regression_guards,YES,generation_guard
