@@ -3,7 +3,7 @@
   "project": "FORGE AI",
   "publisher": "NexLabs",
   "repository": "https://github.com/ryanmurray89/FORGEAI-Research",
-  "updated_at": "2026-09-15T09:31:28Z",
+  "updated_at": "2026-09-16T02:17:00Z",
   "entries": [
     {
       "id": "FORGE-EXP-001",
@@ -1519,6 +1519,50 @@
         "preflight",
         "source-policy",
         "knowledge-factory"
+      ],
+      "files": [
+        {
+          "name": "README.md",
+          "type": "markdown",
+          "primary": true
+        },
+        {
+          "name": "note.json",
+          "type": "json"
+        },
+        {
+          "name": "metrics.csv",
+          "type": "csv"
+        },
+        {
+          "name": "methodology.md",
+          "type": "markdown"
+        },
+        {
+          "name": "provenance.json",
+          "type": "json"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "FORGE-NOTE-024",
+      "type": "technical_note",
+      "title": "Trusted Knowledge Freshness and Continuous Reverification Foundation",
+      "date": "2026-09-15",
+      "status": "published",
+      "summary": "FORGE established the database foundation for freshness-aware Trusted Knowledge and documented a configurable continuous-reverification lifecycle. Freshness state now exists on trusted knowledge, a knowledge_refresh_jobs queue exists, and the existing supersession/versioning path can be reused; policy configuration, scheduling, evidence reacquisition, change detection, stale-on-retrieval behavior, Admin controls, and refresh telemetry remain planned at this checkpoint.",
+      "path": "technical-notes/FORGE-NOTE-024",
+      "tags": [
+        "trusted-knowledge",
+        "freshness",
+        "reverification",
+        "supersession",
+        "knowledge-lifecycle",
+        "rag"
       ],
       "files": [
         {

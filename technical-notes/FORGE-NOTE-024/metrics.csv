@@ -1,0 +1,7 @@
+metric,value,unit,status,notes
+freshness_classes_defined,6,classes,derived,"Counted from the six explicitly listed policy classes: static, slow, volatile, highly_volatile, event_driven, manual."
+database_foundation_complete,1,boolean,recorded,"Project update states the DB foundation is complete."
+trusted_knowledge_freshness_state_present,1,boolean,recorded,"Project update states trusted_knowledge now has freshness fields; exact live schema was not supplied."
+knowledge_refresh_jobs_table_present,1,boolean,recorded,"Project update states knowledge_refresh_jobs exists."
+existing_supersession_system_reusable,1,boolean,recorded,"Project update states existing supersession/versioning can be reused."
+continuous_reverification_end_to_end_verified,0,boolean,boundary,"No end-to-end reverification execution evidence was supplied in this batch."

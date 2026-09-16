@@ -1,0 +1,63 @@
+{
+  "artifact_id": "FORGE-NOTE-024",
+  "source_material": [
+    {
+      "type": "user_provided_project_update",
+      "description": "Raw FORGE Trusted Knowledge Freshness & Continuous Reverification overview, scope/plan, primary goal, and current-status checkpoint supplied for public artifact packaging on 2026-09-15."
+    },
+    {
+      "type": "existing_public_manifest",
+      "description": "Authoritative FORGE public manifest supplied in the same packaging session and used for ID allocation and deduplication."
+    }
+  ],
+  "directly_recorded_facts": [
+    "The DB foundation is complete.",
+    "trusted_knowledge now has freshness-related fields/state.",
+    "knowledge_refresh_jobs exists.",
+    "The existing supersession/versioning system can be reused.",
+    "The design names six freshness classes: static, slow, volatile, highly_volatile, event_driven, and manual.",
+    "Freshness policy is intended to live in brain_config / Admin rather than hard-coded intervals.",
+    "The next implementation step is freshness policy plus scheduler/queueing worker."
+  ],
+  "derived_values": [
+    {
+      "name": "freshness_classes_defined",
+      "value": 6,
+      "formula": "count(static, slow, volatile, highly_volatile, event_driven, manual)"
+    }
+  ],
+  "interpretations": [
+    "The freshness lifecycle is materially distinct from existing public artifacts focused on initial acquisition, promotion, release, indexing, and retrieval because its primary concern is post-promotion validity over time.",
+    "The current source supports publication of the architecture/foundation but not a verified claim that continuous reverification is operational end to end."
+  ],
+  "validation_boundary": {
+    "recorded_complete": [
+      "database foundation",
+      "freshness-related trusted_knowledge state",
+      "knowledge_refresh_jobs table",
+      "reuse of existing supersession/versioning mechanism"
+    ],
+    "not_independently_demonstrated_in_source": [
+      "exact live database schema",
+      "configured refresh intervals",
+      "scheduler execution",
+      "queued refresh job execution",
+      "evidence reacquisition",
+      "unchanged-claim refresh",
+      "changed-claim supersession",
+      "conflict hold behavior",
+      "freshness-driven Chroma reindex",
+      "stale-on-retrieval revalidation",
+      "Admin freshness controls",
+      "refresh telemetry"
+    ]
+  },
+  "publication_exclusions": [
+    "credentials and secrets",
+    "private user information",
+    "raw telemetry",
+    "prompts and conversation contents",
+    "private application source code",
+    "security-sensitive implementation details"
+  ]
+}
