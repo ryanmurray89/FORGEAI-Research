@@ -1,0 +1,47 @@
+{
+  "schema": "kespa.public_provenance.v1",
+  "research_id": "KESPA-NOTE-001",
+  "historical_source_archive": "forge_ai_research.zip",
+  "source_artifacts": [
+    {
+      "path": "FORGE_blueprint_v004_candidate/README_VALIDATION.txt",
+      "sha256": "32b9bd38708d03d3d208a87589e08060f86cccb97c1f9248276aeb21bb8a1dc7",
+      "bytes": 4714
+    },
+    {
+      "path": "FORGE_blueprint_v004_candidate/LOCAL_ARTIFACT_VALIDATION.txt",
+      "sha256": "db740ef1a3ac5f469ec47c0a2faaeabe8e7abe102e26f3ab4b08de11fda4f7f7",
+      "bytes": 1195
+    },
+    {
+      "path": "FORGE_blueprint_v004_candidate/AUDIT_CHANGELOG.txt",
+      "sha256": "8b3eb5d20f18dc468f0f3618e27b31c656579fc093aed6860c5f658166a43c92",
+      "bytes": 4828
+    },
+    {
+      "path": "FORGE_blueprint_v004_candidate/amendment/foundational_gap_amendment_summary_v004.txt",
+      "sha256": "06fa9a914be30cf73c09640da9c20a8e9ee8b27438300d999107d82215780215",
+      "bytes": 1022
+    },
+    {
+      "path": "FORGE_blueprint_v004_candidate/input_repair/blueprint_input_repair_summary_v002.txt",
+      "sha256": "c71d87479fb2bec8393a29fa3b0e92a981c040b15ceb7a726200544d91de7dc7",
+      "bytes": 1442
+    },
+    {
+      "path": "FORGE_blueprint_v004_candidate/full_blueprint/full_blueprint_summary_v004.txt",
+      "sha256": "920ea5b210c822fc1723d379e207403c922a8497a4566a99892364089b2080c4",
+      "bytes": 4412
+    }
+  ],
+  "publication_note": "This public note publishes derived counts, methodology, limitations, source hashes, and the later user-environment validation outcome. The full historical blueprint JSONL/CSV corpus, implementation scripts, private repository metadata, and internal candidate package remain intentionally unpublished.",
+  "status_update": {
+    "previous_public_status": "published",
+    "new_public_status": "verified",
+    "reason": "Later user-environment validation record supplied after the original public package was created.",
+    "windows_python_version": "3.11.9",
+    "deterministic_rebuild": "byte-for-byte match",
+    "validator_result": "[PASS] Windows validation completed successfully",
+    "production_changes": "none"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schema": "kespa.public_technical_note.v1",
+  "id": "KESPA-NOTE-008",
+  "title": "Chroma Corpus Compatibility and Retrieval Equivalence",
+  "date": "2026-09-04",
+  "status": "verified",
+  "purpose": "Document the compatibility validation performed before using the 423-claim clean verified corpus in Brain-compatible Chroma retrieval experiments.",
+  "corpus": {
+    "verified_claims": 423,
+    "embedding_model": "all-MiniLM-L6-v2",
+    "distance_metric": "cosine"
+  },
+  "structural_equivalence": {
+    "ids_exact": "423/423",
+    "documents_exact": "423/423",
+    "metadata_exact": "423/423",
+    "combined_ids_documents_metadata_exact": "423/423"
+  },
+  "retrieval_equivalence": {
+    "top1_and_top10_checks": "32/32",
+    "result": "PASS"
+  },
+  "embedding_roundtrip": {
+    "embeddings_with_nonzero_float_delta": "43/423",
+    "maximum_absolute_delta": 1.49011611938e-08,
+    "interpretation": "Float-roundtrip scale only; no observed retrieval-equivalence failure."
+  },
+  "research_boundary": {
+    "production_chroma_modified": false,
+    "brain_api_modified": false,
+    "database_modified": false,
+    "trust_assignment_changed": false
+  },
+  "interpretation": [
+    "The clean verified corpus could be represented in the Brain-compatible Chroma layout without losing record identity, text, or metadata.",
+    "Observed float-scale embedding differences did not change the tested top-1/top-10 retrieval results.",
+    "The compatibility result supported using the isolated clean Chroma collection for later retrieval calibration and A/B/C benchmarking."
+  ],
+  "limitations": [
+    "The retrieval-equivalence sample comprised 32 checks, not an exhaustive query set.",
+    "Embedding equality was not byte-for-byte for every vector because 43 of 423 vectors showed tiny float round-trip differences.",
+    "This validation established compatibility and retrieval equivalence under the tested conditions; it was not itself an answer-quality benchmark.",
+    "The result is specific to the tested corpus, embedding model, metadata contract, and Chroma configuration."
+  ]
+}

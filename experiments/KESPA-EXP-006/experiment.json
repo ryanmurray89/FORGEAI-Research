@@ -1,0 +1,58 @@
+{
+  "schema": "kespa.public_experiment.v1",
+  "id": "KESPA-EXP-006",
+  "title": "Autonomous Trust Policy v0.1 to v0.2 Backlog Reclassification",
+  "date": "2026-09-14",
+  "status": "published",
+  "research_question": "Can KESPA reduce unnecessary human-review load by changing only the supporting-evidence threshold while preserving its other verification, consensus, confidence, and conflict gates?",
+  "policy_v0_1": {
+    "verification": "PASS required",
+    "minimum_confidence": 0.9,
+    "ai_consensus": "required",
+    "minimum_qualifying_evidence": 2,
+    "minimum_supporting_evidence": 2,
+    "conflicting_evidence": 0,
+    "verifier_conflict": false,
+    "recorded_approver_type": "system_policy",
+    "policy_version": "forge-auto-publish-policy-v0.1.0"
+  },
+  "policy_v0_2": {
+    "supporting_evidence_change": "2 -> 1",
+    "other_trust_conflict_consensus_requirements": "retained",
+    "system_generated_publish_jobs": "real system_policy approval",
+    "approval_audit_policy_version": "forge-auto-publish-policy-v0.2.0"
+  },
+  "backlog_reclassification": {
+    "previously_held_candidates_newly_eligible": 29,
+    "evidence_recollection_required": false,
+    "local_reverification_required": false,
+    "baseline_autonomy_percent": 36.7,
+    "projected_autonomy_percent": 95.9,
+    "absolute_percentage_point_change": 59.2
+  },
+  "interpretation": [
+    "The dominant blocker in the backlog was not necessarily model disagreement or detected contradiction; the recorded policy-tuning rationale identified the supporting-evidence count as the condition being relaxed.",
+    "The policy change was intentionally narrow: only the supporting-evidence minimum changed from two to one.",
+    "Because evidence collection and local verification were not rerun for the 29 newly eligible candidates, the change isolates publication-policy behavior from upstream evidence-generation behavior."
+  ],
+  "research_value": {
+    "comparison": "policy v0.1 versus policy v0.2",
+    "future_measures": [
+      "observed auto-publication rate",
+      "human-review rate",
+      "false acceptance rate",
+      "false rejection rate",
+      "verification accuracy",
+      "evidence quality",
+      "latency",
+      "compute",
+      "energy"
+    ]
+  },
+  "limitations": [
+    "The approximately 95.9% autonomy figure is explicitly recorded as expected/projected backlog autonomy, not a completed prospective production measurement.",
+    "The supplied source record does not provide the full backlog denominator in a directly auditable table, so this package preserves the reported percentages rather than reverse-engineering candidate counts.",
+    "Making a candidate policy-eligible does not prove the candidate is factually correct.",
+    "This policy change should be evaluated prospectively for false acceptance and false rejection, not judged only by higher automation rate."
+  ]
+}

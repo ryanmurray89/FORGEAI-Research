@@ -1,0 +1,15 @@
+{
+  "schema": "kespa.public_provenance.v1",
+  "research_id": "KESPA-NOTE-009",
+  "source_basis": "Historical KESPA changelog/Jira export supplied for public research reconstruction.",
+  "source_observations": [
+    "The scale verifier was changed to resolve frozen evidence using canonical URL plus SHA-256 rather than URL alone.",
+    "17 authoritative URLs legitimately mapped to multiple frozen evidence excerpts.",
+    "16 of those URLs were referenced by candidates.",
+    "Only new scale-verifier files changed; the canonical pilot verifier remained untouched.",
+    "No candidate/evidence mutation and no Chroma, Brain, or database writes were recorded.",
+    "The deadlock-1213 contamination guard remained strict except where explicitly permitted by the approved blueprint."
+  ],
+  "verification_note": "The supplied changelog documents the correction and safety boundary but does not record a separate full user-environment validation result for this specific verifier revision; this public entry is therefore marked published rather than verified.",
+  "publication_note": "Raw third-party evidence excerpts, private candidate payloads, and implementation code are not republished."
+}

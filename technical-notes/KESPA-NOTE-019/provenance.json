@@ -1,0 +1,14 @@
+{
+  "schema": "kespa.public_provenance.v1",
+  "research_id": "KESPA-NOTE-019",
+  "source_basis": "KESPA public-research repository, website-bridge implementation records, and the recorded stale GitHub Raw branch incident during benchmark publication.",
+  "source_observations": [
+    "KESPA uses a separate public repository at ryanmurray89/KESPA-Research with the kespa.public_research_index.v1 manifest.",
+    "The website sync caches the manifest and entry artifacts and runs every five minutes.",
+    "A stale raw.githubusercontent.com main-branch response was observed while the GitHub API already showed the newer manifest contents.",
+    "Sync v0.2.3 corrected this by resolving main to an immutable commit SHA and fetching both manifest and artifacts from that same SHA.",
+    "The public viewer supports safe Markdown plus escaped JSON/text and exposes SHA-256, byte size, and source links.",
+    "Private application code and raw third-party evidence are intentionally excluded from the public archive."
+  ],
+  "publication_note": "This note describes the public publication architecture and its consistency correction. It intentionally excludes private repository contents, credentials, environment data, raw third-party evidence, and private implementation details not necessary to understand the publication contract."
+}

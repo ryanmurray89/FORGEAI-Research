@@ -1,3 +1,3 @@
 # Experiments
 
-Controlled FORGE experiments and supporting public artifacts.
+Controlled KESPA experiments and supporting public artifacts.

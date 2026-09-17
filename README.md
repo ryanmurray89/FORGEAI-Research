@@ -1,19 +1,19 @@
-# FORGEAI Research
+# KESPA Research
 
-Public research artifacts for **FORGE AI** by NexLabs.
+Public research artifacts for **KESPA AI** by NexLabs Studios.
 
-This repository is intentionally separate from the private FORGE application repository.
+This repository is intentionally separate from the private KESPA application repository.
 It is for public experiments, benchmarks, technical notes, selected datasets, progress updates,
 and provenance records.
 
 ## Repository layout
 
-- `manifest.json` — machine-readable public research index consumed by forge.nexlabs.studio
+- `manifest.json` — machine-readable public research index consumed by kespa.nexlabs.studio
 - `experiments/` — controlled experiment reports and artifacts
 - `benchmarks/` — benchmark results and reproducibility material
 - `technical-notes/` — architecture/research notes intended for public release
 - `datasets/` — selected public datasets or derived benchmark data
-- `updates/` — dated FORGE research/project updates
+- `updates/` — dated KESPA research/project updates
 - `provenance/` — hashes, release metadata, and public attestation references
 
 ## Publication boundary
@@ -35,6 +35,6 @@ configuration actually used. A result from one experiment is not a general perfo
 
 Public research is presented at:
 
-https://forge.nexlabs.studio/research/
+https://kespa.nexlabs.studio/research/
 
 The website will consume `manifest.json` and selected entry manifests from this repository.

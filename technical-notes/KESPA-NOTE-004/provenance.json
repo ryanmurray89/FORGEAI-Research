@@ -1,0 +1,13 @@
+{
+  "schema": "kespa.public_provenance.v1",
+  "research_id": "KESPA-NOTE-004",
+  "source_basis": "Historical KESPA changelog/Jira export supplied for public research reconstruction.",
+  "source_observations": [
+    "A representative 15-topic pilot was capped at two cards per topic.",
+    "Evidence collection used curated authoritative source seeds, hashes, and organization-level provenance.",
+    "High-stakes cross-checking was tightened so weak unrelated sources could not satisfy independence.",
+    "The pilot blueprint bound every card to collected evidence and kept all cards production_ready=false.",
+    "The candidate generator used evidence-only prompting, atomic claim-to-source mappings, validation guards, and deferred all trust assignment."
+  ],
+  "publication_note": "This public note contains pilot methodology and aggregate scope only. Raw fetched third-party evidence text, internal source-policy configuration, private implementation scripts, credentials, and generated candidate bodies are not republished."
+}

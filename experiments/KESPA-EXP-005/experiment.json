@@ -1,0 +1,42 @@
+{
+  "schema": "kespa.public_experiment.v1",
+  "id": "KESPA-EXP-005",
+  "title": "Claim-Level Verification and Clean Corpus Consolidation",
+  "date": "2026-09-04",
+  "status": "verified",
+  "research_question": "Does strict claim-level verification preserve independently supportable knowledge that would be lost if KESPA accepted or rejected generated knowledge only at whole-card granularity?",
+  "diagnostic_scope": {
+    "source_cards": 100,
+    "verified_corpus_source_cards": 66,
+    "topics_represented": 66
+  },
+  "result": {
+    "verified_atomic_claims": 423,
+    "linked_evidence_excerpts": 56,
+    "strict_claim_survival_percent": 48.0,
+    "claims_rescued_from_failed_cards": 331,
+    "production_ready": false
+  },
+  "derived_measurements": {
+    "evaluated_claims_approximate_from_reported_survival_rate": 881,
+    "rescued_claim_share_of_final_corpus_percent": 78.3
+  },
+  "interpretation": [
+    "Whole-card acceptance was too coarse a trust boundary for the diagnostic candidate set.",
+    "Claim-level verification allowed KESPA to retain individually supportable claims even when another claim in the same generated card caused the card as a whole to fail.",
+    "The resulting 423-claim corpus became the clean verified knowledge baseline used by subsequent retrieval and A/B/C experiments."
+  ],
+  "safety_and_data_impact": {
+    "production_chroma_changed": false,
+    "brain_api_changed": false,
+    "database_changed": false,
+    "trust_assignment_changed": false,
+    "production_ready_changed": false
+  },
+  "limitations": [
+    "The clean corpus covered the 100-card diagnostic subset, not all 1,075 generated candidates.",
+    "The reported 48.0% value is the recorded strict claim survival rate from the historical experiment; the public package does not reconstruct omitted raw candidate rows.",
+    "Surviving verification means the claim met the experiment's strict evidence-verification rules; it is not a universal or permanent truth guarantee.",
+    "No production trust assignment or production-ready status was granted by this consolidation step alone."
+  ]
+}

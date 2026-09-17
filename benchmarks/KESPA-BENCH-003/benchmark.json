@@ -1,0 +1,96 @@
+{
+  "schema": "kespa.public_benchmark.v1",
+  "id": "KESPA-BENCH-003",
+  "title": "Atomic Knowledge Retrieval Policy Calibration",
+  "date": "2026-09-04",
+  "status": "verified",
+  "research_question": "Do retrieval safeguards designed for long synthetic/legacy cards remain appropriate after KESPA moves to short, strictly verified atomic claims?",
+  "fixed_context": {
+    "calibration_questions": 12,
+    "locked_evaluation_questions": 54,
+    "evaluation_questions_parsed_during_calibration": 0,
+    "isolated_verified_claims": 423,
+    "embedding_model": "all-MiniLM-L6-v2",
+    "production_chroma_modified": false,
+    "brain_modified": false,
+    "database_modified": false
+  },
+  "initial_calibration": {
+    "plain_rag_top6": {
+      "hit_at_1": "12/12",
+      "hit_at_3": "12/12",
+      "hit_at_6": "12/12",
+      "empty_retrievals": "0/12",
+      "claim_recall": "67/87",
+      "claim_recall_percent": 77.0,
+      "retrieval_precision_percent": 93.1,
+      "mean_question_recall_percent": 80.6,
+      "mrr": 1.0,
+      "avg_returned": 6.0,
+      "avg_latency_ms": 29.15
+    },
+    "forge_current_min150": {
+      "hit_at_1": "4/12",
+      "hit_at_3": "4/12",
+      "hit_at_6": "4/12",
+      "empty_retrievals": "8/12",
+      "claim_recall": "10/87",
+      "claim_recall_percent": 11.5,
+      "retrieval_precision_percent": 100.0,
+      "mean_question_recall_percent": 12.3,
+      "mrr": 0.3333,
+      "avg_returned": 0.83,
+      "avg_latency_ms": 60.03
+    },
+    "forge_atomic_min40": {
+      "hit_at_1": "8/12",
+      "hit_at_3": "8/12",
+      "hit_at_6": "8/12",
+      "empty_retrievals": "4/12",
+      "claim_recall": "21/87",
+      "claim_recall_percent": 24.1,
+      "retrieval_precision_percent": 100.0,
+      "mean_question_recall_percent": 28.0,
+      "mrr": 0.6667,
+      "avg_returned": 1.75,
+      "avg_latency_ms": 45.61
+    }
+  },
+  "final_policy_freeze": {
+    "selected_policy": "plain_vector_top6",
+    "plain_vector_top6": {
+      "hit_at_1": "12/12",
+      "claim_recall": "67/87",
+      "claim_recall_percent": 77.0,
+      "retrieval_precision_percent": 93.1,
+      "mean_latency_ms": 22.74
+    },
+    "forge_atomic_candidate": {
+      "hit_at_1": "12/12",
+      "claim_recall": "66/87",
+      "claim_recall_percent": 75.9,
+      "retrieval_precision_percent": 91.7,
+      "mean_latency_ms": 49.89
+    },
+    "freeze_reason": "The more complex atomic-compatible KESPA ranking did not equal or exceed plain vector claim recall and was slower, despite matching Hit@1."
+  },
+  "supporting_compatibility_validation": {
+    "ids_documents_metadata_exact": "423/423",
+    "top1_and_top10_retrieval_matches": "32/32",
+    "embeddings_with_float_roundtrip_delta": "43/423",
+    "max_embedding_delta": 1.49011611938e-08,
+    "legacy_150_char_floor_excluded_claims": "260/423"
+  },
+  "interpretation": [
+    "Legacy retrieval filters designed for long cards were structurally mismatched to short verified atomic claims.",
+    "The 150-character minimum excluded 260 of 423 verified claims and caused severe empty-retrieval behavior in calibration.",
+    "Reducing the minimum length helped but still underperformed plain vector retrieval.",
+    "The final policy freeze selected the simpler plain_vector_top6 path because it preserved claim recall and lower latency without losing Hit@1."
+  ],
+  "limitations": [
+    "The calibration used 12 predeclared questions; it was not a full benchmark by itself.",
+    "The detailed initial calibration and final policy-freeze measurements came from separate calibration steps and should not be treated as one identical timing run.",
+    "The 54 locked evaluation questions were hash-verified but not parsed during calibration.",
+    "The result is specific to the 423-claim verified atomic corpus and the tested retrieval stack."
+  ]
+}

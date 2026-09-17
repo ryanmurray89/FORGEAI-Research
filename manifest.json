@@ -1,18 +1,18 @@
 {
-  "schema": "forge.public_research_index.v1",
-  "project": "FORGE AI",
-  "publisher": "NexLabs",
-  "repository": "https://github.com/ryanmurray89/FORGEAI-Research",
+  "schema": "kespa.public_research_index.v1",
+  "project": "KESPA AI",
+  "publisher": "NexLabs Studios",
+  "repository": "https://github.com/ryanmurray89/KESPA-Research",
   "updated_at": "2026-09-16T02:17:00Z",
   "entries": [
     {
-      "id": "FORGE-EXP-001",
+      "id": "KESPA-EXP-001",
       "type": "experiment",
       "title": "Autonomous Knowledge Gap Acquisition",
       "date": "2026-09-15",
       "status": "verified",
-      "summary": "FORGE detected a live knowledge gap during normal use, researched the missing concept from multiple independent public sources, verified four claims, promoted the result to trusted knowledge, indexed it for retrieval, and recorded provenance through NexLedger.",
-      "path": "experiments/FORGE-EXP-001",
+      "summary": "KESPA detected a live knowledge gap during normal use, researched the missing concept from multiple independent public sources, verified four claims, promoted the result to trusted knowledge, indexed it for retrieval, and recorded provenance through NexLedger.",
+      "path": "experiments/KESPA-EXP-001",
       "tags": [
         "adaptive-learning",
         "knowledge-gap",
@@ -41,13 +41,13 @@
       ]
     },
     {
-      "id": "FORGE-EXP-002",
+      "id": "KESPA-EXP-002",
       "type": "experiment",
       "title": "Evidence Discovery: From Search Dependency to Source-First Discovery",
       "date": "2026-09-02",
       "status": "verified",
-      "summary": "Three bounded discovery iterations showed that general web search was not reliable enough to be a required evidence locator in the tested Windows FORGE runtime. A source-first design using catalog hints, first-party entrypoints, robots.txt, sitemaps, and same-host navigation produced candidates for 26 of 28 smoke slots without Google or DuckDuckGo.",
-      "path": "experiments/FORGE-EXP-002",
+      "summary": "Three bounded discovery iterations showed that general web search was not reliable enough to be a required evidence locator in the tested Windows KESPA runtime. A source-first design using catalog hints, first-party entrypoints, robots.txt, sitemaps, and same-host navigation produced candidates for 26 of 28 smoke slots without Google or DuckDuckGo.",
+      "path": "experiments/KESPA-EXP-002",
       "tags": [
         "knowledge-factory",
         "evidence-discovery",
@@ -84,13 +84,13 @@
       ]
     },
     {
-      "id": "FORGE-EXP-003",
+      "id": "KESPA-EXP-003",
       "type": "experiment",
       "title": "Seeded Evidence Scale: Scope-Precision Correction",
       "date": "2026-09-02",
       "status": "verified",
       "summary": "A fixed 120-card, 142-slot evidence batch was rerun after a bounded seed-precision correction. Card-level evidence-gate passage improved from 62/120 (51.7%) to 82/120 (68.3%), while hard no-scope-term-match issues fell from 24 to 1 without changing the canonical blueprint, collector architecture, or source trust registry.",
-      "path": "experiments/FORGE-EXP-003",
+      "path": "experiments/KESPA-EXP-003",
       "tags": [
         "knowledge-factory",
         "evidence-acquisition",
@@ -127,13 +127,13 @@
       ]
     },
     {
-      "id": "FORGE-EXP-004",
+      "id": "KESPA-EXP-004",
       "type": "experiment",
       "title": "Full Seed-Ready Evidence Scale Run",
       "date": "2026-09-03",
       "status": "published",
-      "summary": "FORGE executed the seeded evidence-acquisition path across 3,128 planned evidence slots representing 2,831 cards. It collected and audited 2,146 evidence excerpts; 1,555 of 2,831 cards passed the evidence gate, while 463 evidence rows required review for missing scope-term matches. The run was deliberately held before card generation.",
-      "path": "experiments/FORGE-EXP-004",
+      "summary": "KESPA executed the seeded evidence-acquisition path across 3,128 planned evidence slots representing 2,831 cards. It collected and audited 2,146 evidence excerpts; 1,555 of 2,831 cards passed the evidence gate, while 463 evidence rows required review for missing scope-term matches. The run was deliberately held before card generation.",
+      "path": "experiments/KESPA-EXP-004",
       "tags": [
         "knowledge-factory",
         "scale-study",
@@ -170,13 +170,13 @@
       ]
     },
     {
-      "id": "FORGE-NOTE-001",
+      "id": "KESPA-NOTE-001",
       "type": "technical_note",
       "title": "Knowledge Blueprint v004: Deterministic Bootstrap Planning",
       "date": "2026-09-02",
       "status": "verified",
-      "summary": "FORGE Blueprint v004 converted a repaired 729-topic recovered taxonomy plus 37 approved foundational additions into 759 canonical generating topics, 3,982 unique planned card scopes, and 4,807 evidence-source slots. Windows user-environment validation later confirmed the deterministic rebuild matched the expected artifacts byte-for-byte.",
-      "path": "technical-notes/FORGE-NOTE-001",
+      "summary": "KESPA Blueprint v004 converted a repaired 729-topic recovered taxonomy plus 37 approved foundational additions into 759 canonical generating topics, 3,982 unique planned card scopes, and 4,807 evidence-source slots. Windows user-environment validation later confirmed the deterministic rebuild matched the expected artifacts byte-for-byte.",
+      "path": "technical-notes/KESPA-NOTE-001",
       "tags": [
         "knowledge-factory",
         "blueprint",
@@ -213,13 +213,13 @@
       ]
     },
     {
-      "id": "FORGE-BENCH-001",
+      "id": "KESPA-BENCH-001",
       "type": "benchmark",
       "title": "A/B/C Verified-Intelligence Quality and Compute Benchmark",
       "date": "2026-09-04",
       "status": "verified",
-      "summary": "A frozen 54-question, 162-execution benchmark compared a raw local 7B path, clean verified atomic retrieval, and the then-current FORGE orchestration. The verified-retrieval arm achieved the highest reported composite quality score (54.22), 54/54 retrieval Hit@1, 79.17% gold recall, and the lowest mean latency and GPU energy of the three arms.",
-      "path": "benchmarks/FORGE-BENCH-001",
+      "summary": "A frozen 54-question, 162-execution benchmark compared a raw local 7B path, clean verified atomic retrieval, and the then-current KESPA orchestration. The verified-retrieval arm achieved the highest reported composite quality score (54.22), 54/54 retrieval Hit@1, 79.17% gold recall, and the lowest mean latency and GPU energy of the three arms.",
+      "path": "benchmarks/KESPA-BENCH-001",
       "tags": [
         "benchmark",
         "verified-rag",
@@ -256,13 +256,13 @@
       ]
     },
     {
-      "id": "FORGE-BENCH-002",
+      "id": "KESPA-BENCH-002",
       "type": "benchmark",
       "title": "Adaptive Inference D v001: Preregistered Efficiency Benchmark",
       "date": "2026-09-05",
       "status": "verified",
-      "summary": "FORGE D v001 tested adaptive inference on the frozen 54-case workload. It achieved a composite quality score of 55.2586 at 2.443 s mean latency and 0.153616 Wh mean energy, but failed the preregistered primary success criterion because retrieval Hit@1, gold recall, and escalation-rate thresholds were not met.",
-      "path": "benchmarks/FORGE-BENCH-002",
+      "summary": "KESPA D v001 tested adaptive inference on the frozen 54-case workload. It achieved a composite quality score of 55.2586 at 2.443 s mean latency and 0.153616 Wh mean energy, but failed the preregistered primary success criterion because retrieval Hit@1, gold recall, and escalation-rate thresholds were not met.",
+      "path": "benchmarks/KESPA-BENCH-002",
       "tags": [
         "adaptive-inference",
         "benchmark",
@@ -303,13 +303,13 @@
       ]
     },
     {
-      "id": "FORGE-EXP-005",
+      "id": "KESPA-EXP-005",
       "type": "experiment",
       "title": "Claim-Level Verification and Clean Corpus Consolidation",
       "date": "2026-09-04",
       "status": "verified",
-      "summary": "FORGE consolidated strict claim-level verifier survivors from a 100-card diagnostic subset into a clean 423-claim corpus. The experiment recorded a 48.0% strict claim survival rate and rescued 331 independently supportable claims from cards that would have been discarded under whole-card acceptance.",
-      "path": "experiments/FORGE-EXP-005",
+      "summary": "KESPA consolidated strict claim-level verifier survivors from a 100-card diagnostic subset into a clean 423-claim corpus. The experiment recorded a 48.0% strict claim survival rate and rescued 331 independently supportable claims from cards that would have been discarded under whole-card acceptance.",
+      "path": "experiments/KESPA-EXP-005",
       "tags": [
         "claim-verification",
         "knowledge-quality",
@@ -346,13 +346,13 @@
       ]
     },
     {
-      "id": "FORGE-BENCH-003",
+      "id": "KESPA-BENCH-003",
       "type": "benchmark",
       "title": "Atomic Knowledge Retrieval Policy Calibration",
       "date": "2026-09-04",
       "status": "verified",
       "summary": "A locked 12-question calibration showed that legacy long-card retrieval filters were poorly matched to short verified atomic claims. Plain vector top-6 achieved 12/12 Hit@1 and 67/87 claim recall, while legacy minimum-length filtering produced severe retrieval loss; the final policy freeze selected plain_vector_top6.",
-      "path": "benchmarks/FORGE-BENCH-003",
+      "path": "benchmarks/KESPA-BENCH-003",
       "tags": [
         "retrieval",
         "calibration",
@@ -389,13 +389,13 @@
       ]
     },
     {
-      "id": "FORGE-NOTE-002",
+      "id": "KESPA-NOTE-002",
       "type": "technical_note",
       "title": "Clean Verified Knowledge Production Baseline",
       "date": "2026-09-13",
       "status": "verified",
-      "summary": "FORGE replaced the legacy ~441k-card production retrieval corpus with the clean 423-claim verified baseline, preserved memory collections separately, validated known-claim retrieval at rank #1, and established trusted_knowledge as the authoritative knowledge store with Chroma as a rebuildable search index.",
-      "path": "technical-notes/FORGE-NOTE-002",
+      "summary": "KESPA replaced the legacy ~441k-card production retrieval corpus with the clean 423-claim verified baseline, preserved memory collections separately, validated known-claim retrieval at rank #1, and established trusted_knowledge as the authoritative knowledge store with Chroma as a rebuildable search index.",
+      "path": "technical-notes/KESPA-NOTE-002",
       "tags": [
         "production-cutover",
         "verified-knowledge",
@@ -432,13 +432,13 @@
       ]
     },
     {
-      "id": "FORGE-EXP-006",
+      "id": "KESPA-EXP-006",
       "type": "experiment",
       "title": "Autonomous Trust Policy v0.1 to v0.2 Backlog Reclassification",
       "date": "2026-09-14",
       "status": "published",
-      "summary": "FORGE relaxed one auto-publication condition from two supporting evidence items to one while retaining verification, confidence, consensus, and zero-conflict requirements. Applying the policy change to the existing backlog made 29 previously held candidates eligible without rerunning evidence collection or local verification, raising projected backlog autonomy from 36.7% to approximately 95.9%.",
-      "path": "experiments/FORGE-EXP-006",
+      "summary": "KESPA relaxed one auto-publication condition from two supporting evidence items to one while retaining verification, confidence, consensus, and zero-conflict requirements. Applying the policy change to the existing backlog made 29 previously held candidates eligible without rerunning evidence collection or local verification, raising projected backlog autonomy from 36.7% to approximately 95.9%.",
+      "path": "experiments/KESPA-EXP-006",
       "tags": [
         "autonomous-learning",
         "trust-policy",
@@ -475,13 +475,13 @@
       ]
     },
     {
-      "id": "FORGE-NOTE-003",
+      "id": "KESPA-NOTE-003",
       "type": "technical_note",
       "title": "Autonomous Trusted Knowledge Lifecycle Operationalization",
       "date": "2026-09-14",
       "status": "verified",
-      "summary": "FORGE operationalized an end-to-end trusted-knowledge lifecycle for manually trained public knowledge: synthesis, candidate creation, evidence collection, local verification, policy-gated approval, trusted-knowledge promotion, and live local indexing. Autonomous publication was separated from human approval through explicit system-policy audit metadata.",
-      "path": "technical-notes/FORGE-NOTE-003",
+      "summary": "KESPA operationalized an end-to-end trusted-knowledge lifecycle for manually trained public knowledge: synthesis, candidate creation, evidence collection, local verification, policy-gated approval, trusted-knowledge promotion, and live local indexing. Autonomous publication was separated from human approval through explicit system-policy audit metadata.",
+      "path": "technical-notes/KESPA-NOTE-003",
       "tags": [
         "autonomous-learning",
         "trusted-knowledge",
@@ -518,13 +518,13 @@
       ]
     },
     {
-      "id": "FORGE-NOTE-004",
+      "id": "KESPA-NOTE-004",
       "type": "technical_note",
       "title": "Evidence-Bound Knowledge Factory Pilot Design",
       "date": "2026-09-02",
       "status": "published",
-      "summary": "FORGE's first clean Knowledge Factory pilot defined a 15-topic, 30-card evidence-bound generation contract with authoritative-source policies, independent organization checks for high-stakes topics, evidence hashing, atomic claim-to-source mappings, contamination guards, and deferred trust assignment.",
-      "path": "technical-notes/FORGE-NOTE-004",
+      "summary": "KESPA's first clean Knowledge Factory pilot defined a 15-topic, 30-card evidence-bound generation contract with authoritative-source policies, independent organization checks for high-stakes topics, evidence hashing, atomic claim-to-source mappings, contamination guards, and deferred trust assignment.",
+      "path": "technical-notes/KESPA-NOTE-004",
       "tags": [
         "knowledge-factory",
         "evidence-bound-generation",
@@ -561,13 +561,13 @@
       ]
     },
     {
-      "id": "FORGE-UPDATE-001",
+      "id": "KESPA-UPDATE-001",
       "type": "update",
-      "title": "FORGE V2 Research Program: Verified Intelligence and Adaptive Compute",
+      "title": "KESPA V2 Research Program: Verified Intelligence and Adaptive Compute",
       "date": "2026-09-05",
       "status": "published",
-      "summary": "FORGE V2 formalized the research direction emerging from the completed A/B/C benchmark: verified externalized intelligence and fast trusted retrieval as the default path, adaptive orchestration only when justified, explicit separation of evidence/knowledge/memory, continuous knowledge growth, and compute-efficiency as a first-class research objective.",
-      "path": "updates/FORGE-UPDATE-001",
+      "summary": "KESPA V2 formalized the research direction emerging from the completed A/B/C benchmark: verified externalized intelligence and fast trusted retrieval as the default path, adaptive orchestration only when justified, explicit separation of evidence/knowledge/memory, continuous knowledge growth, and compute-efficiency as a first-class research objective.",
+      "path": "updates/KESPA-UPDATE-001",
       "tags": [
         "research-program",
         "master-plan-v2",
@@ -600,13 +600,13 @@
       ]
     },
     {
-      "id": "FORGE-NOTE-005",
+      "id": "KESPA-NOTE-005",
       "type": "technical_note",
       "title": "Legacy Corpus Recovery and Clean Rebuild Boundary",
       "date": "2026-09-01",
       "status": "published",
-      "summary": "FORGE recovered 729 original subject areas from the legacy synthetic corpus, resolved all 121 ambiguous taxonomy classifications, split the recovered scope into 484 TECH_REVIEW and 245 REBUILD_FROM_SOURCE topics, preserved the ~442k-card synthetic corpus as immutable archive material, and explicitly rejected those synthetic cards for clean production indexing.",
-      "path": "technical-notes/FORGE-NOTE-005",
+      "summary": "KESPA recovered 729 original subject areas from the legacy synthetic corpus, resolved all 121 ambiguous taxonomy classifications, split the recovered scope into 484 TECH_REVIEW and 245 REBUILD_FROM_SOURCE topics, preserved the ~442k-card synthetic corpus as immutable archive material, and explicitly rejected those synthetic cards for clean production indexing.",
+      "path": "technical-notes/KESPA-NOTE-005",
       "tags": [
         "corpus-recovery",
         "taxonomy",
@@ -643,13 +643,13 @@
       ]
     },
     {
-      "id": "FORGE-NOTE-006",
+      "id": "KESPA-NOTE-006",
       "type": "technical_note",
       "title": "Compute-Aware Model Routing and Telemetry Foundation",
       "date": "2026-09-04",
       "status": "verified",
-      "summary": "FORGE validated its local model registry, routing infrastructure, persistent telemetry, metrics endpoint, RTX 3070 instrumentation, and Admin controls on the actual FORGE machine. A subsequent routing-policy correction separated technical-learning requests from coding requests while preserving local-first execution.",
-      "path": "technical-notes/FORGE-NOTE-006",
+      "summary": "KESPA validated its local model registry, routing infrastructure, persistent telemetry, metrics endpoint, RTX 3070 instrumentation, and Admin controls on the actual KESPA machine. A subsequent routing-policy correction separated technical-learning requests from coding requests while preserving local-first execution.",
+      "path": "technical-notes/KESPA-NOTE-006",
       "tags": [
         "model-routing",
         "telemetry",
@@ -686,13 +686,13 @@
       ]
     },
     {
-      "id": "FORGE-NOTE-007",
+      "id": "KESPA-NOTE-007",
       "type": "technical_note",
       "title": "Evidence-Bound Candidate Generation and Provider Rate-Limit Resilience",
       "date": "2026-09-02",
       "status": "published",
-      "summary": "FORGE's clean pilot generator bound model output to frozen evidence, atomic claim-to-source mappings, retrieval-focused text, contamination guards, and deferred trust. Subsequent provider-pacing changes added rate-header-aware throttling, Retry-After handling, token accounting, and a regression fix for an 8,041-token estimate against an 8,000-TPM limit.",
-      "path": "technical-notes/FORGE-NOTE-007",
+      "summary": "KESPA's clean pilot generator bound model output to frozen evidence, atomic claim-to-source mappings, retrieval-focused text, contamination guards, and deferred trust. Subsequent provider-pacing changes added rate-header-aware throttling, Retry-After handling, token accounting, and a regression fix for an 8,041-token estimate against an 8,000-TPM limit.",
+      "path": "technical-notes/KESPA-NOTE-007",
       "tags": [
         "knowledge-factory",
         "evidence-bound-generation",
@@ -729,13 +729,13 @@
       ]
     },
     {
-      "id": "FORGE-NOTE-008",
+      "id": "KESPA-NOTE-008",
       "type": "technical_note",
       "title": "Chroma Corpus Compatibility and Retrieval Equivalence",
       "date": "2026-09-04",
       "status": "verified",
-      "summary": "FORGE validated that the isolated 423-claim clean corpus could be reproduced in a Brain-compatible Chroma layout without changing IDs, documents, metadata, or observed retrieval ordering. All 423 records matched structurally, 32/32 top-1/top-10 retrieval checks matched, and only float-scale embedding round-trip differences were observed.",
-      "path": "technical-notes/FORGE-NOTE-008",
+      "summary": "KESPA validated that the isolated 423-claim clean corpus could be reproduced in a Brain-compatible Chroma layout without changing IDs, documents, metadata, or observed retrieval ordering. All 423 records matched structurally, 32/32 top-1/top-10 retrieval checks matched, and only float-scale embedding round-trip differences were observed.",
+      "path": "technical-notes/KESPA-NOTE-008",
       "tags": [
         "chroma",
         "retrieval",
@@ -772,13 +772,13 @@
       ]
     },
     {
-      "id": "FORGE-NOTE-009",
+      "id": "KESPA-NOTE-009",
       "type": "technical_note",
       "title": "Frozen Evidence Identity: Canonical URL Plus SHA-256",
       "date": "2026-09-04",
       "status": "published",
-      "summary": "FORGE corrected its scale claim/evidence verifier so frozen evidence is identified by canonical URL plus SHA-256 rather than URL alone. The change addressed 17 authoritative URLs that legitimately mapped to multiple frozen excerpts, 16 of which were referenced by generated candidates, while preserving strict contamination controls.",
-      "path": "technical-notes/FORGE-NOTE-009",
+      "summary": "KESPA corrected its scale claim/evidence verifier so frozen evidence is identified by canonical URL plus SHA-256 rather than URL alone. The change addressed 17 authoritative URLs that legitimately mapped to multiple frozen excerpts, 16 of which were referenced by generated candidates, while preserving strict contamination controls.",
+      "path": "technical-notes/KESPA-NOTE-009",
       "tags": [
         "evidence-verification",
         "provenance",
@@ -815,13 +815,13 @@
       ]
     },
     {
-      "id": "FORGE-NOTE-010",
+      "id": "KESPA-NOTE-010",
       "type": "technical_note",
       "title": "Autonomous Natural Research Gap Lifecycle",
       "date": "2026-09-15",
       "status": "verified",
-      "summary": "FORGE operationalized a natural knowledge-gap research path that detects low-confidence public-knowledge gaps during normal use, queues isolated research jobs, gathers multi-source evidence, verifies claims, imports approved releases, promotes trusted knowledge, indexes it locally, and records provenance through NexLedger without modifying the legacy/manual lifecycle.",
-      "path": "technical-notes/FORGE-NOTE-010",
+      "summary": "KESPA operationalized a natural knowledge-gap research path that detects low-confidence public-knowledge gaps during normal use, queues isolated research jobs, gathers multi-source evidence, verifies claims, imports approved releases, promotes trusted knowledge, indexes it locally, and records provenance through NexLedger without modifying the legacy/manual lifecycle.",
+      "path": "technical-notes/KESPA-NOTE-010",
       "tags": [
         "autonomous-research",
         "knowledge-gap",
@@ -858,13 +858,13 @@
       ]
     },
     {
-      "id": "FORGE-NOTE-011",
+      "id": "KESPA-NOTE-011",
       "type": "technical_note",
       "title": "Automated Research Evidence Capture and NexLedger Attestation",
       "date": "2026-09-14",
       "status": "verified",
-      "summary": "FORGE operationalized an hourly cross-host evidence pipeline that reads closed telemetry from the RTX 3070 Brain machine, aggregates it on the research/home server, submits safe MET evidence through a signed intake, records the event in MySQL, and lets the generic worker attest it to NexLedger. The same automation watches future completed benchmark runs for BM evidence.",
-      "path": "technical-notes/FORGE-NOTE-011",
+      "summary": "KESPA operationalized an hourly cross-host evidence pipeline that reads closed telemetry from the RTX 3070 Brain machine, aggregates it on the research/home server, submits safe MET evidence through a signed intake, records the event in MySQL, and lets the generic worker attest it to NexLedger. The same automation watches future completed benchmark runs for BM evidence.",
+      "path": "technical-notes/KESPA-NOTE-011",
       "tags": [
         "telemetry",
         "evidence-automation",
@@ -901,13 +901,13 @@
       ]
     },
     {
-      "id": "FORGE-NOTE-012",
+      "id": "KESPA-NOTE-012",
       "type": "technical_note",
       "title": "Trusted Research Release Promotion Pipeline",
       "date": "2026-09-14",
       "status": "verified",
-      "summary": "FORGE validated a research-release path that turns audited evidence and verified claims into a gated trusted-knowledge release, imports it as a research candidate, promotes it to trusted knowledge, indexes it for live Brain retrieval, and records the result through NexLedger. A systemd release completed the full path without modifying the existing NexLedger worker.",
-      "path": "technical-notes/FORGE-NOTE-012",
+      "summary": "KESPA validated a research-release path that turns audited evidence and verified claims into a gated trusted-knowledge release, imports it as a research candidate, promotes it to trusted knowledge, indexes it for live Brain retrieval, and records the result through NexLedger. A systemd release completed the full path without modifying the existing NexLedger worker.",
+      "path": "technical-notes/KESPA-NOTE-012",
       "tags": [
         "research-release",
         "trusted-knowledge",
@@ -944,13 +944,13 @@
       ]
     },
     {
-      "id": "FORGE-NOTE-013",
+      "id": "KESPA-NOTE-013",
       "type": "technical_note",
       "title": "Frozen Benchmark Construction and Evaluation Leakage Prevention",
       "date": "2026-09-04",
       "status": "verified",
-      "summary": "FORGE built a 66-question benchmark from the 423-claim verified corpus, separating 12 calibration questions from 54 locked evaluation questions. Evaluation hashes were frozen before retrieval-policy tuning, and calibration tooling verified the locked evaluation hash without parsing its contents.",
-      "path": "technical-notes/FORGE-NOTE-013",
+      "summary": "KESPA built a 66-question benchmark from the 423-claim verified corpus, separating 12 calibration questions from 54 locked evaluation questions. Evaluation hashes were frozen before retrieval-policy tuning, and calibration tooling verified the locked evaluation hash without parsing its contents.",
+      "path": "technical-notes/KESPA-NOTE-013",
       "tags": [
         "benchmark-design",
         "evaluation-freeze",
@@ -987,13 +987,13 @@
       ]
     },
     {
-      "id": "FORGE-NOTE-014",
+      "id": "KESPA-NOTE-014",
       "type": "technical_note",
       "title": "Blinded Quality Judging and Offline Gold-Metadata Repair",
       "date": "2026-09-04",
       "status": "verified",
-      "summary": "FORGE preserved a completed 162-row A/B/C benchmark after discovering that all raw rows had empty gold_claim_ids. The evaluator repaired gold associations offline from locked reference_claim_ids without modifying raw results, verified frozen corpus/evaluation hashes, and used blinded one-answer judge inputs containing no arm labels, runtime metrics, or system identity.",
-      "path": "technical-notes/FORGE-NOTE-014",
+      "summary": "KESPA preserved a completed 162-row A/B/C benchmark after discovering that all raw rows had empty gold_claim_ids. The evaluator repaired gold associations offline from locked reference_claim_ids without modifying raw results, verified frozen corpus/evaluation hashes, and used blinded one-answer judge inputs containing no arm labels, runtime metrics, or system identity.",
+      "path": "technical-notes/KESPA-NOTE-014",
       "tags": [
         "benchmark-integrity",
         "blinded-judging",
@@ -1030,13 +1030,13 @@
       ]
     },
     {
-      "id": "FORGE-NOTE-015",
+      "id": "KESPA-NOTE-015",
       "type": "technical_note",
       "title": "Trusted Knowledge Indexing Boundary and Private-Data Exclusion",
       "date": "2026-09-14",
       "status": "verified",
-      "summary": "FORGE introduced an authenticated trusted-knowledge indexing path that allows promoted public knowledge to enter the live Chroma retrieval index while blocking internal/private plaintext indexing. MySQL trusted_knowledge remains authoritative and Chroma remains a rebuildable search index; the first promoted trusted record was confirmed live, increasing the clean production index from 423 to 424 cards.",
-      "path": "technical-notes/FORGE-NOTE-015",
+      "summary": "KESPA introduced an authenticated trusted-knowledge indexing path that allows promoted public knowledge to enter the live Chroma retrieval index while blocking internal/private plaintext indexing. MySQL trusted_knowledge remains authoritative and Chroma remains a rebuildable search index; the first promoted trusted record was confirmed live, increasing the clean production index from 423 to 424 cards.",
+      "path": "technical-notes/KESPA-NOTE-015",
       "tags": [
         "trusted-knowledge",
         "indexing",
@@ -1073,13 +1073,13 @@
       ]
     },
     {
-      "id": "FORGE-NOTE-016",
+      "id": "KESPA-NOTE-016",
       "type": "technical_note",
       "title": "Telemetry-Backed User Profiles, Community Scoring, and Privacy Controls",
       "date": "2026-09-15",
       "status": "verified",
-      "summary": "FORGE added complete authenticated profiles, historical usage analytics, milestones, a 182-day activity history, community leaderboards, FORGE Score v2, and opt-in public profiles using existing persisted telemetry rather than a second analytics pipeline. The design keeps prompts, answers, private memories, request diagnostics, and user/community statistics out of NexLedger.",
-      "path": "technical-notes/FORGE-NOTE-016",
+      "summary": "KESPA added complete authenticated profiles, historical usage analytics, milestones, a 182-day activity history, community leaderboards, KESPA Score v2, and opt-in public profiles using existing persisted telemetry rather than a second analytics pipeline. The design keeps prompts, answers, private memories, request diagnostics, and user/community statistics out of NexLedger.",
+      "path": "technical-notes/KESPA-NOTE-016",
       "tags": [
         "telemetry",
         "user-profiles",
@@ -1116,13 +1116,13 @@
       ]
     },
     {
-      "id": "FORGE-NOTE-017",
+      "id": "KESPA-NOTE-017",
       "type": "technical_note",
       "title": "Signed Cross-Host Research Queue and Durable Handoff Architecture",
       "date": "2026-09-15",
       "status": "verified",
-      "summary": "FORGE split autonomous research across the application server and home research server using pull-based HTTPS, HMAC SHA-256 request authentication, nonce replay protection, durable filesystem queues, signed release handoff, and resumable delivery state. The design keeps the home server off the public inbound path while allowing queued research and completed releases to survive process restarts and host reboots.",
-      "path": "technical-notes/FORGE-NOTE-017",
+      "summary": "KESPA split autonomous research across the application server and home research server using pull-based HTTPS, HMAC SHA-256 request authentication, nonce replay protection, durable filesystem queues, signed release handoff, and resumable delivery state. The design keeps the home server off the public inbound path while allowing queued research and completed releases to survive process restarts and host reboots.",
+      "path": "technical-notes/KESPA-NOTE-017",
       "tags": [
         "distributed-systems",
         "research-queue",
@@ -1159,13 +1159,13 @@
       ]
     },
     {
-      "id": "FORGE-NOTE-018",
+      "id": "KESPA-NOTE-018",
       "type": "technical_note",
       "title": "Fail-Closed Web Discovery and Evidence Qualification Pipeline",
       "date": "2026-09-15",
       "status": "verified",
-      "summary": "FORGE's autonomous research worker separates discovery from evidence, directly fetches candidate sources, rejects unsafe/off-topic/blocked material, requires independent organizations, and refuses high-stakes/private/volatile topics from durable autonomous learning. The validated Cuckoo-filter run accepted three independent sources while rejecting multiple unsuitable candidates and completed with four verified claims.",
-      "path": "technical-notes/FORGE-NOTE-018",
+      "summary": "KESPA's autonomous research worker separates discovery from evidence, directly fetches candidate sources, rejects unsafe/off-topic/blocked material, requires independent organizations, and refuses high-stakes/private/volatile topics from durable autonomous learning. The validated Cuckoo-filter run accepted three independent sources while rejecting multiple unsuitable candidates and completed with four verified claims.",
+      "path": "technical-notes/KESPA-NOTE-018",
       "tags": [
         "web-research",
         "evidence-quality",
@@ -1202,13 +1202,13 @@
       ]
     },
     {
-      "id": "FORGE-NOTE-019",
+      "id": "KESPA-NOTE-019",
       "type": "technical_note",
       "title": "Public Research Archive and Immutable Revision Sync",
       "date": "2026-09-15",
       "status": "verified",
-      "summary": "FORGE established a public research repository and website bridge that publishes experiments, benchmarks, technical notes, datasets, and updates through a manifest-driven archive. The sync path resolves GitHub main to an immutable commit SHA before fetching the manifest and artifacts, eliminating stale branch-CDN reads and ensuring each sync uses one consistent repository revision.",
-      "path": "technical-notes/FORGE-NOTE-019",
+      "summary": "KESPA established a public research repository and website bridge that publishes experiments, benchmarks, technical notes, datasets, and updates through a manifest-driven archive. The sync path resolves GitHub main to an immutable commit SHA before fetching the manifest and artifacts, eliminating stale branch-CDN reads and ensuring each sync uses one consistent repository revision.",
+      "path": "technical-notes/KESPA-NOTE-019",
       "tags": [
         "research-archive",
         "provenance",
@@ -1245,13 +1245,13 @@
       ]
     },
     {
-      "id": "FORGE-BENCH-004",
+      "id": "KESPA-BENCH-004",
       "type": "benchmark",
       "title": "Clean Pilot Retrieval Gate and Contamination-Metric Correction",
       "date": "2026-09-02",
       "status": "published",
       "summary": "A 30-card clean candidate corpus achieved 93.3% exact-card retrieval at rank 1 and 100% expected-topic retrieval at rank 1. The first benchmark run incorrectly treated legitimate cross-topic top-5 retrieval as hard contamination and produced a NO-GO; benchmark v002 separated hard contamination from cross-topic retrieval, after which the recorded public checkpoint reported 0/150 hard synthetic flags and a GO scale gate.",
-      "path": "benchmarks/FORGE-BENCH-004",
+      "path": "benchmarks/KESPA-BENCH-004",
       "tags": [
         "retrieval",
         "clean-pilot",
@@ -1288,13 +1288,13 @@
       ]
     },
     {
-      "id": "FORGE-EXP-007",
+      "id": "KESPA-EXP-007",
       "type": "experiment",
       "title": "Groq Evidence-Bound Generation Canary and Fail-Closed Verification",
       "date": "2026-09-02",
       "status": "verified",
       "summary": "A four-blueprint cross-domain Groq canary generated four evidence-bound knowledge candidates with zero generation failures for $0.003482 in reported provider cost, while assigning no trust and making no Chroma writes. Downstream verification then demonstrated the intended fail-closed boundary: a PostgreSQL candidate passed claim support verification, a calculus candidate failed on a partially supported claim, and a diabetes candidate surfaced a structural missing-claim-number execution failure.",
-      "path": "experiments/FORGE-EXP-007",
+      "path": "experiments/KESPA-EXP-007",
       "tags": [
         "knowledge-factory",
         "groq",
@@ -1332,13 +1332,13 @@
       ]
     },
     {
-      "id": "FORGE-NOTE-020",
+      "id": "KESPA-NOTE-020",
       "type": "technical_note",
       "title": "Always-On Orchestration Overhead in the Locked A/B/C Runtime Run",
       "date": "2026-09-04",
       "status": "verified",
-      "summary": "The locked 54-case A/B/C runtime run showed that the then-current full FORGE orchestration path was materially more expensive than both the raw local model and the verified-retrieval fast path. Arm C averaged 9.066 s and 0.5759 Wh, executed 65 LLM passes, searched RAG on all 54 cases but used it on only 28, invoked planner/reviewer selectively, and avoided inference on zero cases. This runtime profile helped motivate V2 adaptive compute rather than always-on orchestration.",
-      "path": "technical-notes/FORGE-NOTE-020",
+      "summary": "The locked 54-case A/B/C runtime run showed that the then-current full KESPA orchestration path was materially more expensive than both the raw local model and the verified-retrieval fast path. Arm C averaged 9.066 s and 0.5759 Wh, executed 65 LLM passes, searched RAG on all 54 cases but used it on only 28, invoked planner/reviewer selectively, and avoided inference on zero cases. This runtime profile helped motivate V2 adaptive compute rather than always-on orchestration.",
+      "path": "technical-notes/KESPA-NOTE-020",
       "tags": [
         "orchestration",
         "compute-efficiency",
@@ -1375,13 +1375,13 @@
       ]
     },
     {
-      "id": "FORGE-NOTE-021",
+      "id": "KESPA-NOTE-021",
       "type": "technical_note",
       "title": "Public-Only External Intelligence Refinery and Budgeted Cloud Analysis",
       "date": "2026-09-05",
       "status": "verified",
-      "summary": "FORGE introduced an optional external-intelligence refinery that sends only explicitly classified public_external/public_benchmark tasks to Groq, retains all provider output as non-authoritative candidate analysis, enforces daily request/token budgets and rate-limit backoff, and persists queue/results/provenance locally. A desktop validation completed four Groq 120B analyses and exposed the provider's 8K TPM limit; the worker was then made rate-aware. A later Windows-service wrapper was prepared for the always-on home server but had not yet received a user-environment SCM validation at the recorded checkpoint.",
-      "path": "technical-notes/FORGE-NOTE-021",
+      "summary": "KESPA introduced an optional external-intelligence refinery that sends only explicitly classified public_external/public_benchmark tasks to Groq, retains all provider output as non-authoritative candidate analysis, enforces daily request/token budgets and rate-limit backoff, and persists queue/results/provenance locally. A desktop validation completed four Groq 120B analyses and exposed the provider's 8K TPM limit; the worker was then made rate-aware. A later Windows-service wrapper was prepared for the always-on home server but had not yet received a user-environment SCM validation at the recorded checkpoint.",
+      "path": "technical-notes/KESPA-NOTE-021",
       "tags": [
         "external-intelligence",
         "groq",
@@ -1419,13 +1419,13 @@
       ]
     },
     {
-      "id": "FORGE-EXP-008",
+      "id": "KESPA-EXP-008",
       "type": "experiment",
       "title": "Cross-Model Claim Verification and Human-Review Gating Pilot",
       "date": "2026-09-02",
       "status": "verified",
       "summary": "Four recorded pilot verifier runs evaluated 21 candidate-card executions with a different model family from the generator. The verifier produced 19 card passes, one evidence-support failure, and one structural execution failure while rechecking frozen evidence hashes and candidate identity. Seven high-stakes/safety cards still required human review despite model-level support, demonstrating that model agreement did not bypass policy or trust gates.",
-      "path": "experiments/FORGE-EXP-008",
+      "path": "experiments/KESPA-EXP-008",
       "tags": [
         "claim-verification",
         "cross-model",
@@ -1463,13 +1463,13 @@
       ]
     },
     {
-      "id": "FORGE-NOTE-022",
+      "id": "KESPA-NOTE-022",
       "type": "technical_note",
       "title": "Source-Organization Independence and High-Stakes Evidence Policy",
       "date": "2026-09-01",
       "status": "published",
-      "summary": "FORGE hardened its pilot evidence policy by moving independence from hostname counting to source-organization counting, adding explicit source_organization provenance, strengthening high-stakes cross-check requirements, replacing weak/failed seeds with authoritative sources, and preserving evidence-excerpt, hashing, redirect, and SSRF safety rails. Syntax and offline cross-check policy tests passed; no LLM, Chroma, or Brain changes were involved.",
-      "path": "technical-notes/FORGE-NOTE-022",
+      "summary": "KESPA hardened its pilot evidence policy by moving independence from hostname counting to source-organization counting, adding explicit source_organization provenance, strengthening high-stakes cross-check requirements, replacing weak/failed seeds with authoritative sources, and preserving evidence-excerpt, hashing, redirect, and SSRF safety rails. Syntax and offline cross-check policy tests passed; no LLM, Chroma, or Brain changes were involved.",
+      "path": "technical-notes/KESPA-NOTE-022",
       "tags": [
         "evidence-policy",
         "source-independence",
@@ -1506,13 +1506,13 @@
       ]
     },
     {
-      "id": "FORGE-NOTE-023",
+      "id": "KESPA-NOTE-023",
       "type": "technical_note",
       "title": "Deterministic Evidence Acquisition Preflight and Bounded Smoke Harness",
       "date": "2026-09-02",
       "status": "published",
-      "summary": "FORGE converted the validated 3,982-card knowledge blueprint into a 4,807-slot evidence-acquisition workload with explicit primary/supporting/cross-check roles, a conservative 60-family source-policy catalog, an offline evidence-quality auditor, invariant validation, and a deterministic 28-slot/24-topic smoke harness. Local preflight checks passed with zero network/provider calls; the recorded checkpoint explicitly notes that the Windows live smoke had not yet been executed.",
-      "path": "technical-notes/FORGE-NOTE-023",
+      "summary": "KESPA converted the validated 3,982-card knowledge blueprint into a 4,807-slot evidence-acquisition workload with explicit primary/supporting/cross-check roles, a conservative 60-family source-policy catalog, an offline evidence-quality auditor, invariant validation, and a deterministic 28-slot/24-topic smoke harness. Local preflight checks passed with zero network/provider calls; the recorded checkpoint explicitly notes that the Windows live smoke had not yet been executed.",
+      "path": "technical-notes/KESPA-NOTE-023",
       "tags": [
         "evidence-acquisition",
         "deterministic-smoke",
@@ -1549,13 +1549,13 @@
       ]
     },
     {
-      "id": "FORGE-NOTE-024",
+      "id": "KESPA-NOTE-024",
       "type": "technical_note",
       "title": "Trusted Knowledge Freshness and Continuous Reverification Foundation",
       "date": "2026-09-15",
       "status": "published",
-      "summary": "FORGE established the database foundation for freshness-aware Trusted Knowledge and documented a configurable continuous-reverification lifecycle. Freshness state now exists on trusted knowledge, a knowledge_refresh_jobs queue exists, and the existing supersession/versioning path can be reused; policy configuration, scheduling, evidence reacquisition, change detection, stale-on-retrieval behavior, Admin controls, and refresh telemetry remain planned at this checkpoint.",
-      "path": "technical-notes/FORGE-NOTE-024",
+      "summary": "KESPA established the database foundation for freshness-aware Trusted Knowledge and documented a configurable continuous-reverification lifecycle. Freshness state now exists on trusted knowledge, a knowledge_refresh_jobs queue exists, and the existing supersession/versioning path can be reused; policy configuration, scheduling, evidence reacquisition, change detection, stale-on-retrieval behavior, Admin controls, and refresh telemetry remain planned at this checkpoint.",
+      "path": "technical-notes/KESPA-NOTE-024",
       "tags": [
         "trusted-knowledge",
         "freshness",

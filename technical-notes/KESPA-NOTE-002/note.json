@@ -1,0 +1,65 @@
+{
+  "schema": "kespa.public_technical_note.v1",
+  "id": "KESPA-NOTE-002",
+  "title": "Clean Verified Knowledge Production Baseline",
+  "date": "2026-09-13",
+  "status": "verified",
+  "purpose": "Document the production cutover from the archived legacy corpus to the clean verified atomic-claim baseline and the architecture boundary between authoritative knowledge storage and rebuildable retrieval indexing.",
+  "pre_cutover": {
+    "legacy_card_count_approx": 441197,
+    "legacy_role": "retired from live production retrieval and retained as historical/research material",
+    "clean_verified_claims": 423,
+    "chat_memory_records_preserved": 13,
+    "user_memory_records_preserved": 5
+  },
+  "clean_index_build": {
+    "source": "D:\\forge\\verified_corpus\\clean_verified_claim_corpus_v001",
+    "target": "D:\\forge\\chroma_db_clean_v001",
+    "collection": "forge_cards",
+    "indexed_verified_claims": 423,
+    "embedding_model": "all-MiniLM-L6-v2",
+    "distance": "cosine",
+    "expected_claims": 423,
+    "indexed_cards": 423,
+    "build_result": "PASS"
+  },
+  "retrieval_validation": {
+    "status": "PASS",
+    "clean_cards": 423,
+    "known_claim_rank": 1,
+    "top_similarity": 0.8409,
+    "verified_metadata": true,
+    "claim_verdict": "SUPPORTED",
+    "expected_terms": "4/4",
+    "chroma_writes_during_validation": 0
+  },
+  "production_cutover": {
+    "status": "COMPLETE",
+    "live_production_baseline_claims": 423,
+    "legacy_cards_copied_into_new_dataset": 0,
+    "source_code_changed_during_cutover": false
+  },
+  "post_cutover_growth": {
+    "first_promoted_trusted_knowledge_id": 1,
+    "live_count_after_first_promotion": 424,
+    "later_observed_autonomous_growth_sequence": [
+      423,
+      424,
+      425,
+      426
+    ]
+  },
+  "architecture": {
+    "authoritative_store": "MySQL trusted_knowledge",
+    "retrieval_index": "Chroma forge_cards",
+    "index_semantics": "rebuildable search index, not source of truth",
+    "private_plaintext_indexing": "blocked for promoted public knowledge path",
+    "legacy_corpus_status": "archived / research history"
+  },
+  "limitations": [
+    "The single-query retrieval validation is a production smoke test, not a broad retrieval benchmark.",
+    "The post-cutover growth sequence records observed operational milestones and should not be interpreted as a controlled experiment.",
+    "The legacy corpus size is reported from the historical operational record and is approximate in this note.",
+    "This note documents architecture and cutover integrity rather than end-user quality improvement; quality effects are covered by separate benchmark records."
+  ]
+}

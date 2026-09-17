@@ -1,3 +1,3 @@
 # Updates
 
-Dated FORGE research and project-progress updates.
+Dated KESPA research and project-progress updates.

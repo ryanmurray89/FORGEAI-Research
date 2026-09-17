@@ -1,0 +1,73 @@
+{
+  "schema": "kespa.public_update.v1",
+  "id": "KESPA-UPDATE-001",
+  "title": "KESPA V2 Research Program: Verified Intelligence and Adaptive Compute",
+  "date": "2026-09-05",
+  "status": "published",
+  "basis": "Master Plan V2 revision grounded in the completed A/B/C benchmark and the emerging clean-knowledge architecture.",
+  "core_research_thesis": "Can an intelligence-management system improve reliability, efficiency, provenance, and practical usefulness of relatively small/local language models by supplying and maintaining verified intelligence, selectively allocating compute, and preventing untrusted information from silently becoming persistent knowledge?",
+  "design_principles": [
+    "Verified externalized intelligence should be preferred over uncontrolled corpus accumulation.",
+    "Fast trusted retrieval should be the default path when sufficient verified knowledge exists.",
+    "Expensive orchestration should be adaptive rather than always-on.",
+    "Evidence, trusted knowledge, and memory are distinct data classes with different lifecycle rules.",
+    "Continuous knowledge acquisition must preserve provenance and explicit trust transitions.",
+    "Compute, latency, and energy should be evaluated together with answer quality."
+  ],
+  "empirical_basis": {
+    "A_raw_quality": 20.71,
+    "B_verified_retrieval_quality": 54.22,
+    "C_then_current_orchestration_quality": 27.71,
+    "B_latency_seconds": 1.675,
+    "B_gpu_energy_wh": 0.1085,
+    "B_retrieval_hit_at_1": "54/54",
+    "B_gold_recall_percent": 79.17,
+    "B_case_quality_wins": 39
+  },
+  "research_hypotheses": [
+    {
+      "id": "H1",
+      "hypothesis": "Verified externalized knowledge can improve useful small-model output relative to the same local model without retrieval.",
+      "status_on_2026_09_05": "supported by initial A/B/C benchmark; requires replication/generalization"
+    },
+    {
+      "id": "H2",
+      "hypothesis": "Verified retrieval can reduce recurring inference compute for knowledge-rich workloads.",
+      "status_on_2026_09_05": "supported by initial latency/energy comparison; requires broader workload testing"
+    },
+    {
+      "id": "H3",
+      "hypothesis": "Always-on orchestration can destroy the efficiency advantage of clean retrieval when its additional compute does not produce proportional quality gains.",
+      "status_on_2026_09_05": "supported by A/B/C C-arm result; architecture-specific"
+    },
+    {
+      "id": "H4",
+      "hypothesis": "Adaptive inference can preserve quality while selectively allocating additional compute only where necessary.",
+      "status_on_2026_09_05": "planned / not yet validated at V2 revision time"
+    },
+    {
+      "id": "H5",
+      "hypothesis": "Continuous knowledge growth can remain useful only if candidate intelligence is separated from trusted knowledge through evidence, verification, conflict detection, and auditable promotion.",
+      "status_on_2026_09_05": "planned lifecycle hypothesis; later operationalized"
+    },
+    {
+      "id": "H6",
+      "hypothesis": "Knowledge quality and provenance may substitute for some model-scale increases on bounded private/local workloads.",
+      "status_on_2026_09_05": "research hypothesis; not established as a universal result"
+    }
+  ],
+  "program_changes": [
+    "Trust emphasis moved toward ingest/promotion rather than assuming stored content was trustworthy.",
+    "Fast trusted retrieval became the intended default.",
+    "Orchestration became adaptive rather than mandatory.",
+    "Evidence, knowledge, and memory were explicitly separated.",
+    "Daily-use KESPA and continuous knowledge accumulation became immediate objectives.",
+    "The research/funding program became a parallel workstream rather than downstream documentation."
+  ],
+  "limitations": [
+    "The V2 update is a research-program revision, not an experimental result by itself.",
+    "The empirical basis came from one frozen corpus/workload, one local model/hardware configuration, and one judge setup.",
+    "At the time of the revision, adaptive D had not yet been executed and the continuous evidence lifecycle had not yet been operationalized.",
+    "Any future funding application is competitive and not guaranteed."
+  ]
+}

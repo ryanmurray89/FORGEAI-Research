@@ -1,0 +1,42 @@
+{
+  "schema": "kespa.public_provenance.v1",
+  "research_id": "KESPA-EXP-007",
+  "source_basis": [
+    {
+      "artifact": "knowledge_cards_pilot/canary-groq/generation_summary.txt",
+      "role": "generation run metrics and safety state"
+    },
+    {
+      "artifact": "knowledge_cards_pilot/canary-groq/candidate_review.txt",
+      "role": "candidate-only state and four-card review record"
+    },
+    {
+      "artifact": "knowledge_cards_pilot/canary-groq/verification-retry/verification_review.txt",
+      "role": "observed downstream verifier outcomes"
+    }
+  ],
+  "recorded_facts": {
+    "generator_version": "forge-kb-v2-generator-006-groq",
+    "provider": "groq",
+    "model": "openai/gpt-oss-120b",
+    "blueprints_selected": 4,
+    "candidates_generated": 4,
+    "generation_failures": 0,
+    "prompt_tokens_reported": 15445,
+    "completion_tokens_reported": 1942,
+    "reported_cost_usd": 0.003482
+  },
+  "derived_facts": {
+    "total_tokens": {
+      "value": 17387,
+      "derivation": "15445 prompt tokens + 1942 completion tokens"
+    }
+  },
+  "verification_observations": {
+    "postgresql": "VERIFIER_PASS / MODEL_VERIFIER_PASS_PENDING_FINAL_POLICY",
+    "calculus": "VERIFIER_FAIL due to a PARTIALLY_SUPPORTED claim",
+    "diabetes": "verification execution failure: missing_claim_number:7"
+  },
+  "reconstruction_boundary": "No complete final-policy outcome for all four canary candidates was present in the supplied records, so this package intentionally does not claim an aggregate post-verification pass rate.",
+  "publication_boundary": "This public package summarizes measured behavior and metadata. It does not republish raw third-party evidence excerpts, credentials, private configuration, or private implementation code."
+}

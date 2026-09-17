@@ -1,0 +1,140 @@
+{
+  "schema": "kespa.public_experiment.v1",
+  "id": "KESPA-EXP-008",
+  "title": "Cross-Model Claim Verification and Human-Review Gating Pilot",
+  "date": "2026-09-02",
+  "status": "verified",
+  "research_question": "Can KESPA independently verify generated candidate claims against frozen evidence using a different model family while preserving fail-closed behavior and separate human-review requirements for higher-risk material?",
+  "verifier": {
+    "version": "forge-kb-v2-claim-verifier-002-free-tier",
+    "model": "qwen/qwen3.6-27b",
+    "generator_and_verifier_same_model_family": false,
+    "provider_mode": "Groq free-tier quota guard"
+  },
+  "recorded_runs": [
+    {
+      "run": "batch-13a/verification-6b",
+      "candidate_cards": 6,
+      "verifier_pass": 6,
+      "verifier_fail": 0,
+      "execution_failures": 0,
+      "human_review_required": 0,
+      "supported": 40,
+      "partially_supported": 0,
+      "unsupported": 0,
+      "contradicted": 0,
+      "unclear": 0,
+      "prompt_tokens": 21823,
+      "completion_tokens": 7811,
+      "total_tokens": 29634
+    },
+    {
+      "run": "batch-13a/verification-7a",
+      "candidate_cards": 7,
+      "verifier_pass": 6,
+      "verifier_fail": 1,
+      "execution_failures": 0,
+      "human_review_required": 0,
+      "supported": 45,
+      "partially_supported": 1,
+      "unsupported": 1,
+      "contradicted": 0,
+      "unclear": 0,
+      "prompt_tokens": 23725,
+      "completion_tokens": 7037,
+      "total_tokens": 30762
+    },
+    {
+      "run": "batch-13b/verification-highstakes-4",
+      "candidate_cards": 4,
+      "verifier_pass": 4,
+      "verifier_fail": 0,
+      "execution_failures": 0,
+      "human_review_required": 4,
+      "supported": 26,
+      "partially_supported": 0,
+      "unsupported": 0,
+      "contradicted": 0,
+      "unclear": 0,
+      "prompt_tokens": 17341,
+      "completion_tokens": 4260,
+      "total_tokens": 21601
+    },
+    {
+      "run": "batch-13b/verification-safety-4",
+      "candidate_cards": 4,
+      "verifier_pass": 3,
+      "verifier_fail": 0,
+      "execution_failures": 1,
+      "human_review_required": 3,
+      "supported": 19,
+      "partially_supported": 0,
+      "unsupported": 0,
+      "contradicted": 0,
+      "unclear": 0,
+      "prompt_tokens": 19171,
+      "completion_tokens": 4520,
+      "total_tokens": 23691
+    }
+  ],
+  "aggregate_recorded_run_totals": {
+    "candidate_cards": 21,
+    "verifier_pass": 19,
+    "verifier_fail": 1,
+    "execution_failures": 1,
+    "human_review_required": 7,
+    "supported": 130,
+    "partially_supported": 1,
+    "unsupported": 1,
+    "contradicted": 0,
+    "unclear": 0,
+    "prompt_tokens": 82060,
+    "completion_tokens": 23628,
+    "total_tokens": 105688
+  },
+  "aggregate_note": "Totals are sums of four recorded verifier runs and are reported as card-evaluation executions, not asserted as a deduplicated unique-card corpus.",
+  "safety_invariants": {
+    "frozen_evidence_hashes_rechecked": true,
+    "candidate_content_claim_identity_checked": true,
+    "trust_assigned": false,
+    "candidate_files_mutated": false,
+    "cards_marked_verified_by_model_stage": false,
+    "production_ready_cards": 0,
+    "chroma_writes": 0
+  },
+  "observed_fail_closed_cases": [
+    {
+      "case": "batch-13a/verification-7a",
+      "result": "VERIFIER_FAIL",
+      "evidence": "One candidate contained one PARTIALLY_SUPPORTED and one UNSUPPORTED claim; the card failed rather than being promoted."
+    },
+    {
+      "case": "batch-13b/verification-safety-4",
+      "result": "EXECUTION_FAILURE",
+      "evidence": "A missing claim number was surfaced as missing_claim_number:7 and the run required resolution before proceeding."
+    }
+  ],
+  "high_stakes_behavior": {
+    "recorded_high_stakes_batch_cards": 4,
+    "model_passes": 4,
+    "human_review_required": 4,
+    "trust_assigned": false,
+    "production_ready": false,
+    "example_topics": [
+      "Cognitive Behavioral Therapy CBT",
+      "Investing"
+    ]
+  },
+  "interpretation": [
+    "Using a different model family for verification reduced direct generator/verifier self-agreement risk.",
+    "Model-level support was not sufficient to assign trust or mark a card production-ready.",
+    "Higher-risk content retained a separate human-review gate even when every tested claim was model-supported.",
+    "Partial support, unsupported claims, and structural verification errors were surfaced as blocking outcomes instead of being coerced into a pass."
+  ],
+  "limitations": [
+    "These are four recorded pilot runs, not a statistically representative estimate of verifier accuracy.",
+    "The aggregate card count is a sum of recorded evaluation executions and is not presented as a deduplicated corpus cardinality.",
+    "Model verdicts measure agreement with supplied frozen evidence; they do not independently establish objective truth.",
+    "Human-review-required means the model stage passed but policy still required a person before trust/promotion."
+  ]
+}

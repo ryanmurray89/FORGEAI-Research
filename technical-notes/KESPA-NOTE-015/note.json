@@ -1,0 +1,48 @@
+{
+  "schema": "kespa.public_technical_note.v1",
+  "id": "KESPA-NOTE-015",
+  "title": "Trusted Knowledge Indexing Boundary and Private-Data Exclusion",
+  "date": "2026-09-14",
+  "status": "verified",
+  "purpose": "Document the production boundary that separates authoritative trusted knowledge from the semantic retrieval index and prevents internal/private plaintext from entering the public promoted-knowledge indexing path.",
+  "indexing_contract": {
+    "endpoint_role": "authenticated trusted-knowledge indexing",
+    "promoted_public_knowledge_indexable": true,
+    "internal_private_plaintext_indexing_blocked": true,
+    "authoritative_store": "MySQL trusted_knowledge",
+    "semantic_index": "Chroma forge_cards",
+    "semantic_index_rebuildable": true
+  },
+  "runtime_change": {
+    "brain_api_version": "v1.1.1-dev",
+    "knowledge_index_endpoint": "POST /knowledge/index",
+    "authentication_required": true
+  },
+  "first_live_validation": {
+    "clean_index_before": 423,
+    "trusted_knowledge_id": 1,
+    "clean_index_after": 424,
+    "index_status": "indexed",
+    "indexed_card_id": "trusted-knowledge-b645128e-7020-4639-9e3e-7a21aaf36fc8",
+    "production_index_version": "dev-013-trusted-knowledge-index",
+    "intended_query_rank": 1,
+    "website_counter_reflected_live_index": true,
+    "result": "PASS"
+  },
+  "privacy_boundary": {
+    "public_promoted_knowledge": "eligible for semantic indexing",
+    "internal_private_training": "outside public external-evidence/index path",
+    "private_plaintext_to_public_chroma": false
+  },
+  "interpretation": [
+    "Trusted knowledge remains authoritative outside the vector database.",
+    "Chroma can be rebuilt from canonical trusted records rather than serving as the sole source of truth.",
+    "The indexing endpoint creates an explicit promotion boundary instead of allowing arbitrary candidate text to enter retrieval.",
+    "Blocking internal/private plaintext indexing prevents the public promoted-knowledge path from collapsing privacy scope into retrieval scope."
+  ],
+  "limitations": [
+    "The first live validation proves the indexing path and privacy boundary, not broad retrieval quality; retrieval quality is measured separately.",
+    "An authenticated indexing endpoint still depends on correct upstream authorization and promotion logic.",
+    "The public note documents the architecture and live result but does not disclose credentials, request signatures, or private payloads."
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": "kespa.public_technical_note.v1",
+  "id": "KESPA-NOTE-004",
+  "title": "Evidence-Bound Knowledge Factory Pilot Design",
+  "date": "2026-09-02",
+  "status": "published",
+  "purpose": "Document the methodology and safety contract used to construct KESPA's first evidence-bound clean knowledge-generation pilot before later scale experiments.",
+  "pilot_scope": {
+    "topics": 15,
+    "planned_cards": 30,
+    "cards_per_topic": 2,
+    "coverage": "cross-domain technical, general, and high-stakes subjects"
+  },
+  "evidence_policy": {
+    "authoritative_source_seeds": true,
+    "evidence_excerpt_only_collection": true,
+    "evidence_hashing": true,
+    "source_organization_provenance": true,
+    "unknown_sources_implicitly_trusted": false,
+    "optional_general_search_fallback": true,
+    "ssrf_safe_url_validation": true,
+    "redirect_validation": true,
+    "high_stakes_independent_organization_checks": true
+  },
+  "quality_gate": {
+    "duplicate_evidence_detection": true,
+    "duplicate_url_detection": true,
+    "antibot_error_page_detection": true,
+    "prompt_injection_text_detection": true,
+    "deterministic_topic_relevance_checks": true,
+    "navigation_html_artifact_warnings": true,
+    "high_stakes_usable_source_organization_gate": true
+  },
+  "card_contract": {
+    "exact_two_card_contract_per_topic": true,
+    "allowed_claim_scopes": true,
+    "topic_specific_exclusions": true,
+    "global_synthetic_contamination_exclusions": true,
+    "high_stakes_source_relevance_gate": true,
+    "food_safety_card_level_review_requirements": true,
+    "evidence_hash_provenance_binding": true,
+    "focused_retrieval_text_seed": true,
+    "production_ready_default": false
+  },
+  "generation_contract": {
+    "evidence_only_system_prompt": true,
+    "atomic_claim_to_source_mapping": true,
+    "focused_retrieval_text_generation": true,
+    "candidate_schema_validation": true,
+    "candidate_length_validation": true,
+    "long_verbatim_copy_detection": true,
+    "synthetic_contamination_regression_guards": true,
+    "high_stakes_personalized_advice_guard": true,
+    "trust_assignment_deferred": true,
+    "generated_candidate_verified_default": false,
+    "generated_candidate_production_ready_default": false
+  },
+  "source_policy_refinements": [
+    "CBT was promoted to high-stakes verification policy.",
+    "High-stakes independence moved from hostname count to source-organization count.",
+    "Weak unrelated secondary sources were prevented from satisfying independent verification.",
+    "Blocked or weak pilot sources were replaced with stronger authoritative alternatives.",
+    "Known source-organization aliases were prevented from falsely counting as independent organizations."
+  ],
+  "limitations": [
+    "This note documents the pilot design and safeguards; it is not itself a measured quality benchmark.",
+    "The historical change records supplied here do not include a complete final per-card outcome table for all 30 pilot cards.",
+    "Source-policy choices reflect the pilot's 2026-09 design and should not be interpreted as permanent universal source rankings.",
+    "Generated candidates remained untrusted until later factual verification."
+  ]
+}

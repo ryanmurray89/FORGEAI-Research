@@ -1,0 +1,12 @@
+{
+  "schema": "kespa.public_provenance.v1",
+  "research_id": "KESPA-NOTE-007",
+  "source_basis": "Historical KESPA changelog/Jira export supplied for public research reconstruction.",
+  "source_observations": [
+    "The evidence-bound pilot generator supported DeepInfra and local Ollama, verified frozen evidence hashes, used atomic claim-to-source mappings, and deferred all trust assignment.",
+    "Groq generation was later made rate-header-aware with rolling TPM pacing, reset parsing, serialization, Retry-After fallback, and improved token/cost accounting.",
+    "A pacing deadlock was fixed for the specific 8,041-token estimate versus 8,000-TPM condition.",
+    "No Chroma changes and no brain_api.py changes were recorded for these revisions."
+  ],
+  "publication_note": "This public note publishes generator/pacing methodology and aggregate configuration values only. Credentials, raw prompts/model outputs, private implementation code, and provider secrets are intentionally omitted."
+}

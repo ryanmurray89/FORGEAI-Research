@@ -1,0 +1,38 @@
+{
+  "schema": "kespa.public_provenance.v1",
+  "experiment_id": "KESPA-EXP-003",
+  "source_archive": "legacy internal KESPA research repository supplied for public-history reconstruction",
+  "source_artifacts": [
+    {
+      "label": "baseline_quality_summary",
+      "legacy_path": "FORGE_seeded_evidence_scale_v001_1_windows_candidate/scale_batch_001_run/quality_audit/evidence_quality_summary.txt",
+      "sha256": "2a9d6818ef64c7c053e64323459f812959be5599d88cf7000195d807ed5b56b1"
+    },
+    {
+      "label": "scope_seed_correction_report",
+      "legacy_path": "FORGE_seeded_evidence_scale_v001_2_windows_candidate/SCOPE_SEED_CORRECTION_REPORT_v001_2.txt",
+      "sha256": "7811f22dd252c4c464e9775fc06d568a3fd765237a7ab34c00c7e33df767a75f"
+    },
+    {
+      "label": "corrected_quality_summary",
+      "legacy_path": "FORGE_seeded_evidence_scale_v001_2_windows_candidate/scale_batch_001_run/quality_audit/evidence_quality_summary.txt",
+      "sha256": "fe14b421018688306046e2cff62a6ba6d2b137b8ba39a3ab708f474a8bb2ce21"
+    },
+    {
+      "label": "fixed_batch_summary",
+      "legacy_path": "FORGE_seeded_evidence_scale_v001_2_windows_candidate/generated/scale_batch_001_summary_v001.txt",
+      "sha256": "82e26d28cf5d8097b7bb52ff0720b3a5d7f89fd2655113d7c2c943b18a58b27d"
+    },
+    {
+      "label": "v001_2_audit_changelog",
+      "legacy_path": "FORGE_seeded_evidence_scale_v001_2_windows_candidate/AUDIT_CHANGELOG.txt",
+      "sha256": "4931d31114892c6926590d028c2073992c986992592ea263b2741f62f460e5cf"
+    }
+  ],
+  "publication_policy": {
+    "raw_third_party_evidence_republished": false,
+    "implementation_scripts_republished": false,
+    "private_configuration_republished": false,
+    "aggregate_results_and_source_artifact_hashes_only": true
+  }
+}

@@ -1,3 +1,3 @@
 # Benchmarks
 
-Published FORGE benchmark results and reproducibility material.
+Published KESPA benchmark results and reproducibility material.

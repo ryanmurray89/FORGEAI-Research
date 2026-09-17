@@ -1,0 +1,13 @@
+{
+  "schema": "kespa.public_provenance.v1",
+  "research_id": "KESPA-NOTE-006",
+  "source_basis": "Historical KESPA changelog/Jira export supplied for public research reconstruction.",
+  "source_observations": [
+    "Brain model registry, routing infrastructure, telemetry, and Admin validation passed on the actual KESPA machine.",
+    "Persistent telemetry, metrics endpoint, and RTX 3070 telemetry were recorded as PASS.",
+    "A routing-policy correction narrowed coding keywords so Docker explanation requests routed as learn/instant while Python implementation requests routed as build/coding.",
+    "Three of three telemetry requests succeeded after the routing change.",
+    "Production Chroma remained unchanged and no new request-time external-provider dependency was added."
+  ],
+  "publication_note": "This public note contains aggregate validation and architecture information. Private configuration values, telemetry payloads, credentials, internal source code, and Admin implementation details are not republished."
+}

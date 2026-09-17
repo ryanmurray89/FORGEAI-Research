@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://forge.nexlabs.studio/schemas/public-research-index-v1.json",
-  "title": "FORGE Public Research Index",
+  "$id": "https://kespa.nexlabs.studio/schemas/public-research-index-v1.json",
+  "title": "KESPA Public Research Index",
   "type": "object",
   "required": [
     "schema",
@@ -11,7 +11,7 @@
   ],
   "properties": {
     "schema": {
-      "const": "forge.public_research_index.v1"
+      "const": "kespa.public_research_index.v1"
     },
     "project": {
       "type": "string"

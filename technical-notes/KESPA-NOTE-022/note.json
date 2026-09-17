@@ -1,0 +1,73 @@
+{
+  "schema": "kespa.public_technical_note.v1",
+  "id": "KESPA-NOTE-022",
+  "title": "Source-Organization Independence and High-Stakes Evidence Policy",
+  "date": "2026-09-01",
+  "status": "published",
+  "purpose": "Document the evidence-policy hardening that changed KESPA's definition of independent corroboration from hostname diversity to source-organization diversity and strengthened source handling for high-stakes pilot topics.",
+  "policy_changes": {
+    "independence_unit_before": "hostname/domain count",
+    "independence_unit_after": "source organization",
+    "source_organization_provenance_added": true,
+    "organization_counts_added_to_evidence_reports": true,
+    "same_organization_multi_domain_false_independence_blocked": true,
+    "high_stakes_cross_checking_strengthened": true,
+    "evidence_excerpt_only_collection": true,
+    "explicit_source_usage_review_required": true,
+    "evidence_hashing_and_provenance": true,
+    "ssrf_safe_public_url_validation": true,
+    "redirect_validation": true
+  },
+  "pilot_source_hardening": [
+    {
+      "topic": "Cognitive Behavioral Therapy (CBT)",
+      "changes": [
+        "promoted to high-stakes verification policy",
+        "added independent cross-checking",
+        "replaced failed seeds with NIMH, APA, and VA sources"
+      ]
+    },
+    {
+      "topic": "Cooking / food safety",
+      "changes": [
+        "replaced failed source URLs with FoodSafety.gov and current USDA FSIS sources"
+      ]
+    },
+    {
+      "topic": "Investing",
+      "changes": [
+        "added U.S. Department of Labor as an independent evidence source"
+      ]
+    },
+    {
+      "topic": "Copyright",
+      "changes": [
+        "added official U.S. Code Title 17 as independent evidence"
+      ]
+    }
+  ],
+  "source_policy_correction": {
+    "openstax_removed_from_automated_ai_ingestion_source_policy": true,
+    "sec_domains_prevented_from_false_independence": true,
+    "unknown_source_default": "REVIEW_REQUIRED"
+  },
+  "validation": {
+    "syntax_validation": "PASS",
+    "offline_cross_check_policy_tests": "PASS",
+    "llm_calls": 0,
+    "chroma_changes": 0,
+    "brain_api_changes": 0
+  },
+  "interpretation": [
+    "Two hostnames are not independent evidence if they belong to the same underlying organization.",
+    "Source-organization provenance makes corroboration auditable and reduces false confidence from domain-count inflation.",
+    "Higher-risk domains require stricter source diversity and human/policy review rather than weaker evidence thresholds.",
+    "Evidence collection is intentionally separated from model generation so source qualification can be audited independently."
+  ],
+  "limitations": [
+    "The September 1 record validates policy mechanics and offline cross-check behavior, not a broad empirical accuracy rate for high-stakes knowledge.",
+    "Source-organization identity still depends on correct source cataloging and provenance metadata.",
+    "The policy was designed for the pilot and can require later source-family maintenance as authoritative sites change.",
+    "This note does not claim that institutional authority alone proves factual correctness."
+  ]
+}

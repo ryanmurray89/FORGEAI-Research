@@ -1,0 +1,80 @@
+{
+  "schema": "kespa.public_technical_note.v1",
+  "id": "KESPA-NOTE-010",
+  "title": "Autonomous Natural Research Gap Lifecycle",
+  "date": "2026-09-15",
+  "status": "verified",
+  "purpose": "Document the isolated natural-research lifecycle that converts low-confidence public-knowledge gaps observed during normal KESPA use into evidence-backed trusted knowledge without modifying the existing manual-learning lifecycle.",
+  "trigger_policy": {
+    "response_source": "brain",
+    "cache_required": false,
+    "rag_searched": true,
+    "allowed_goal": "learn",
+    "trust_after_max": 0.72,
+    "best_rag_score_max": 0.45,
+    "excludes": [
+      "private",
+      "strict_internal",
+      "memory",
+      "high_stakes",
+      "ordinary routing-only gaps"
+    ],
+    "classification": "public_general_knowledge"
+  },
+  "isolated_flow": [
+    "normal user question",
+    "gap detector",
+    "signed research request queue",
+    "home research poller",
+    "isolated natural research worker",
+    "multi-source evidence collection",
+    "claim verification",
+    "research release package",
+    "signed app handoff",
+    "isolated import",
+    "local verification",
+    "system-policy approval",
+    "trusted-knowledge promotion",
+    "local semantic indexing",
+    "NexLedger attestation"
+  ],
+  "research_worker_policy": {
+    "shared_legacy_lifecycle_scripts_modified": false,
+    "shared_legacy_lifecycle_scripts_invoked": false,
+    "search_snippets_used_as_evidence": false,
+    "minimum_independent_source_organizations_per_claim": 2,
+    "high_stakes_requests_refused": true,
+    "time_sensitive_requests_refused": true,
+    "sensitive_requests_refused": true,
+    "model": "openai/gpt-oss-120b via Groq"
+  },
+  "validated_end_to_end_example": {
+    "question": "What is a Cuckoo filter?",
+    "request_id": "research-gap-20a905c55f6ad819c57f6920",
+    "release_id": "forge-release-07990ffc7fc9d09f9be2dd3b",
+    "release_sha256": "07990ffc7fc9d09f9be2dd3b5594285e5ee0789f7430e24fb1a812cbbf996ed3",
+    "evidence_sources": 3,
+    "independent_source_organizations": 3,
+    "candidate_claims": 4,
+    "verified_claims": 4,
+    "groq_requests": 2,
+    "groq_tokens_total": 11034,
+    "candidate_id": 82,
+    "trusted_knowledge_id": 74,
+    "nexledger_asset": "FORGEAI#TK123V1",
+    "lifecycle_result": "PASS"
+  },
+  "architecture_boundaries": {
+    "manual_learning_lifecycle_modified": false,
+    "legacy_shared_scripts_reused": false,
+    "search_snippets_as_evidence": false,
+    "trusted_knowledge_authoritative": true,
+    "retrieval_index_rebuildable": true
+  },
+  "limitations": [
+    "The Cuckoo-filter run proves one full end-to-end path; it is not a statistical estimate of autonomous research accuracy.",
+    "The current worker deliberately refuses high-stakes, sensitive, and time-sensitive research requests.",
+    "Multi-source agreement does not itself prove correctness; claims still require source/evidence verification.",
+    "The system's long-term false-acceptance, false-rejection, and research-yield rates require continued measurement."
+  ]
+}

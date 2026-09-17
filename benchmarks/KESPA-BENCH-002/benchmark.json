@@ -1,0 +1,114 @@
+{
+  "schema": "kespa.public_benchmark.v1",
+  "id": "KESPA-BENCH-002",
+  "title": "Adaptive Inference D v001: Preregistered Efficiency Benchmark",
+  "date": "2026-09-05",
+  "status": "verified",
+  "run_id": "d_v001_20260905T225726Z",
+  "research_question": "Can KESPA's adaptive inference path retain near-best observed answer quality while reducing latency, energy, and model-call cost under a preregistered set of retrieval, efficiency, and escalation constraints?",
+  "workload": {
+    "cases": 54,
+    "scoring_policy": "Frozen A + frozen B + C-envelope with D answer; C slot = D",
+    "blinded_judgments": 162,
+    "judge_model": "Qwen/Qwen3.6-35B-A3B"
+  },
+  "adaptive_D": {
+    "quality_score": 55.2586,
+    "latency_ms": 2443.03,
+    "energy_wh": 0.153616,
+    "hit_at_1": "42/54",
+    "gold_micro_recall_percent": 59.5238,
+    "mean_llm_calls": 1.0185185185185186,
+    "escalation_rate_percent": 62.963,
+    "quality_per_second": 22.618858,
+    "quality_per_wh": 359.71812
+  },
+  "same_batch_comparison": {
+    "A_quality": 23.26,
+    "B_quality": 56.2379
+  },
+  "historical_frozen_comparison": {
+    "A_quality": 20.71,
+    "B_quality": 54.22
+  },
+  "preregistered_checks": [
+    {
+      "metric": "quality",
+      "threshold": ">= 51.50",
+      "observed": 55.2586,
+      "result": "PASS"
+    },
+    {
+      "metric": "retrieval_hit_at_1",
+      "threshold": ">= 50/54",
+      "observed": "42/54",
+      "result": "FAIL"
+    },
+    {
+      "metric": "gold_micro_recall",
+      "threshold": ">= 75%",
+      "observed": "59.5238%",
+      "result": "FAIL"
+    },
+    {
+      "metric": "mean_latency",
+      "threshold": "<= 2500 ms",
+      "observed": "2443.03 ms",
+      "result": "PASS"
+    },
+    {
+      "metric": "mean_energy",
+      "threshold": "<= 0.1600 Wh",
+      "observed": "0.153616 Wh",
+      "result": "PASS"
+    },
+    {
+      "metric": "mean_inference_calls",
+      "threshold": "<= 1.30",
+      "observed": 1.0185185185185186,
+      "result": "PASS"
+    },
+    {
+      "metric": "escalation_rate",
+      "threshold": "<= 25%",
+      "observed": "62.9630%",
+      "result": "FAIL"
+    },
+    {
+      "metric": "quality_per_second",
+      "threshold": "> C",
+      "observed": 22.618858,
+      "result": "PASS"
+    },
+    {
+      "metric": "quality_per_wh",
+      "threshold": "> C",
+      "observed": 359.71812,
+      "result": "PASS"
+    }
+  ],
+  "primary_success": "FAIL",
+  "judge_run": {
+    "reported_judge_tokens": 461717,
+    "estimated_judge_cost_usd": 0.140612,
+    "raw_result_rows": 162,
+    "raw_results_sha256": "EC4717DA7745532124C8F02BC256501B85C01CAC346A63E837BE89C9E72D028E",
+    "gold_association_repaired_offline": true,
+    "raw_results_modified": false,
+    "evaluation_gold_claims_restored": 336,
+    "judge_inputs_exposed_arm_identity": false
+  },
+  "interpretation": [
+    "D v001 achieved its preregistered quality, latency, energy, inference-call, quality-per-second, and quality-per-Wh targets.",
+    "It did not meet preregistered retrieval Hit@1, gold recall, or escalation-rate thresholds.",
+    "Because the primary success rule required the preregistered condition set rather than selective metric wins, the experiment's primary result was FAIL.",
+    "The run still demonstrated that an adaptive path could approach the clean verified-retrieval arm's quality while operating substantially faster and with less energy than the earlier always-on orchestration arm."
+  ],
+  "limitations": [
+    "The result is one adaptive-inference experiment on one frozen 54-case workload.",
+    "The composite quality score is a benchmark/judge score, not an absolute factual-accuracy percentage.",
+    "The quality evaluation used one blinded LLM judge.",
+    "A raw-run metadata defect left gold_claim_ids empty; gold associations were repaired offline from locked reference_claim_ids without modifying raw outputs.",
+    "The high 62.963% escalation rate means the tested adaptive policy did not achieve the intended low-escalation operating regime."
+  ]
+}

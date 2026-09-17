@@ -1,0 +1,25 @@
+{
+  "schema": "kespa.public_provenance.v1",
+  "research_id": "KESPA-NOTE-002",
+  "source_basis": "Historical KESPA changelog/Jira export supplied for public research reconstruction.",
+  "recorded_clean_corpus_hashes": [
+    {
+      "path": "verified_corpus/clean_verified_claim_corpus_v001/manifest.json",
+      "recorded_sha256": "48764DDEDB2D094DCD621E030321653C557494C872EE9ADAC405FD58022FAAA9"
+    },
+    {
+      "path": "verified_corpus/clean_verified_claim_corpus_v001/validation_summary.txt",
+      "recorded_sha256": "30F75EC56D22C811CFC171F31F1689AF7126C3DE6E9B12F9108EA672C77A91EA"
+    },
+    {
+      "path": "verified_corpus/clean_verified_claim_corpus_v001/verified_claims.jsonl",
+      "recorded_sha256": "D0BD8E02484472263A8D38E82023DD8CBEFC4B70AC86BA31713E04A63044352B"
+    },
+    {
+      "path": "verified_corpus/clean_verified_claim_corpus_v001/verified_evidence.jsonl",
+      "recorded_sha256": "0C181ED53224EE5E14A09037A49840F3D3A171C7CFF8322E090C3C64ABF13C4A"
+    }
+  ],
+  "hash_verification_note": "These hashes are transcribed from the historical user-environment record. The underlying corpus artifacts were not supplied with the changelog export, so this public package does not claim independent rehashing.",
+  "publication_note": "This public note contains architecture, aggregate counts, validation outcomes, and recorded provenance. Private memory contents, source code, raw Chroma data, and internal database records are not republished."
+}
