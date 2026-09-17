@@ -35,6 +35,6 @@ configuration actually used. A result from one experiment is not a general perfo
 
 Public research is presented at:
 
-https://kespa.nexlabs.studio/research/
+https://usekespa.ai/research/
 
 The website will consume `manifest.json` and selected entry manifests from this repository.
